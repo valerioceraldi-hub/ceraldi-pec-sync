@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: ceraldi-pec-sync
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python pec_sync.py
+    plan: free
+    envVars:
+      - key: PEC_HOST
+        value: imaps.pec.aruba.it
+      - key: PEC_PORT
+        value: "993"
+      - key: PEC_MAILBOX
+        value: INBOX
+      - key: SYNC_INTERVAL_HOURS
+        value: "24"
+      # ── Da impostare manualmente nella dashboard Render ──
+      - key: PEC_USER
+        sync: false   # inserisci tu: tuanome@pec.it
+      - key: PEC_PASS
+        sync: false   # inserisci tu: password PEC
+      - key: DRIVE_FOLDER_ID
+        sync: false   # inserisci tu: ID cartella Google Drive
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        sync: false   # inserisci tu: contenuto JSON del service account
