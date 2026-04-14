@@ -1,359 +1,192 @@
-"""
-Ceraldi PEC Sync v2
-Legge la PEC Aruba via IMAP, parsea le fatture XML SDI,
-salva l'indice JSON su GitHub (nel repo esistente).
-L'app legge il JSON direttamente da GitHub (raw URL pubblico).
-"""
-
-import imaplib
-import email
-import os
-import json
-import time
-import logging
-import zipfile
-import io
-import urllib.request
-import urllib.error
+import imaplib, email, os, json, time, logging, zipfile, io, urllib.request, base64
 from datetime import datetime, timezone
 from xml.etree import ElementTree as ET
 import schedule
 
-# ── Logging ───────────────────────────────────────────────────────────────────
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("ceraldi-pec")
 
-# ── Config da env ─────────────────────────────────────────────────────────────
-PEC_HOST    = os.environ.get("PEC_HOST", "imaps.pec.aruba.it")
-PEC_PORT    = int(os.environ.get("PEC_PORT", "993"))
-PEC_USER    = os.environ["PEC_USER"]
-PEC_PASS    = os.environ["PEC_PASS"]
-PEC_MAILBOX = os.environ.get("PEC_MAILBOX", "INBOX")
-
-# GitHub: repo dove salvare l'indice
-GH_TOKEN    = os.environ["GH_TOKEN"]       # Personal Access Token GitHub
-GH_REPO     = os.environ["GH_REPO"]        # es. valerioceraldi-hub/ceraldi-pec-sync
-GH_BRANCH   = os.environ.get("GH_BRANCH", "main")
-GH_INDEX_PATH = "ceraldi_fatture_index.json"
-GH_PROCESSED_PATH = "processed_ids.json"
-
+PEC_HOST = os.environ.get("PEC_HOST", "imaps.pec.aruba.it")
+PEC_PORT = int(os.environ.get("PEC_PORT", "993"))
+PEC_USER = os.environ["PEC_USER"]
+PEC_PASS = os.environ["PEC_PASS"]
+GH_TOKEN = os.environ["GH_TOKEN"]
+GH_REPO  = os.environ["GH_REPO"]
+GH_BRANCH = os.environ.get("GH_BRANCH", "main")
 SYNC_INTERVAL_HOURS = int(os.environ.get("SYNC_INTERVAL_HOURS", "24"))
 
-# ── GitHub API ────────────────────────────────────────────────────────────────
-GH_API = "https://api.github.com"
-
-def gh_get(path: str) -> dict:
+def gh_read(path, default):
     req = urllib.request.Request(
-        f"{GH_API}{path}",
-        headers={
-            "Authorization": f"token {GH_TOKEN}",
-            "Accept": "application/vnd.github.v3+json",
-            "User-Agent": "ceraldi-pec-sync"
-        }
+        f"https://api.github.com/repos/{GH_REPO}/contents/{path}?ref={GH_BRANCH}",
+        headers={"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json", "User-Agent": "ceraldi"}
     )
     try:
         with urllib.request.urlopen(req) as r:
-            return json.loads(r.read().decode())
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            return {}
-        raise
+            data = json.loads(r.read())
+            return json.loads(base64.b64decode(data["content"]).decode()), data.get("sha")
+    except:
+        return default, None
 
-def gh_put(path: str, content: bytes, message: str, sha: str = None):
-    import base64
-    body = {
-        "message": message,
-        "content": base64.b64encode(content).decode(),
-        "branch": GH_BRANCH,
-    }
-    if sha:
-        body["sha"] = sha
-    data = json.dumps(body).encode()
+def gh_write(path, obj, msg, sha=None):
+    body = {"message": msg, "content": base64.b64encode(json.dumps(obj, ensure_ascii=False, indent=2).encode()).decode(), "branch": GH_BRANCH}
+    if sha: body["sha"] = sha
     req = urllib.request.Request(
-        f"{GH_API}{path}",
-        data=data,
-        method="PUT",
-        headers={
-            "Authorization": f"token {GH_TOKEN}",
-            "Accept": "application/vnd.github.v3+json",
-            "Content-Type": "application/json",
-            "User-Agent": "ceraldi-pec-sync"
-        }
+        f"https://api.github.com/repos/{GH_REPO}/contents/{path}",
+        data=json.dumps(body).encode(), method="PUT",
+        headers={"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json", "Content-Type": "application/json", "User-Agent": "ceraldi"}
     )
     with urllib.request.urlopen(req) as r:
-        return json.loads(r.read().decode())
+        return json.loads(r.read()).get("content", {}).get("sha")
 
-def read_gh_json(filepath: str, default):
-    """Legge un file JSON dal repo GitHub."""
-    data = gh_get(f"/repos/{GH_REPO}/contents/{filepath}?ref={GH_BRANCH}")
-    if not data or "content" not in data:
-        return default, None
-    import base64
-    content = base64.b64decode(data["content"]).decode()
-    return json.loads(content), data.get("sha")
-
-def write_gh_json(filepath: str, obj, message: str, sha: str = None):
-    """Scrive/aggiorna un file JSON nel repo GitHub."""
-    content = json.dumps(obj, ensure_ascii=False, indent=2).encode()
-    result = gh_put(f"/repos/{GH_REPO}/contents/{filepath}", content, message, sha)
-    log.info(f"  → GitHub: {filepath} aggiornato")
-    return result.get("content", {}).get("sha")
-
-# ── SDI XML Parser ────────────────────────────────────────────────────────────
-def parse_sdi_xml(xml_bytes: bytes) -> dict | None:
-    try:
-        root = ET.fromstring(xml_bytes)
-    except ET.ParseError as e:
-        log.warning(f"  XML parse error: {e}")
-        return None
-
-    tag = root.tag
-    ns = ""
-    if tag.startswith("{"):
-        ns_uri = tag[1: tag.index("}")]
-        ns = f"{{{ns_uri}}}"
-
-    def tx(path):
-        el = root.find(path.replace("./", f"./{ns}").replace("/", f"/{ns}"))
-        if el is None:
-            el = root.find(path)
-        return el.text.strip() if el is not None and el.text else ""
-
-    def find_all(path):
-        els = root.findall(path.replace("./", f"./{ns}").replace("/", f"/{ns}"))
-        if not els:
-            els = root.findall(path)
-        return els
-
-    denom   = tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Denominazione")
-    cognome = tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Cognome")
-    nome_f  = tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Nome")
-    fornitore = denom or f"{cognome} {nome_f}".strip()
-
-    numero   = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/Numero")
-    data_raw = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/Data")
-    tipo_doc = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/TipoDocumento")
-    importo  = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/ImportoTotaleDocumento")
-
-    if not importo:
-        totali = find_all("./FatturaElettronicaBody/DatiBeniServizi/DatiRiepilogo/ImponibileImporto")
-        imp_sum = sum(float(t.text.replace(",", ".")) for t in totali if t.text)
-        iva_els = find_all("./FatturaElettronicaBody/DatiBeniServizi/DatiRiepilogo/Imposta")
-        iva_sum = sum(float(t.text.replace(",", ".")) for t in iva_els if t.text)
-        importo = str(round(imp_sum + iva_sum, 2)) if imp_sum else ""
-
-    scadenza = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/DataScadenzaPagamento")
-    modalita_map = {
-        "MP01": "contanti", "MP02": "assegno", "MP05": "bonifico",
-        "MP08": "carta",    "MP10": "rid",     "MP12": "riba",
-    }
-    mod_raw   = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/ModalitaPagamento")
-    pagamento = modalita_map.get(mod_raw, "")
-    iban      = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/IBAN")
-    tipo      = "ddt" if tipo_doc in ("TD24", "TD25", "TD26") else "fattura"
-    data      = data_raw[:10] if data_raw else ""
-
-    if not fornitore or not numero:
-        log.warning("  XML incompleto: fornitore o numero mancante")
-        return None
-
-    imp_float = 0.0
-    try:
-        imp_float = float(str(importo).replace(",", "."))
-    except (ValueError, TypeError):
-        pass
-
-    return {
-        "id":         f"pec_{int(time.time()*1000)}_{numero}",
-        "tipo":       tipo,
-        "fornitore":  fornitore,
-        "numero":     numero,
-        "data":       data,
-        "importo":    imp_float,
-        "scadenza":   scadenza[:10] if scadenza else "",
-        "pagamento":  pagamento,
-        "bonIban":    iban,
-        "stato":      "da_pagare",
-        "note":       f"Importato da PEC ({datetime.now(timezone.utc).strftime('%d/%m/%Y')})",
-        "rate":       [],
-        "source":     "pec",
-        "importedAt": datetime.now(timezone.utc).isoformat(),
-    }
-
-# ── P7M / ZIP ─────────────────────────────────────────────────────────────────
-def _extract_from_p7m(p7m_bytes: bytes) -> bytes | None:
-    for marker in (b"<?xml", b"<FatturaElettronica", b"<p:FatturaElettronica"):
-        idx = p7m_bytes.find(marker)
-        if idx != -1:
-            return p7m_bytes[idx:]
+def extract_p7m(data):
+    for m in (b"<?xml", b"<FatturaElettronica", b"<p:FatturaElettronica"):
+        i = data.find(m)
+        if i != -1:
+            chunk = data[i:]
+            for end in (b"</FatturaElettronica>", b"</p:FatturaElettronica>"):
+                j = chunk.rfind(end)
+                if j != -1:
+                    return chunk[:j+len(end)]
+            return chunk
+    i = 0
+    while i < len(data)-10:
+        if data[i] == 0x04:
+            lb = data[i+1]
+            if lb < 0x80: l, s = lb, i+2
+            elif lb == 0x81: l, s = data[i+2], i+3
+            elif lb == 0x82: l, s = (data[i+2]<<8)|data[i+3], i+4
+            elif lb == 0x83: l, s = (data[i+2]<<16)|(data[i+3]<<8)|data[i+4], i+5
+            else: i+=1; continue
+            if s+5 < len(data) and any(data[s:s+10].startswith(m) for m in (b"<?xml",b"<Fattura",b"<p:F")):
+                return data[s:s+l]
+        i += 1
     return None
 
-def _extract_xml_from_zip(zip_bytes: bytes):
-    try:
-        with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
-            for name in zf.namelist():
-                if name.lower().endswith(".xml") or name.lower().endswith(".xml.p7m"):
-                    data = zf.read(name)
-                    if name.lower().endswith(".p7m"):
-                        data = _extract_from_p7m(data) or data
-                    return data, name.replace(".p7m", "")
-    except Exception as e:
-        log.warning(f"  zip extract error: {e}")
-    return None, ""
+def parse_xml(xml_bytes):
+    try: root = ET.fromstring(xml_bytes)
+    except: return None
+    ns = ""
+    if root.tag.startswith("{"):
+        ns = "{" + root.tag[1:root.tag.index("}")] + "}"
+    def tx(path):
+        for use_ns in (True, False):
+            p = path.replace("/", f"/{ns}").replace("./", f"./{ns}") if use_ns and ns else path
+            el = root.find(p)
+            if el is not None and el.text: return el.text.strip()
+        return ""
+    fornitore = (tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Denominazione") or
+                 (tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Cognome") + " " +
+                  tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Nome")).strip())
+    numero   = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/Numero")
+    data_raw = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/Data")
+    importo  = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/ImportoTotaleDocumento")
+    scadenza = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/DataScadenzaPagamento")
+    iban     = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/IBAN")
+    mod      = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/ModalitaPagamento")
+    pag      = {"MP01":"contanti","MP02":"assegno","MP05":"bonifico"}.get(mod,"")
+    if not fornitore or not numero:
+        log.warning(f"  XML incompleto — fornitore='{fornitore}' numero='{numero}'")
+        return None
+    try: imp = float(str(importo).replace(",","."))
+    except: imp = 0.0
+    return {"id": f"pec_{int(time.time()*1000)}_{numero}", "tipo":"fattura",
+            "fornitore": fornitore, "numero": numero, "data": data_raw[:10] if data_raw else "",
+            "importo": imp, "scadenza": scadenza[:10] if scadenza else "",
+            "pagamento": pag, "bonIban": iban, "stato":"da_pagare",
+            "note": f"Importato da PEC ({datetime.now(timezone.utc).strftime('%d/%m/%Y')})",
+            "rate":[], "source":"pec", "importedAt": datetime.now(timezone.utc).isoformat()}
 
-# ── IMAP ──────────────────────────────────────────────────────────────────────
-def fetch_pec_messages(processed_ids: list) -> list[dict]:
-    results = []
-    log.info(f"Connessione IMAP a {PEC_HOST}:{PEC_PORT}…")
-
+def sync():
+    log.info("=== Avvio sync PEC -> GitHub ===")
+    index, index_sha = gh_read("ceraldi_fatture_index.json", {"fatture":[],"lastSync":""})
+    processed, proc_sha = gh_read("processed_ids.json", [])
+    log.info(f"Connessione IMAP {PEC_HOST}:{PEC_PORT}")
+    new_count = 0
     with imaplib.IMAP4_SSL(PEC_HOST, PEC_PORT) as imap:
         imap.login(PEC_USER, PEC_PASS)
-        imap.select('"Fatturazione Elettronica"')
-        # Cerca specificamente email dal Sistema di Interscambio (SDI)
-        # che invia le fatture elettroniche
-        sdi_queries = [
-            'FROM "sdi"',
-            'FROM "pec.fatturapa.it"',
-            'SUBJECT "fattura"',
-        ]
-
-        all_uids = set()
-
-        # Prima cerca email SDI specifiche
-        for q in sdi_queries:
-            try:
-                _, data = imap.search(None, q)
-                uids = data[0].split()
-                all_uids.update(u.decode() for u in uids)
-                log.info(f"  Query '{q}': {len(uids)} email")
-            except Exception as e:
-                log.warning(f"  Query '{q}' fallita: {e}")
-
-        # Poi aggiungi tutte le email (per sicurezza)
+        _, folders = imap.list()
+        log.info("Cartelle:")
+        for f in (folders or []):
+            log.info(f"  {f.decode() if isinstance(f,bytes) else f}")
+        selected = False
+        for try_name in ['"Fatturazione Elettronica"', 'Fatturazione Elettronica',
+                         'INBOX.Fatturazione Elettronica', 'INBOX']:
+            status, msgs = imap.select(try_name)
+            if status == "OK":
+                log.info(f"Cartella selezionata: {try_name} ({msgs[0].decode()} email)")
+                selected = True
+                break
+        if not selected:
+            log.error("Nessuna cartella selezionabile")
+            return
         _, data = imap.search(None, "ALL")
-        all_uids_list = data[0].split()
-        log.info(f"  Totale email in INBOX: {len(all_uids_list)}")
-        all_uids.update(u.decode() for u in all_uids_list)
-
-        log.info(f"  Email totali da controllare: {len(all_uids)}")
-
-        for uid_str in sorted(all_uids, reverse=True):
-            if uid_str in processed_ids:
+        uids = data[0].split()
+        log.info(f"Email: {len(uids)}")
+        for uid in uids:
+            uid_str = uid.decode()
+            if uid_str in processed:
                 continue
-
             try:
-                _, msg_data = imap.fetch(uid_str.encode(), "(RFC822)")
-                if not msg_data or not msg_data[0]:
-                    processed_ids.append(uid_str)
-                    continue
-                raw = msg_data[0][1]
-                msg = email.message_from_bytes(raw)
+                _, msg_data = imap.fetch(uid, "(RFC822)")
+                if not msg_data or not msg_data[0]: continue
+                msg = email.message_from_bytes(msg_data[0][1])
             except Exception as e:
-                log.warning(f"  Errore fetch uid {uid_str}: {e}")
-                processed_ids.append(uid_str)
+                log.warning(f"Fetch {uid_str}: {e}")
+                processed.append(uid_str)
                 continue
-
-            found_xml = False
+            found = False
             for part in msg.walk():
-                ct = part.get_content_type()
                 fn = part.get_filename() or ""
-                fn_lower = fn.lower()
+                fn_l = fn.lower()
                 xml_bytes = None
-                out_filename = fn
-
-                if fn_lower.endswith(".xml"):
+                if fn_l.endswith(".xml"):
                     xml_bytes = part.get_payload(decode=True)
-
-                elif fn_lower.endswith(".xml.p7m") or fn_lower.endswith(".p7m"):
-                    p7m = part.get_payload(decode=True)
-                    if p7m:
-                        xml_bytes = _extract_from_p7m(p7m)
-                        if not xml_bytes:
-                            # Prova a usare il payload direttamente
-                            xml_bytes = p7m
-                        out_filename = fn.replace(".p7m", "")
-
-                elif fn_lower.endswith(".zip"):
-                    zdata = part.get_payload(decode=True)
-                    if zdata:
-                        xml_bytes, out_filename = _extract_xml_from_zip(zdata)
-
-                elif ct in ("text/xml", "application/xml",
-                            "application/pkcs7-mime", "application/x-pkcs7-mime"):
-                    payload = part.get_payload(decode=True)
-                    if payload:
-                        xml_bytes = _extract_from_p7m(payload) or payload
-
-                if xml_bytes and len(xml_bytes) > 100:
-                    log.info(f"  → Allegato: {out_filename} (uid {uid_str}, {len(xml_bytes)} bytes)")
-                    results.append({
-                        "uid": uid_str,
-                        "filename": out_filename or f"fattura_{uid_str}.xml",
-                        "xml_bytes": xml_bytes,
-                    })
-                    found_xml = True
-                    break  # una fattura per email
-
-            if not found_xml:
-                processed_ids.append(uid_str)
-
-        imap.logout()
-
-    return results
-
-# ── Sync principale ───────────────────────────────────────────────────────────
-def sync():
-    log.info("═══ Avvio sync PEC → GitHub ═══")
-
-    index, index_sha = read_gh_json(GH_INDEX_PATH, {"fatture": [], "lastSync": ""})
-    processed, processed_sha = read_gh_json(GH_PROCESSED_PATH, [])
-
-    messages = fetch_pec_messages(processed)
-    log.info(f"Nuove email con XML: {len(messages)}")
-
-    new_count = 0
-    for msg in messages:
-        xml_bytes = msg["xml_bytes"]
-        filename  = msg["filename"]
-
-        fattura = parse_sdi_xml(xml_bytes)
-        if not fattura:
-            log.warning(f"  Skip {filename}: parsing fallito")
-            processed.append(msg["uid"])
-            continue
-
-        chiave = f"{fattura['fornitore']}|{fattura['numero']}"
-        if any(f"{f.get('fornitore')}|{f.get('numero')}" == chiave for f in index.get("fatture", [])):
-            log.info(f"  Duplicato: {chiave} — skip")
-            processed.append(msg["uid"])
-            continue
-
-        index.setdefault("fatture", []).append(fattura)
-        processed.append(msg["uid"])
-        new_count += 1
-        log.info(f"  ✓ {fattura['fornitore']} n.{fattura['numero']} €{fattura['importo']}")
-
+                elif fn_l.endswith(".xml.p7m") or fn_l.endswith(".p7m"):
+                    raw = part.get_payload(decode=True)
+                    xml_bytes = extract_p7m(raw) if raw else None
+                elif fn_l.endswith(".zip"):
+                    raw = part.get_payload(decode=True)
+                    if raw:
+                        try:
+                            with zipfile.ZipFile(io.BytesIO(raw)) as zf:
+                                for name in zf.namelist():
+                                    if ".xml" in name.lower():
+                                        d = zf.read(name)
+                                        xml_bytes = extract_p7m(d) if name.lower().endswith(".p7m") else d
+                                        break
+                        except: pass
+                if not xml_bytes or len(xml_bytes) < 100:
+                    continue
+                log.info(f"  Allegato: {fn} (uid {uid_str})")
+                fattura = parse_xml(xml_bytes)
+                if not fattura:
+                    processed.append(uid_str)
+                    found = True
+                    break
+                chiave = f"{fattura['fornitore']}|{fattura['numero']}"
+                if any(f"{f.get('fornitore')}|{f.get('numero')}" == chiave for f in index.get("fatture",[])):
+                    log.info(f"  Duplicato: {chiave}")
+                    processed.append(uid_str)
+                    found = True
+                    break
+                index.setdefault("fatture",[]).append(fattura)
+                processed.append(uid_str)
+                new_count += 1
+                log.info(f"  + {fattura['fornitore']} n.{fattura['numero']} EUR {fattura['importo']}")
+                found = True
+                break
+            if not found:
+                processed.append(uid_str)
     index["lastSync"] = datetime.now(timezone.utc).isoformat()
     index["newCount"] = new_count
+    gh_write("ceraldi_fatture_index.json", index, f"Sync: {new_count} nuove fatture", index_sha)
+    gh_write("processed_ids.json", processed, "Aggiorna processed", proc_sha)
+    log.info(f"=== Completata: {new_count} nuove fatture ===")
 
-    write_gh_json(GH_INDEX_PATH, index,
-                  f"Sync PEC: {new_count} nuove fatture ({datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')})",
-                  index_sha)
-    write_gh_json(GH_PROCESSED_PATH, processed,
-                  "Aggiorna processed_ids",
-                  processed_sha)
-
-    log.info(f"═══ Sync completata: {new_count} nuove fatture ═══\n")
-
-# ── Entry point ───────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     sync()
     schedule.every(SYNC_INTERVAL_HOURS).hours.do(sync)
-    log.info(f"Scheduler: sync ogni {SYNC_INTERVAL_HOURS}h")
+    log.info(f"Scheduler: ogni {SYNC_INTERVAL_HOURS}h")
     while True:
         schedule.run_pending()
         time.sleep(60)
