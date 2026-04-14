@@ -73,13 +73,17 @@ def parse_xml(xml_bytes):
     try:
         root = ET.fromstring(xml_bytes)
     except Exception as e:
-        log.warning(f"  ET.fromstring error: {e}")
-        log.warning(f"  XML raw: {xml_bytes[:500].decode('utf-8','ignore')}")
+        log.warning(f"  ET error: {e} — raw: {xml_bytes[:300].decode('utf-8','ignore')}")
         return None
 
     ns = ""
     if root.tag.startswith("{"):
         ns = "{" + root.tag[1:root.tag.index("}")] + "}"
+
+    # Se è un file di metadati SDI (FileMetadati) lo saltiamo
+    if "FileMetadati" in root.tag or "FileMetadati" in root.tag.split("}")[-1]:
+        log.info("  Skipping FileMetadati")
+        return None
 
     def tx(path):
         for use_ns in (True, False):
@@ -104,7 +108,8 @@ def parse_xml(xml_bytes):
 
     if not fornitore or not numero:
         log.warning(f"  XML incompleto — fornitore='{fornitore}' numero='{numero}'")
-        log.warning(f"  XML raw: {xml_bytes[:800].decode('utf-8', 'ignore')}")
+        log.warning(f"  Tag root: {root.tag}")
+        log.warning(f"  XML raw: {xml_bytes[:500].decode('utf-8','ignore')}")
         return None
 
     try:
@@ -129,6 +134,47 @@ def parse_xml(xml_bytes):
         "importedAt": datetime.now(timezone.utc).isoformat()
     }
 
+def get_attachments(msg):
+    """
+    Restituisce lista di (filename, xml_bytes) ordinata per priorità:
+    prima .xml.p7m (fattura firmata), poi .xml (fattura o metadati), poi .zip
+    I file _MT_ (metadati) vengono messi in fondo.
+    """
+    attachments = []
+    for part in msg.walk():
+        fn = part.get_filename() or ""
+        fn_l = fn.lower()
+        xml_bytes = None
+
+        if fn_l.endswith(".xml.p7m") or (fn_l.endswith(".p7m") and ".xml" in fn_l):
+            raw = part.get_payload(decode=True)
+            xml_bytes = extract_p7m(raw) if raw else None
+        elif fn_l.endswith(".xml"):
+            xml_bytes = part.get_payload(decode=True)
+        elif fn_l.endswith(".zip"):
+            raw = part.get_payload(decode=True)
+            if raw:
+                try:
+                    with zipfile.ZipFile(io.BytesIO(raw)) as zf:
+                        for name in zf.namelist():
+                            if ".xml" in name.lower():
+                                d = zf.read(name)
+                                xml_bytes = extract_p7m(d) if name.lower().endswith(".p7m") else d
+                                fn = name
+                                break
+                except:
+                    pass
+
+        if xml_bytes and len(xml_bytes) > 100:
+            # Priorità: p7m prima, metadati (_MT_) in fondo
+            is_metadata = "_MT_" in fn.upper() or "METADAT" in fn.upper()
+            is_p7m = fn_l.endswith(".p7m")
+            priority = 0 if (is_p7m and not is_metadata) else (2 if is_metadata else 1)
+            attachments.append((priority, fn, xml_bytes))
+
+    attachments.sort(key=lambda x: x[0])
+    return [(fn, xb) for _, fn, xb in attachments]
+
 def sync():
     log.info("=== Avvio sync PEC -> GitHub ===")
     index, index_sha = gh_read("ceraldi_fatture_index.json", {"fatture": [], "lastSync": ""})
@@ -149,7 +195,7 @@ def sync():
                          'INBOX.Fatturazione Elettronica', 'INBOX']:
             status, msgs = imap.select(try_name)
             if status == "OK":
-                log.info(f"Cartella selezionata: {try_name} ({msgs[0].decode()} email)")
+                log.info(f"Cartella: {try_name} ({msgs[0].decode()} email)")
                 selected = True
                 break
 
@@ -169,6 +215,7 @@ def sync():
             try:
                 _, msg_data = imap.fetch(uid, "(RFC822)")
                 if not msg_data or not msg_data[0]:
+                    processed.append(uid_str)
                     continue
                 msg = email.message_from_bytes(msg_data[0][1])
             except Exception as e:
@@ -176,57 +223,31 @@ def sync():
                 processed.append(uid_str)
                 continue
 
-            found = False
-            for part in msg.walk():
-                fn = part.get_filename() or ""
-                fn_l = fn.lower()
-                xml_bytes = None
+            attachments = get_attachments(msg)
+            if not attachments:
+                processed.append(uid_str)
+                continue
 
-                if fn_l.endswith(".xml"):
-                    xml_bytes = part.get_payload(decode=True)
-                elif fn_l.endswith(".xml.p7m") or fn_l.endswith(".p7m"):
-                    raw = part.get_payload(decode=True)
-                    xml_bytes = extract_p7m(raw) if raw else None
-                elif fn_l.endswith(".zip"):
-                    raw = part.get_payload(decode=True)
-                    if raw:
-                        try:
-                            with zipfile.ZipFile(io.BytesIO(raw)) as zf:
-                                for name in zf.namelist():
-                                    if ".xml" in name.lower():
-                                        d = zf.read(name)
-                                        xml_bytes = extract_p7m(d) if name.lower().endswith(".p7m") else d
-                                        break
-                        except:
-                            pass
-
-                if not xml_bytes or len(xml_bytes) < 100:
-                    continue
-
-                log.info(f"  Allegato: {fn} (uid {uid_str}, {len(xml_bytes)} bytes)")
+            fattura_trovata = False
+            for fn, xml_bytes in attachments:
+                log.info(f"  Provo: {fn} ({len(xml_bytes)} bytes)")
                 fattura = parse_xml(xml_bytes)
-
                 if not fattura:
-                    processed.append(uid_str)
-                    found = True
-                    break
+                    continue
 
                 chiave = f"{fattura['fornitore']}|{fattura['numero']}"
                 if any(f"{f.get('fornitore')}|{f.get('numero')}" == chiave for f in index.get("fatture", [])):
                     log.info(f"  Duplicato: {chiave}")
-                    processed.append(uid_str)
-                    found = True
+                    fattura_trovata = True
                     break
 
                 index.setdefault("fatture", []).append(fattura)
-                processed.append(uid_str)
                 new_count += 1
                 log.info(f"  + {fattura['fornitore']} n.{fattura['numero']} EUR {fattura['importo']}")
-                found = True
+                fattura_trovata = True
                 break
 
-            if not found:
-                processed.append(uid_str)
+            processed.append(uid_str)
 
     index["lastSync"] = datetime.now(timezone.utc).isoformat()
     index["newCount"] = new_count
