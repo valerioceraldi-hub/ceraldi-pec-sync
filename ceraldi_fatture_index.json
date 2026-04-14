@@ -175,8 +175,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-14T20:14:55.160290+00:00"
+    },
+    {
+      "id": "pec_1776202183162_146",
+      "tipo": "fattura",
+      "fornitore": "VDM Refrigeration di Vincenzo Di Macco",
+      "numero": "146",
+      "data": "2026-04-14",
+      "importo": 122.0,
+      "scadenza": "",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/VDM_Refrigeration_di_Vincenzo_Di_Macco_146.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (14/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-14T21:29:43.162217+00:00"
     }
   ],
-  "lastSync": "2026-04-14T21:28:41.073605+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-14T21:29:43.989276+00:00",
+  "newCount": 1
 }
