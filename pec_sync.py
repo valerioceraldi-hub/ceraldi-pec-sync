@@ -85,8 +85,8 @@ def parse_xml(xml_bytes):
     mod      = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/ModalitaPagamento")
     pag      = {"MP01":"contanti","MP02":"assegno","MP05":"bonifico"}.get(mod,"")
     if not fornitore or not numero:
-        log.warning(f"  XML incompleto — fornitore='{fornitore}' numero='{numero}'")
-        return None
+    log.warning(f"  XML raw (primi 500 chars): {xml_bytes[:500]}")
+    return None
     try: imp = float(str(importo).replace(",","."))
     except: imp = 0.0
     return {"id": f"pec_{int(time.time()*1000)}_{numero}", "tipo":"fattura",
