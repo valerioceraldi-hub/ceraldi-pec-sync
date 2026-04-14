@@ -212,8 +212,7 @@ def fetch_pec_messages(processed_ids: list) -> list[dict]:
 
     with imaplib.IMAP4_SSL(PEC_HOST, PEC_PORT) as imap:
         imap.login(PEC_USER, PEC_PASS)
-        imap.select(PEC_MAILBOX)
-
+        imap.select('"Fatturazione Elettronica"')
         # Cerca specificamente email dal Sistema di Interscambio (SDI)
         # che invia le fatture elettroniche
         sdi_queries = [
