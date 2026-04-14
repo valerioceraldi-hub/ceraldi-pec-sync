@@ -39,6 +39,36 @@ def gh_write(path, obj, msg, sha=None):
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read()).get("content", {}).get("sha")
 
+def gh_write_raw(path, content_bytes, msg, sha=None):
+    """Salva un file binario/testo su GitHub (content_bytes = bytes)."""
+    body = {
+        "message": msg,
+        "content": base64.b64encode(content_bytes).decode(),
+        "branch": GH_BRANCH
+    }
+    if sha:
+        body["sha"] = sha
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{GH_REPO}/contents/{path}",
+        data=json.dumps(body).encode(), method="PUT",
+        headers={"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json",
+                 "Content-Type": "application/json", "User-Agent": "ceraldi"}
+    )
+    with urllib.request.urlopen(req) as r:
+        return json.loads(r.read()).get("content", {}).get("sha")
+
+def gh_get_sha(path):
+    """Restituisce lo sha di un file esistente su GitHub (None se non esiste)."""
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{GH_REPO}/contents/{path}?ref={GH_BRANCH}",
+        headers={"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json", "User-Agent": "ceraldi"}
+    )
+    try:
+        with urllib.request.urlopen(req) as r:
+            return json.loads(r.read()).get("sha")
+    except:
+        return None
+
 def extract_p7m(data):
     for m in (b"<?xml", b"<FatturaElettronica", b"<p:FatturaElettronica"):
         i = data.find(m)
@@ -119,14 +149,6 @@ def parse_xml(xml_bytes):
     except:
         imp = 0.0
 
-    # ── NUOVO: salva il contenuto XML in base64 ─────────────────────────────
-    # Limitato a 400 KB per non gonfiare l'indice (le fatture tipiche sono 5-50 KB)
-    xml_b64 = ""
-    if len(xml_bytes) <= 400_000:
-        xml_b64 = base64.b64encode(xml_bytes).decode()
-    else:
-        log.warning(f"  XML troppo grande ({len(xml_bytes)} bytes), xmlBase64 non salvato")
-
     return {
         "id": f"pec_{int(time.time()*1000)}_{numero}",
         "tipo": "fattura",
@@ -137,8 +159,8 @@ def parse_xml(xml_bytes):
         "scadenza": scadenza[:10] if scadenza else "",
         "pagamento": pag,
         "bonIban": iban,
-        "numDdt": num_ddt,          # ── NUOVO: riferimento DDT dalla fattura
-        "xmlBase64": xml_b64,       # ── NUOVO: contenuto XML completo in base64
+        "numDdt": num_ddt,
+        "xmlGithubPath": "",        # verrà compilato in sync() dopo il salvataggio su GitHub
         "stato": "da_pagare",
         "note": f"Importato da PEC ({datetime.now(timezone.utc).strftime('%d/%m/%Y')})",
         "rate": [],
@@ -246,6 +268,18 @@ def sync():
                     log.info(f"  Duplicato: {chiave}")
                     fattura_trovata = True
                     break
+
+                # Salva il file XML su GitHub in fatture_xml/
+                safe_forn = "".join(c if c.isalnum() or c in "-_." else "_" for c in fattura["fornitore"])[:40]
+                safe_num  = "".join(c if c.isalnum() or c in "-_." else "_" for c in fattura["numero"])[:30]
+                xml_path  = f"fatture_xml/{safe_forn}_{safe_num}.xml"
+                try:
+                    existing_sha = gh_get_sha(xml_path)
+                    gh_write_raw(xml_path, xml_bytes, f"Fattura {fattura['fornitore']} n.{fattura['numero']}", existing_sha)
+                    fattura["xmlGithubPath"] = xml_path
+                    log.info(f"  XML salvato: {xml_path}")
+                except Exception as xe:
+                    log.warning(f"  Salvataggio XML fallito: {xe}")
 
                 index.setdefault("fatture", []).append(fattura)
                 new_count += 1
