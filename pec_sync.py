@@ -214,44 +214,90 @@ def fetch_pec_messages(processed_ids: list) -> list[dict]:
         imap.login(PEC_USER, PEC_PASS)
         imap.select(PEC_MAILBOX)
 
-        _, data = imap.search(None, "ALL")
-        uids = data[0].split()
-        log.info(f"  Trovate {len(uids)} email in {PEC_MAILBOX}")
+        # Cerca specificamente email dal Sistema di Interscambio (SDI)
+        # che invia le fatture elettroniche
+        sdi_queries = [
+            'FROM "sdi"',
+            'FROM "pec.fatturapa.it"',
+            'SUBJECT "fattura"',
+        ]
 
-        for uid in reversed(uids[-500:]):
-            uid_str = uid.decode()
+        all_uids = set()
+
+        # Prima cerca email SDI specifiche
+        for q in sdi_queries:
+            try:
+                _, data = imap.search(None, q)
+                uids = data[0].split()
+                all_uids.update(u.decode() for u in uids)
+                log.info(f"  Query '{q}': {len(uids)} email")
+            except Exception as e:
+                log.warning(f"  Query '{q}' fallita: {e}")
+
+        # Poi aggiungi tutte le email (per sicurezza)
+        _, data = imap.search(None, "ALL")
+        all_uids_list = data[0].split()
+        log.info(f"  Totale email in INBOX: {len(all_uids_list)}")
+        all_uids.update(u.decode() for u in all_uids_list)
+
+        log.info(f"  Email totali da controllare: {len(all_uids)}")
+
+        for uid_str in sorted(all_uids, reverse=True):
             if uid_str in processed_ids:
                 continue
 
-            _, msg_data = imap.fetch(uid, "(RFC822)")
-            raw = msg_data[0][1]
-            msg = email.message_from_bytes(raw)
+            try:
+                _, msg_data = imap.fetch(uid_str.encode(), "(RFC822)")
+                if not msg_data or not msg_data[0]:
+                    processed_ids.append(uid_str)
+                    continue
+                raw = msg_data[0][1]
+                msg = email.message_from_bytes(raw)
+            except Exception as e:
+                log.warning(f"  Errore fetch uid {uid_str}: {e}")
+                processed_ids.append(uid_str)
+                continue
 
             found_xml = False
             for part in msg.walk():
                 ct = part.get_content_type()
                 fn = part.get_filename() or ""
+                fn_lower = fn.lower()
                 xml_bytes = None
                 out_filename = fn
 
-                if fn.lower().endswith(".xml") or ct in ("text/xml", "application/xml"):
+                if fn_lower.endswith(".xml"):
                     xml_bytes = part.get_payload(decode=True)
-                elif fn.lower().endswith(".xml.p7m"):
-                    p7m = part.get_payload(decode=True)
-                    xml_bytes = _extract_from_p7m(p7m)
-                    out_filename = fn.replace(".p7m", "")
-                elif fn.lower().endswith(".zip"):
-                    zdata = part.get_payload(decode=True)
-                    xml_bytes, out_filename = _extract_xml_from_zip(zdata)
 
-                if xml_bytes:
-                    log.info(f"  → Allegato: {out_filename} (uid {uid_str})")
+                elif fn_lower.endswith(".xml.p7m") or fn_lower.endswith(".p7m"):
+                    p7m = part.get_payload(decode=True)
+                    if p7m:
+                        xml_bytes = _extract_from_p7m(p7m)
+                        if not xml_bytes:
+                            # Prova a usare il payload direttamente
+                            xml_bytes = p7m
+                        out_filename = fn.replace(".p7m", "")
+
+                elif fn_lower.endswith(".zip"):
+                    zdata = part.get_payload(decode=True)
+                    if zdata:
+                        xml_bytes, out_filename = _extract_xml_from_zip(zdata)
+
+                elif ct in ("text/xml", "application/xml",
+                            "application/pkcs7-mime", "application/x-pkcs7-mime"):
+                    payload = part.get_payload(decode=True)
+                    if payload:
+                        xml_bytes = _extract_from_p7m(payload) or payload
+
+                if xml_bytes and len(xml_bytes) > 100:
+                    log.info(f"  → Allegato: {out_filename} (uid {uid_str}, {len(xml_bytes)} bytes)")
                     results.append({
                         "uid": uid_str,
                         "filename": out_filename or f"fattura_{uid_str}.xml",
                         "xml_bytes": xml_bytes,
                     })
                     found_xml = True
+                    break  # una fattura per email
 
             if not found_xml:
                 processed_ids.append(uid_str)
