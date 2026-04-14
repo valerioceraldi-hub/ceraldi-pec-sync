@@ -186,10 +186,52 @@ def parse_sdi_xml(xml_bytes: bytes) -> dict | None:
 
 # ── P7M / ZIP ─────────────────────────────────────────────────────────────────
 def _extract_from_p7m(p7m_bytes: bytes) -> bytes | None:
-    for marker in (b"<?xml", b"<FatturaElettronica", b"<p:FatturaElettronica"):
+    """
+    Estrae XML da un file .p7m (CMS/CAdES).
+    """
+    # Metodo 1: cerca direttamente marker XML nel payload
+    for marker in (b"<?xml", b"<FatturaElettronica", b"<p:FatturaElettronica",
+                   b"<ns0:FatturaElettronica", b"<ns2:FatturaElettronica"):
         idx = p7m_bytes.find(marker)
         if idx != -1:
-            return p7m_bytes[idx:]
+            content = p7m_bytes[idx:]
+            for end_marker in (b"</FatturaElettronica>", b"</p:FatturaElettronica>",
+                               b"</ns0:FatturaElettronica>", b"</ns2:FatturaElettronica>"):
+                end_idx = content.rfind(end_marker)
+                if end_idx != -1:
+                    return content[:end_idx + len(end_marker)]
+            return content
+
+    # Metodo 2: struttura ASN.1 — cerca OCTET STRING che contiene XML
+    try:
+        i = 0
+        while i < len(p7m_bytes) - 10:
+            if p7m_bytes[i] == 0x04:  # OCTET STRING
+                l_byte = p7m_bytes[i+1]
+                if l_byte < 0x80:
+                    length = l_byte
+                    data_start = i + 2
+                elif l_byte == 0x81:
+                    length = p7m_bytes[i+2]
+                    data_start = i + 3
+                elif l_byte == 0x82:
+                    length = (p7m_bytes[i+2] << 8) | p7m_bytes[i+3]
+                    data_start = i + 4
+                elif l_byte == 0x83:
+                    length = (p7m_bytes[i+2] << 16) | (p7m_bytes[i+3] << 8) | p7m_bytes[i+4]
+                    data_start = i + 5
+                else:
+                    i += 1
+                    continue
+                if data_start + 5 < len(p7m_bytes):
+                    chunk = p7m_bytes[data_start:data_start+10]
+                    if any(chunk.startswith(m) for m in
+                           (b"<?xml", b"<Fattura", b"<p:Fattura", b"<ns")):
+                        return p7m_bytes[data_start:data_start+length]
+            i += 1
+    except Exception:
+        pass
+
     return None
 
 def _extract_xml_from_zip(zip_bytes: bytes):
@@ -212,35 +254,32 @@ def fetch_pec_messages(processed_ids: list) -> list[dict]:
 
     with imaplib.IMAP4_SSL(PEC_HOST, PEC_PORT) as imap:
         imap.login(PEC_USER, PEC_PASS)
-        imap.select(PEC_MAILBOX)
 
-        # Cerca specificamente email dal Sistema di Interscambio (SDI)
-        # che invia le fatture elettroniche
-        sdi_queries = [
-            'FROM "sdi"',
-            'FROM "pec.fatturapa.it"',
-            'SUBJECT "fattura"',
-        ]
-
-        all_uids = set()
-
-        # Prima cerca email SDI specifiche
-        for q in sdi_queries:
+        # Seleziona la cartella — prova varie codifiche
+        status, msgs = None, None
+        for mailbox_try in [f'"{PEC_MAILBOX}"', PEC_MAILBOX,
+                            PEC_MAILBOX.encode("utf-7").decode(), "INBOX"]:
             try:
-                _, data = imap.search(None, q)
-                uids = data[0].split()
-                all_uids.update(u.decode() for u in uids)
-                log.info(f"  Query '{q}': {len(uids)} email")
-            except Exception as e:
-                log.warning(f"  Query '{q}' fallita: {e}")
+                status, msgs = imap.select(mailbox_try)
+                if status == "OK":
+                    log.info(f"  Cartella aperta: {mailbox_try} ({msgs[0].decode()} email)")
+                    break
+            except Exception:
+                continue
 
-        # Poi aggiungi tutte le email (per sicurezza)
+        if status != "OK":
+            # Mostra cartelle disponibili per debug
+            _, folders = imap.list()
+            log.error("  Cartelle disponibili:")
+            for f in (folders or []):
+                log.error(f"    {f}")
+            return results
+
+        # Prendi tutte le email
         _, data = imap.search(None, "ALL")
         all_uids_list = data[0].split()
-        log.info(f"  Totale email in INBOX: {len(all_uids_list)}")
-        all_uids.update(u.decode() for u in all_uids_list)
-
-        log.info(f"  Email totali da controllare: {len(all_uids)}")
+        log.info(f"  Email trovate: {len(all_uids_list)}")
+        all_uids = set(u.decode() for u in all_uids_list)
 
         for uid_str in sorted(all_uids, reverse=True):
             if uid_str in processed_ids:
