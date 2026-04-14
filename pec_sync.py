@@ -80,7 +80,6 @@ def parse_xml(xml_bytes):
     if root.tag.startswith("{"):
         ns = "{" + root.tag[1:root.tag.index("}")] + "}"
 
-    # Se è un file di metadati SDI (FileMetadati) lo saltiamo
     if "FileMetadati" in root.tag or "FileMetadati" in root.tag.split("}")[-1]:
         log.info("  Skipping FileMetadati")
         return None
@@ -106,6 +105,9 @@ def parse_xml(xml_bytes):
     mod      = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/ModalitaPagamento")
     pag      = {"MP01": "contanti", "MP02": "assegno", "MP05": "bonifico"}.get(mod, "")
 
+    # ── NUOVO: numero DDT di riferimento (DatiDDT) ──────────────────────────
+    num_ddt  = tx("./FatturaElettronicaBody/DatiGenerali/DatiDDT/NumeroDDT")
+
     if not fornitore or not numero:
         log.warning(f"  XML incompleto — fornitore='{fornitore}' numero='{numero}'")
         log.warning(f"  Tag root: {root.tag}")
@@ -117,6 +119,14 @@ def parse_xml(xml_bytes):
     except:
         imp = 0.0
 
+    # ── NUOVO: salva il contenuto XML in base64 ─────────────────────────────
+    # Limitato a 400 KB per non gonfiare l'indice (le fatture tipiche sono 5-50 KB)
+    xml_b64 = ""
+    if len(xml_bytes) <= 400_000:
+        xml_b64 = base64.b64encode(xml_bytes).decode()
+    else:
+        log.warning(f"  XML troppo grande ({len(xml_bytes)} bytes), xmlBase64 non salvato")
+
     return {
         "id": f"pec_{int(time.time()*1000)}_{numero}",
         "tipo": "fattura",
@@ -127,6 +137,8 @@ def parse_xml(xml_bytes):
         "scadenza": scadenza[:10] if scadenza else "",
         "pagamento": pag,
         "bonIban": iban,
+        "numDdt": num_ddt,          # ── NUOVO: riferimento DDT dalla fattura
+        "xmlBase64": xml_b64,       # ── NUOVO: contenuto XML completo in base64
         "stato": "da_pagare",
         "note": f"Importato da PEC ({datetime.now(timezone.utc).strftime('%d/%m/%Y')})",
         "rate": [],
@@ -135,11 +147,6 @@ def parse_xml(xml_bytes):
     }
 
 def get_attachments(msg):
-    """
-    Restituisce lista di (filename, xml_bytes) ordinata per priorità:
-    prima .xml.p7m (fattura firmata), poi .xml (fattura o metadati), poi .zip
-    I file _MT_ (metadati) vengono messi in fondo.
-    """
     attachments = []
     for part in msg.walk():
         fn = part.get_filename() or ""
@@ -166,7 +173,6 @@ def get_attachments(msg):
                     pass
 
         if xml_bytes and len(xml_bytes) > 100:
-            # Priorità: p7m prima, metadati (_MT_) in fondo
             is_metadata = "_MT_" in fn.upper() or "METADAT" in fn.upper()
             is_p7m = fn_l.endswith(".p7m")
             priority = 0 if (is_p7m and not is_metadata) else (2 if is_metadata else 1)
