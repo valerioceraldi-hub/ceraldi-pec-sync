@@ -29,7 +29,8 @@ def gh_read(path, default):
 
 def gh_write(path, obj, msg, sha=None):
     body = {"message": msg, "content": base64.b64encode(json.dumps(obj, ensure_ascii=False, indent=2).encode()).decode(), "branch": GH_BRANCH}
-    if sha: body["sha"] = sha
+    if sha:
+        body["sha"] = sha
     req = urllib.request.Request(
         f"https://api.github.com/repos/{GH_REPO}/contents/{path}",
         data=json.dumps(body).encode(), method="PUT",
@@ -52,62 +53,97 @@ def extract_p7m(data):
     while i < len(data)-10:
         if data[i] == 0x04:
             lb = data[i+1]
-            if lb < 0x80: l, s = lb, i+2
-            elif lb == 0x81: l, s = data[i+2], i+3
-            elif lb == 0x82: l, s = (data[i+2]<<8)|data[i+3], i+4
-            elif lb == 0x83: l, s = (data[i+2]<<16)|(data[i+3]<<8)|data[i+4], i+5
-            else: i+=1; continue
-            if s+5 < len(data) and any(data[s:s+10].startswith(m) for m in (b"<?xml",b"<Fattura",b"<p:F")):
+            if lb < 0x80:
+                l, s = lb, i+2
+            elif lb == 0x81:
+                l, s = data[i+2], i+3
+            elif lb == 0x82:
+                l, s = (data[i+2]<<8)|data[i+3], i+4
+            elif lb == 0x83:
+                l, s = (data[i+2]<<16)|(data[i+3]<<8)|data[i+4], i+5
+            else:
+                i += 1
+                continue
+            if s+5 < len(data) and any(data[s:s+10].startswith(m) for m in (b"<?xml", b"<Fattura", b"<p:F")):
                 return data[s:s+l]
         i += 1
     return None
 
 def parse_xml(xml_bytes):
-    try: root = ET.fromstring(xml_bytes)
-    except: return None
+    try:
+        root = ET.fromstring(xml_bytes)
+    except Exception as e:
+        log.warning(f"  ET.fromstring error: {e}")
+        log.warning(f"  XML raw: {xml_bytes[:500].decode('utf-8','ignore')}")
+        return None
+
     ns = ""
     if root.tag.startswith("{"):
         ns = "{" + root.tag[1:root.tag.index("}")] + "}"
+
     def tx(path):
         for use_ns in (True, False):
             p = path.replace("/", f"/{ns}").replace("./", f"./{ns}") if use_ns and ns else path
             el = root.find(p)
-            if el is not None and el.text: return el.text.strip()
+            if el is not None and el.text:
+                return el.text.strip()
         return ""
-    fornitore = (tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Denominazione") or
-                 (tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Cognome") + " " +
-                  tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Nome")).strip())
+
+    fornitore = (
+        tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Denominazione") or
+        (tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Cognome") + " " +
+         tx("./FatturaElettronicaHeader/CedentePrestatore/DatiAnagrafici/Anagrafica/Nome")).strip()
+    )
     numero   = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/Numero")
     data_raw = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/Data")
     importo  = tx("./FatturaElettronicaBody/DatiGenerali/DatiGeneraliDocumento/ImportoTotaleDocumento")
     scadenza = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/DataScadenzaPagamento")
     iban     = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/IBAN")
     mod      = tx("./FatturaElettronicaBody/DatiPagamento/DettaglioPagamento/ModalitaPagamento")
-    pag      = {"MP01":"contanti","MP02":"assegno","MP05":"bonifico"}.get(mod,"")
+    pag      = {"MP01": "contanti", "MP02": "assegno", "MP05": "bonifico"}.get(mod, "")
+
     if not fornitore or not numero:
-    log.warning(f"  XML raw (primi 500 chars): {xml_bytes[:500]}")
-    return None
-    try: imp = float(str(importo).replace(",","."))
-    except: imp = 0.0
-    return {"id": f"pec_{int(time.time()*1000)}_{numero}", "tipo":"fattura",
-            "fornitore": fornitore, "numero": numero, "data": data_raw[:10] if data_raw else "",
-            "importo": imp, "scadenza": scadenza[:10] if scadenza else "",
-            "pagamento": pag, "bonIban": iban, "stato":"da_pagare",
-            "note": f"Importato da PEC ({datetime.now(timezone.utc).strftime('%d/%m/%Y')})",
-            "rate":[], "source":"pec", "importedAt": datetime.now(timezone.utc).isoformat()}
+        log.warning(f"  XML incompleto — fornitore='{fornitore}' numero='{numero}'")
+        log.warning(f"  XML raw: {xml_bytes[:800].decode('utf-8', 'ignore')}")
+        return None
+
+    try:
+        imp = float(str(importo).replace(",", "."))
+    except:
+        imp = 0.0
+
+    return {
+        "id": f"pec_{int(time.time()*1000)}_{numero}",
+        "tipo": "fattura",
+        "fornitore": fornitore,
+        "numero": numero,
+        "data": data_raw[:10] if data_raw else "",
+        "importo": imp,
+        "scadenza": scadenza[:10] if scadenza else "",
+        "pagamento": pag,
+        "bonIban": iban,
+        "stato": "da_pagare",
+        "note": f"Importato da PEC ({datetime.now(timezone.utc).strftime('%d/%m/%Y')})",
+        "rate": [],
+        "source": "pec",
+        "importedAt": datetime.now(timezone.utc).isoformat()
+    }
 
 def sync():
     log.info("=== Avvio sync PEC -> GitHub ===")
-    index, index_sha = gh_read("ceraldi_fatture_index.json", {"fatture":[],"lastSync":""})
+    index, index_sha = gh_read("ceraldi_fatture_index.json", {"fatture": [], "lastSync": ""})
     processed, proc_sha = gh_read("processed_ids.json", [])
     log.info(f"Connessione IMAP {PEC_HOST}:{PEC_PORT}")
     new_count = 0
+
     with imaplib.IMAP4_SSL(PEC_HOST, PEC_PORT) as imap:
         imap.login(PEC_USER, PEC_PASS)
+
         _, folders = imap.list()
         log.info("Cartelle:")
         for f in (folders or []):
-            log.info(f"  {f.decode() if isinstance(f,bytes) else f}")
+            log.info(f"  {f.decode() if isinstance(f, bytes) else f}")
+
         selected = False
         for try_name in ['"Fatturazione Elettronica"', 'Fatturazione Elettronica',
                          'INBOX.Fatturazione Elettronica', 'INBOX']:
@@ -116,29 +152,36 @@ def sync():
                 log.info(f"Cartella selezionata: {try_name} ({msgs[0].decode()} email)")
                 selected = True
                 break
+
         if not selected:
             log.error("Nessuna cartella selezionabile")
             return
+
         _, data = imap.search(None, "ALL")
         uids = data[0].split()
         log.info(f"Email: {len(uids)}")
+
         for uid in uids:
             uid_str = uid.decode()
             if uid_str in processed:
                 continue
+
             try:
                 _, msg_data = imap.fetch(uid, "(RFC822)")
-                if not msg_data or not msg_data[0]: continue
+                if not msg_data or not msg_data[0]:
+                    continue
                 msg = email.message_from_bytes(msg_data[0][1])
             except Exception as e:
                 log.warning(f"Fetch {uid_str}: {e}")
                 processed.append(uid_str)
                 continue
+
             found = False
             for part in msg.walk():
                 fn = part.get_filename() or ""
                 fn_l = fn.lower()
                 xml_bytes = None
+
                 if fn_l.endswith(".xml"):
                     xml_bytes = part.get_payload(decode=True)
                 elif fn_l.endswith(".xml.p7m") or fn_l.endswith(".p7m"):
@@ -154,29 +197,37 @@ def sync():
                                         d = zf.read(name)
                                         xml_bytes = extract_p7m(d) if name.lower().endswith(".p7m") else d
                                         break
-                        except: pass
+                        except:
+                            pass
+
                 if not xml_bytes or len(xml_bytes) < 100:
                     continue
-                log.info(f"  Allegato: {fn} (uid {uid_str})")
+
+                log.info(f"  Allegato: {fn} (uid {uid_str}, {len(xml_bytes)} bytes)")
                 fattura = parse_xml(xml_bytes)
+
                 if not fattura:
                     processed.append(uid_str)
                     found = True
                     break
+
                 chiave = f"{fattura['fornitore']}|{fattura['numero']}"
-                if any(f"{f.get('fornitore')}|{f.get('numero')}" == chiave for f in index.get("fatture",[])):
+                if any(f"{f.get('fornitore')}|{f.get('numero')}" == chiave for f in index.get("fatture", [])):
                     log.info(f"  Duplicato: {chiave}")
                     processed.append(uid_str)
                     found = True
                     break
-                index.setdefault("fatture",[]).append(fattura)
+
+                index.setdefault("fatture", []).append(fattura)
                 processed.append(uid_str)
                 new_count += 1
                 log.info(f"  + {fattura['fornitore']} n.{fattura['numero']} EUR {fattura['importo']}")
                 found = True
                 break
+
             if not found:
                 processed.append(uid_str)
+
     index["lastSync"] = datetime.now(timezone.utc).isoformat()
     index["newCount"] = new_count
     gh_write("ceraldi_fatture_index.json", index, f"Sync: {new_count} nuove fatture", index_sha)
