@@ -229,8 +229,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-15T08:16:42.881321+00:00"
+    },
+    {
+      "id": "pec_1776241640372_693",
+      "tipo": "fattura",
+      "fornitore": "\"RONDINELLA MARKET S.R.L.\"",
+      "numero": "693",
+      "data": "2026-04-13",
+      "importo": 315.82,
+      "scadenza": "2026-04-13",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/_RONDINELLA_MARKET_S.R.L.__693.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (15/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-15T08:27:20.372999+00:00"
     }
   ],
-  "lastSync": "2026-04-15T08:25:49.872283+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-15T08:27:21.159748+00:00",
+  "newCount": 1
 }
