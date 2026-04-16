@@ -373,8 +373,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-15T19:56:00.320416+00:00"
+    },
+    {
+      "id": "pec_1776339672226_1/60050",
+      "tipo": "fattura",
+      "fornitore": "SAIMA S.p.A.",
+      "numero": "1/60050",
+      "data": "2026-04-14",
+      "importo": 337.91,
+      "scadenza": "2026-04-14",
+      "pagamento": "bonifico",
+      "bonIban": "IT94P0306975013100000004681",
+      "numDdt": "1/62794",
+      "xmlGithubPath": "fatture_xml/SAIMA_S.p.A._1_60050.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (16/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-16T11:41:12.226844+00:00"
     }
   ],
-  "lastSync": "2026-04-16T08:46:59.057776+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-16T11:41:13.278456+00:00",
+  "newCount": 1
 }
