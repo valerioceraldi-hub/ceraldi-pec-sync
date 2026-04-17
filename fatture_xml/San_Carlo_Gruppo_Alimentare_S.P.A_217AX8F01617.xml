@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>
+<ns3:FatturaElettronica versione="FPR12" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>00967720285</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>bOCxd</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+            <ContattiTrasmittente>
+                <Telefono>00000</Telefono>
+                <Email>digidoc-support@eng.it</Email>
+            </ContattiTrasmittente>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04172800155</IdCodice>
+                </IdFiscaleIVA>
+                <CodiceFiscale>00836320150</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>San Carlo Gruppo Alimentare S.P.A</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>TOLMEZZO 15</Indirizzo>
+                <CAP>20132</CAP>
+                <Comune>MILANO</Comune>
+                <Provincia>MI</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+            <IscrizioneREA>
+                <Ufficio>MI</Ufficio>
+                <NumeroREA>829559</NumeroREA>
+                <CapitaleSociale>127667715.50</CapitaleSociale>
+                <SocioUnico>SM</SocioUnico>
+                <StatoLiquidazione>LN</StatoLiquidazione>
+            </IscrizioneREA>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04523831214</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>CERALDI GROUP  SRL</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>CARITA </Indirizzo>
+                <CAP>80134</CAP>
+                <Comune>NAPOLI</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2026-04-10</Data>
+                <Numero>217AX8F01617</Numero>
+                <ImportoTotaleDocumento>33.79</ImportoTotaleDocumento>
+                <Causale>Contributo ambientale CONAI assolto ove dovuto</Causale>
+                <Causale>Assolve gli obblighi di cui all art 62 comma 1 del DL n 1 2012 convertito con modificazioni dalla L n 27 2012</Causale>
+            </DatiGeneraliDocumento>
+            <DatiOrdineAcquisto>
+                <IdDocumento>26DV021001</IdDocumento>
+                <CodiceCommessaConvenzione>KRRH6B9</CodiceCommessaConvenzione>
+            </DatiOrdineAcquisto>
+            <DatiDDT>
+                <NumeroDDT>26DDT30001105932</NumeroDDT>
+                <DataDDT>2026-04-10</DataDDT>
+            </DatiDDT>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Articolo</CodiceTipo>
+                    <CodiceValore>004393</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>1936 G.25X32</Descrizione>
+                <Quantita>96.00</Quantita>
+                <UnitaMisura>PC</UnitaMisura>
+                <PrezzoUnitario>0.32000</PrezzoUnitario>
+                <PrezzoTotale>30.72</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+                <AltriDatiGestionali>
+                    <TipoDato>Num.Ordine</TipoDato>
+                    <RiferimentoTesto>26OV30001113684</RiferimentoTesto>
+                </AltriDatiGestionali>
+                <AltriDatiGestionali>
+                    <TipoDato>Rif.Bolle</TipoDato>
+                    <RiferimentoTesto>26DDT30001105932</RiferimentoTesto>
+                </AltriDatiGestionali>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>10.00</AliquotaIVA>
+                <ImponibileImporto>30.72</ImponibileImporto>
+                <Imposta>3.07</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP01</ModalitaPagamento>
+                <DataScadenzaPagamento>2026-04-10</DataScadenzaPagamento>
+                <ImportoPagamento>33.79</ImportoPagamento>
+            </DettaglioPagamento>
+        </DatiPagamento>
+    </FatturaElettronicaBody>
+</ns3:FatturaElettronica>
