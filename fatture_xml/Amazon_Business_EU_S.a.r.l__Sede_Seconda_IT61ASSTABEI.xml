@@ -1,0 +1,143 @@
+<ns2:FatturaElettronica xmlns:ns2="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>08973230967</IdCodice></IdTrasmittente><ProgressivoInvio>FHpe0</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>KRRH6B9</CodiceDestinatario><PECDestinatario>Ceraldigroupsrl@legalmail.it</PECDestinatario></DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>13397910962</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Amazon Business EU S.a.r.l, Sede Secondaria</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>38 avenue John F. Kennedy</Indirizzo>
+<CAP>01855</CAP>
+<Comune>Lussemburgo</Comune>
+<Nazione>LU</Nazione>
+</Sede>
+<StabileOrganizzazione>
+<Indirizzo>Viale Monte Grappa 3/5</Indirizzo>
+<CAP>20124</CAP>
+<Comune>Milano</Comune>
+<Nazione>IT</Nazione>
+</StabileOrganizzazione>
+<RiferimentoAmministrazione>P.IVA: 13397910962</RiferimentoAmministrazione>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Ceraldi group srl</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Piazza Nazionale 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>napoli</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-18</Data>
+<Numero>IT61ASSTABEI</Numero>
+<ImportoTotaleDocumento>194.69</ImportoTotaleDocumento>
+<Arrotondamento>0.00</Arrotondamento>
+</DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>407-3004678-1455546</IdDocumento>
+<Data>2026-04-17</Data>
+</DatiOrdineAcquisto>
+<DatiContratto>
+<IdDocumento>407-3004678-1455546</IdDocumento>
+<Data>2026-04-17</Data>
+</DatiContratto>
+<DatiTrasporto>
+<IndirizzoResa>
+<Indirizzo>Piazza Carita 14</Indirizzo>
+<CAP>80134</CAP>
+<Comune>Napoli</Comune>
+<Nazione>IT</Nazione>
+</IndirizzoResa>
+</DatiTrasporto>
+<FatturaPrincipale>
+<NumeroFatturaPrincipale>IT61ASSTABEI</NumeroFatturaPrincipale>
+<DataFatturaPrincipale>2026-04-18</DataFatturaPrincipale>
+</FatturaPrincipale>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-18</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-18</DataFinePeriodo>
+<PrezzoUnitario>0.00</PrezzoUnitario>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>OrdinatoDa</TipoDato>
+<RiferimentoTesto>Ceraldi Group S.R.L</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Burgermeister-Mahr-Str.,2,63179,Obertshausen,DE</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>407-3004678-1455546</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<Descrizione>Optimum, spremiagrumi professionale a leva XL, per arance, melograno, ecc.</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-18</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-18</DataFinePeriodo>
+<PrezzoUnitario>159.58</PrezzoUnitario>
+<PrezzoTotale>159.58</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Burgermeister-Mahr-Str.,2,63179,Obertshausen,DE</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>407-3004678-1455546</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<Arrotondamento>0.01</Arrotondamento>
+<ImponibileImporto>159.59</ImponibileImporto>
+<Imposta>35.11</Imposta>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP08</ModalitaPagamento>
+<DataRiferimentoTerminiPagamento>2026-04-18</DataRiferimentoTerminiPagamento>
+<ImportoPagamento>194.69</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</ns2:FatturaElettronica>
