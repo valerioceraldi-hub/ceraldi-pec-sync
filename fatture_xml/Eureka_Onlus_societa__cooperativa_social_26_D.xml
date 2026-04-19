@@ -1,0 +1,144 @@
+<?xml-stylesheet type='text/xsl' href='fatturapa_v1.2.xsl'?>
+<p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FatturaElettronicaHeader>
+		<DatiTrasmissione>
+			<IdTrasmittente>
+				<IdPaese>IT</IdPaese>
+				<IdCodice>03162360618</IdCodice>
+			</IdTrasmittente>
+			<ProgressivoInvio>440</ProgressivoInvio>
+			<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+			<CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+		</DatiTrasmissione>
+		<CedentePrestatore>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>03162360618</IdCodice>
+				</IdFiscaleIVA>
+				<Anagrafica>
+					<Denominazione>Eureka Onlus societa' cooperativa sociale</Denominazione>
+				</Anagrafica>
+				<RegimeFiscale>RF01</RegimeFiscale>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>via Treviso I traversa n.10</Indirizzo>
+				<CAP>81033</CAP>
+				<Comune>CASAL DI PRINCPE</Comune>
+				<Provincia>CE</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+			<Contatti>
+				<Telefono>0818923880</Telefono>
+			</Contatti>
+		</CedentePrestatore>
+		<CessionarioCommittente>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>04523831214</IdCodice>
+				</IdFiscaleIVA>
+				<Anagrafica>
+					<Denominazione>CAFFETTERIA PASTICCERIA CERALDI GROUP</Denominazione>
+				</Anagrafica>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>PIAZZA CARITA' N.14</Indirizzo>
+				<CAP>80134</CAP>
+				<Comune>NAPOLI</Comune>
+				<Provincia>NA</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+		</CessionarioCommittente>
+	</FatturaElettronicaHeader>
+	<FatturaElettronicaBody>
+		<DatiGenerali>
+			<DatiGeneraliDocumento>
+				<TipoDocumento>TD01</TipoDocumento>
+				<Divisa>EUR</Divisa>
+				<Data>2026-04-07</Data>
+				<Numero>26/D</Numero>
+				<ImportoTotaleDocumento>646.72</ImportoTotaleDocumento>
+			</DatiGeneraliDocumento>
+			<DatiConvenzione>
+				<IdDocumento>0</IdDocumento>
+			</DatiConvenzione>
+		</DatiGenerali>
+		<DatiBeniServizi>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>CODICE</CodiceTipo>
+					<CodiceValore>+</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>90 BOTTIGLIE ASPRINIO METODO CHARMAT</Descrizione>
+				<Quantita>90.000</Quantita>
+				<UnitaMisura>B</UnitaMisura>
+				<PrezzoUnitario>6.20000</PrezzoUnitario>
+				<ScontoMaggiorazione>
+					<Tipo>SC</Tipo>
+					<Percentuale>5.00</Percentuale>
+				</ScontoMaggiorazione>
+				<PrezzoTotale>530.1000</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>2</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>CODICE</CodiceTipo>
+					<CodiceValore>+</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>"MARHITATE" LOTTO 10.26</Descrizione>
+				<Quantita>1.000</Quantita>
+				<PrezzoUnitario>0.00000</PrezzoUnitario>
+				<PrezzoTotale>0.0000</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>3</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>CODICE</CodiceTipo>
+					<CodiceValore>+</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>RIF. DDT N. 26 DEL 01.04.2026</Descrizione>
+				<Quantita>1.000</Quantita>
+				<PrezzoUnitario>0.00000</PrezzoUnitario>
+				<PrezzoTotale>0.0000</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>4</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>CODICE</CodiceTipo>
+					<CodiceValore>+</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>1 CARTONE OMAGGIO</Descrizione>
+				<Quantita>6.000</Quantita>
+				<UnitaMisura>B</UnitaMisura>
+				<PrezzoUnitario>0.00000</PrezzoUnitario>
+				<PrezzoTotale>0.0000</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DatiRiepilogo>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<SpeseAccessorie>0.00</SpeseAccessorie>
+				<ImponibileImporto>530.10</ImponibileImporto>
+				<Imposta>116.62</Imposta>
+				<EsigibilitaIVA>I</EsigibilitaIVA>
+			</DatiRiepilogo>
+		</DatiBeniServizi>
+		<DatiPagamento>
+			<CondizioniPagamento>TP02</CondizioniPagamento>
+			<DettaglioPagamento>
+				<ModalitaPagamento>MP05</ModalitaPagamento>
+				<DataScadenzaPagamento>2026-04-08</DataScadenzaPagamento>
+				<ImportoPagamento>646.72</ImportoPagamento>
+				<IstitutoFinanziario>BANCO POSTA</IstitutoFinanziario>
+				<IBAN>IT45N0760114900000075513101</IBAN>
+				<ABI>07601</ABI>
+				<CAB>14900</CAB>
+			</DettaglioPagamento>
+		</DatiPagamento>
+	</FatturaElettronicaBody>
+</p:FatturaElettronica>
+
