@@ -1,0 +1,143 @@
+<ns2:FatturaElettronica xmlns:ns2="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>08973230967</IdCodice></IdTrasmittente><ProgressivoInvio>Er4oS</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>KRRH6B9</CodiceDestinatario><PECDestinatario>Ceraldigroupsrl@legalmail.it</PECDestinatario></DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>13397910962</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Amazon Business EU S.a.r.l, Sede Secondaria</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>38 avenue John F. Kennedy</Indirizzo>
+<CAP>01855</CAP>
+<Comune>Lussemburgo</Comune>
+<Nazione>LU</Nazione>
+</Sede>
+<StabileOrganizzazione>
+<Indirizzo>Viale Monte Grappa 3/5</Indirizzo>
+<CAP>20124</CAP>
+<Comune>Milano</Comune>
+<Nazione>IT</Nazione>
+</StabileOrganizzazione>
+<RiferimentoAmministrazione>P.IVA: 13397910962</RiferimentoAmministrazione>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Ceraldi group srl</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Piazza Nazionale 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>napoli</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-03-06</Data>
+<Numero>IT6RKAEABEI</Numero>
+<ImportoTotaleDocumento>295.54</ImportoTotaleDocumento>
+<Arrotondamento>0.00</Arrotondamento>
+</DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>404-8176755-5136332</IdDocumento>
+<Data>2026-03-05</Data>
+</DatiOrdineAcquisto>
+<DatiContratto>
+<IdDocumento>404-8176755-5136332</IdDocumento>
+<Data>2026-03-05</Data>
+</DatiContratto>
+<DatiTrasporto>
+<IndirizzoResa>
+<Indirizzo>Piazza Carita 14</Indirizzo>
+<CAP>80134</CAP>
+<Comune>Napoli</Comune>
+<Nazione>IT</Nazione>
+</IndirizzoResa>
+</DatiTrasporto>
+<FatturaPrincipale>
+<NumeroFatturaPrincipale>IT6RKAEABEI</NumeroFatturaPrincipale>
+<DataFatturaPrincipale>2026-03-06</DataFatturaPrincipale>
+</FatturaPrincipale>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-03-06</DataInizioPeriodo>
+<DataFinePeriodo>2026-03-06</DataFinePeriodo>
+<PrezzoUnitario>0.00</PrezzoUnitario>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>OrdinatoDa</TipoDato>
+<RiferimentoTesto>Ceraldi Group S.R.L</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Viale Germania,29,66050,San Salvo,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>404-8176755-5136332</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<Descrizione>TP-Link Deco X50-PoE Router Mesh WiFi 6, AX3000Mbps Dual Band, Poe(Alimentazione Tramite Ethernet), Porta Ethernet da 2,5 Gbps, Ripetitore WiFi, Access Point, Alexa, 3 Pezzi con Copertura Fino a 600</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-03-06</DataInizioPeriodo>
+<DataFinePeriodo>2026-03-06</DataFinePeriodo>
+<PrezzoUnitario>242.25</PrezzoUnitario>
+<PrezzoTotale>242.25</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Viale Germania,29,66050,San Salvo,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>404-8176755-5136332</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<Arrotondamento>-0.02</Arrotondamento>
+<ImponibileImporto>242.23</ImponibileImporto>
+<Imposta>53.29</Imposta>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP19</ModalitaPagamento>
+<DataRiferimentoTerminiPagamento>2026-03-06</DataRiferimentoTerminiPagamento>
+<ImportoPagamento>295.54</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</ns2:FatturaElettronica>
