@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?><p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+<FatturaElettronicaHeader>       <DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>06628860964</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>1367831752</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+<PECDestinatario>ceraldigroupsrl@legalmail.it</PECDestinatario>
+</DatiTrasmissione>       <CedentePrestatore>         <DatiAnagrafici>            <IdFiscaleIVA>              <IdPaese>IT</IdPaese>             <IdCodice>06723081219</IdCodice>           </IdFiscaleIVA>           <CodiceFiscale>BLDNCL89E02F839H</CodiceFiscale>           <Anagrafica>             <Denominazione>SOLO 50 CENTESIMI DI BALDI NICOLA</Denominazione>           </Anagrafica>           <RegimeFiscale>RF01</RegimeFiscale>         </DatiAnagrafici>         <Sede>           <Indirizzo>VICO PORTAMEDINA 22</Indirizzo>           <CAP>80135</CAP>           <Comune>NAPOLI</Comune>           <Provincia>NA</Provincia>           <Nazione>IT</Nazione>         </Sede>         <IscrizioneREA>           <Ufficio>NA</Ufficio>           <NumeroREA>835695</NumeroREA>                      <StatoLiquidazione>LN</StatoLiquidazione>         </IscrizioneREA>         <Contatti>                                 <Email>pigna@misterisparmioshop.it</Email>         </Contatti>       </CedentePrestatore>       <CessionarioCommittente>         <DatiAnagrafici>           <IdFiscaleIVA>             <IdPaese>IT</IdPaese>             <IdCodice>04523831214</IdCodice>           </IdFiscaleIVA>                      <Anagrafica>             <Denominazione>CERALDI SRL GROUP</Denominazione>           </Anagrafica>         </DatiAnagrafici>         <Sede>           <Indirizzo>PIAZZA CARITA  14</Indirizzo>           <CAP>80134</CAP>           <Comune>NAPOLI</Comune>           <Provincia>NA</Provincia>           <Nazione>IT</Nazione>         </Sede>       </CessionarioCommittente><TerzoIntermediarioOSoggettoEmittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>06628860964</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>06628860964</CodiceFiscale>
+<Anagrafica>
+<Denominazione>PA DIGITALE S.P.A.</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+</TerzoIntermediarioOSoggettoEmittente><SoggettoEmittente>TZ</SoggettoEmittente>   </FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>        <DatiGeneraliDocumento>           <TipoDocumento>TD01</TipoDocumento>           <Divisa>EUR</Divisa>           <Data>2026-03-08</Data>           <Numero>59-W/FS</Numero>           <ImportoTotaleDocumento>23.00</ImportoTotaleDocumento>        </DatiGeneraliDocumento>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>           <NumeroLinea>1</NumeroLinea>                                 <Descrizione>Rif.scontrino nr. 000019 del 08/03/2026</Descrizione>                      <PrezzoUnitario>0.00000000</PrezzoUnitario>           <PrezzoTotale>0.00</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                               </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>2</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>8024007075214</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>8024007075214</CodiceValore>  </CodiceArticolo>            <Descrizione>PATTUMIERA MARGHERITA ECO 16 LT TORTORA</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>4.50820000</PrezzoUnitario>           <PrezzoTotale>4.51</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>19</RiferimentoTesto><RiferimentoNumero>19.00</RiferimentoNumero><RiferimentoData>2026-03-08</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>3</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>8024007075108</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>8024007075108</CodiceValore>  </CodiceArticolo>            <Descrizione>PATTUMIERA MARGHERITA ECO 16 LT BIANCA</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>4.50820000</PrezzoUnitario>           <PrezzoTotale>4.51</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>19</RiferimentoTesto><RiferimentoNumero>19.00</RiferimentoNumero><RiferimentoData>2026-03-08</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>4</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>8009404263587</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>8009404263587</CodiceValore>  </CodiceArticolo>            <Descrizione>PORTABIANCHERIA LAUNDRY BOX CHIUSO 45L</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>5.32790000</PrezzoUnitario>           <PrezzoTotale>5.33</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>19</RiferimentoTesto><RiferimentoNumero>19.00</RiferimentoNumero><RiferimentoData>2026-03-08</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>5</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>8024007074521</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>8024007074521</CodiceValore>  </CodiceArticolo>            <Descrizione>PATTUMIERA VULCANO ECO 16 LT BIANCA</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>4.50820000</PrezzoUnitario>           <PrezzoTotale>4.51</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>19</RiferimentoTesto><RiferimentoNumero>19.00</RiferimentoNumero><RiferimentoData>2026-03-08</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+
+
+
+
+<DatiRiepilogo>           <AliquotaIVA>22.00</AliquotaIVA>                      <ImponibileImporto>18.85</ImponibileImporto>           <Imposta>4.15</Imposta>           <EsigibilitaIVA>I</EsigibilitaIVA>                               </DatiRiepilogo>
+</DatiBeniServizi>
+</FatturaElettronicaBody>
+</p:FatturaElettronica>
