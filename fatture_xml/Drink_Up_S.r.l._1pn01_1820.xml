@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 fatturaordinaria_v1.2.xsd ">
+	<FatturaElettronicaHeader>
+		<DatiTrasmissione>
+			<IdTrasmittente>
+				<IdPaese>IT</IdPaese>
+				<IdCodice>01474000534</IdCodice>
+			</IdTrasmittente>
+			<ProgressivoInvio>1pn0127d4f</ProgressivoInvio>
+			<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+			<CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+		</DatiTrasmissione>
+		<CedentePrestatore>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>06443221210</IdCodice>
+				</IdFiscaleIVA>
+				<Anagrafica>
+					<Denominazione>Drink Up S.r.l.</Denominazione>
+				</Anagrafica>
+				<RegimeFiscale>RF01</RegimeFiscale>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>Zona Asi</Indirizzo>
+				<NumeroCivico>snc</NumeroCivico>
+				<CAP>80014</CAP>
+				<Comune>Giugliano in Campania</Comune>
+				<Provincia>NA</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+		</CedentePrestatore>
+		<CessionarioCommittente>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>04523831214</IdCodice>
+				</IdFiscaleIVA>
+				<Anagrafica>
+					<Denominazione>CERALDI GROUP SRL </Denominazione>
+				</Anagrafica>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>
+				<CAP>80134</CAP>
+				<Comune>Napoli</Comune>
+				<Provincia>NA</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+		</CessionarioCommittente>
+		<TerzoIntermediarioOSoggettoEmittente>
+			<DatiAnagrafici>
+				<CodiceFiscale>BTTMRC76T05C085Z</CodiceFiscale>
+				<Anagrafica>
+					<Nome>Marco</Nome>
+					<Cognome>Battaglia</Cognome>
+				</Anagrafica>
+			</DatiAnagrafici>
+		</TerzoIntermediarioOSoggettoEmittente>
+		<SoggettoEmittente>TZ</SoggettoEmittente>
+	</FatturaElettronicaHeader>
+	<FatturaElettronicaBody>
+		<DatiGenerali>
+			<DatiGeneraliDocumento>
+				<TipoDocumento>TD01</TipoDocumento>
+				<Divisa>EUR</Divisa>
+				<Data>2026-03-13</Data>
+				<Numero>1pn01/1820</Numero>
+				<ImportoTotaleDocumento>291.09</ImportoTotaleDocumento>
+			</DatiGeneraliDocumento>
+			<DatiOrdineAcquisto>
+				<IdDocumento>NOCT07/10</IdDocumento>
+				<Data>2026-03-11</Data>
+			</DatiOrdineAcquisto>
+			<DatiTrasporto>
+				<DatiAnagraficiVettore>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>06443221210</IdCodice>
+					</IdFiscaleIVA>
+					<Anagrafica>
+						<Denominazione>PASQUALE</Denominazione>
+					</Anagrafica>
+				</DatiAnagraficiVettore>
+				<CausaleTrasporto>Vendita</CausaleTrasporto>
+				<NumeroColli>10</NumeroColli>
+				<Descrizione>A vista</Descrizione>
+				<UnitaMisuraPeso>KG</UnitaMisuraPeso>
+				<PesoLordo>69.00</PesoLordo>
+				<DataInizioTrasporto>2026-03-13</DataInizioTrasporto>
+			</DatiTrasporto>
+		</DatiGenerali>
+		<DatiBeniServizi>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>ART</CodiceTipo>
+					<CodiceValore>E327</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>KBIRR PULLICENHELL PALE ALE 5.2% 33X12 approved AVPN</Descrizione>
+				<Quantita>48.0000</Quantita>
+				<UnitaMisura>N.</UnitaMisura>
+				<PrezzoUnitario>1.93000000</PrezzoUnitario>
+				<PrezzoTotale>92.64</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>CPV</TipoDato>
+					<RiferimentoTesto>BAR CERALDI</RiferimentoTesto>
+					<RiferimentoNumero>3597.00</RiferimentoNumero>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>INDDEST</TipoDato>
+					<RiferimentoTesto>PIAZZA CARITA'  14 NAPOLI NA</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>2</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>ART</CodiceTipo>
+					<CodiceValore>E287</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>KBIRR NATAVOTA RED CL 33X12 9%</Descrizione>
+				<Quantita>24.0000</Quantita>
+				<UnitaMisura>N.</UnitaMisura>
+				<PrezzoUnitario>1.96000000</PrezzoUnitario>
+				<PrezzoTotale>47.04</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>CPV</TipoDato>
+					<RiferimentoTesto>BAR CERALDI</RiferimentoTesto>
+					<RiferimentoNumero>3597.00</RiferimentoNumero>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>INDDEST</TipoDato>
+					<RiferimentoTesto>PIAZZA CARITA'  14 NAPOLI NA</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>3</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>ART</CodiceTipo>
+					<CodiceValore>E200</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>KBIRR NATAVOTA LAGER CL 33X12 5.2%</Descrizione>
+				<Quantita>24.0000</Quantita>
+				<UnitaMisura>N.</UnitaMisura>
+				<PrezzoUnitario>1.84000000</PrezzoUnitario>
+				<PrezzoTotale>44.16</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>CPV</TipoDato>
+					<RiferimentoTesto>BAR CERALDI</RiferimentoTesto>
+					<RiferimentoNumero>3597.00</RiferimentoNumero>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>INDDEST</TipoDato>
+					<RiferimentoTesto>PIAZZA CARITA'  14 NAPOLI NA</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>4</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>EAN</CodiceTipo>
+					<CodiceValore>0808375407994</CodiceValore>
+				</CodiceArticolo>
+				<CodiceArticolo>
+					<CodiceTipo>ART</CodiceTipo>
+					<CodiceValore>E250</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>KBIRR CUORE DI NAPOLI 33X12 6%</Descrizione>
+				<Quantita>24.0000</Quantita>
+				<UnitaMisura>N.</UnitaMisura>
+				<PrezzoUnitario>1.99000000</PrezzoUnitario>
+				<PrezzoTotale>47.76</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>CPV</TipoDato>
+					<RiferimentoTesto>BAR CERALDI</RiferimentoTesto>
+					<RiferimentoNumero>3597.00</RiferimentoNumero>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>INDDEST</TipoDato>
+					<RiferimentoTesto>PIAZZA CARITA'  14 NAPOLI NA</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>5</NumeroLinea>
+				<TipoCessionePrestazione>AC</TipoCessionePrestazione>
+				<CodiceArticolo>
+					<CodiceTipo>INTERNO</CodiceTipo>
+					<CodiceValore>SPESE</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>SPESE DI TRASPORTO</Descrizione>
+				<Quantita>1.0000</Quantita>
+				<UnitaMisura>N. </UnitaMisura>
+				<PrezzoUnitario>7.000000</PrezzoUnitario>
+				<PrezzoTotale>7.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>6</NumeroLinea>
+				<Descrizione>LUOGO DI CONSEGNA MERCE:</Descrizione>
+				<PrezzoUnitario>0.000000</PrezzoUnitario>
+				<PrezzoTotale>0.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>7</NumeroLinea>
+				<Descrizione>3597 - BAR CERALDI</Descrizione>
+				<PrezzoUnitario>0.000000</PrezzoUnitario>
+				<PrezzoTotale>0.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>8</NumeroLinea>
+				<Descrizione>PIAZZA CARITA'  14</Descrizione>
+				<PrezzoUnitario>0.000000</PrezzoUnitario>
+				<PrezzoTotale>0.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>9</NumeroLinea>
+				<Descrizione>80134 NAPOLI NA</Descrizione>
+				<PrezzoUnitario>0.000000</PrezzoUnitario>
+				<PrezzoTotale>0.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DatiRiepilogo>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<ImponibileImporto>238.60</ImponibileImporto>
+				<Imposta>52.49</Imposta>
+			</DatiRiepilogo>
+		</DatiBeniServizi>
+		<DatiPagamento>
+			<CondizioniPagamento>TP02</CondizioniPagamento>
+			<DettaglioPagamento>
+				<ModalitaPagamento>MP01</ModalitaPagamento>
+				<DataScadenzaPagamento>2026-03-13</DataScadenzaPagamento>
+				<ImportoPagamento>291.09</ImportoPagamento>
+			</DettaglioPagamento>
+		</DatiPagamento>
+	</FatturaElettronicaBody>
+</p:FatturaElettronica>
