@@ -1,0 +1,199 @@
+<ns2:FatturaElettronica xmlns:ns2="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>08973230967</IdCodice></IdTrasmittente><ProgressivoInvio>EqAjF</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>KRRH6B9</CodiceDestinatario><PECDestinatario>Ceraldigroupsrl@legalmail.it</PECDestinatario></DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>13397910962</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Amazon Business EU S.a.r.l, Sede Secondaria</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>38 avenue John F. Kennedy</Indirizzo>
+<CAP>01855</CAP>
+<Comune>Lussemburgo</Comune>
+<Nazione>LU</Nazione>
+</Sede>
+<StabileOrganizzazione>
+<Indirizzo>Viale Monte Grappa 3/5</Indirizzo>
+<CAP>20124</CAP>
+<Comune>Milano</Comune>
+<Nazione>IT</Nazione>
+</StabileOrganizzazione>
+<RiferimentoAmministrazione>P.IVA: 13397910962</RiferimentoAmministrazione>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Ceraldi group srl</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Piazza Nazionale 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>napoli</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-03-04</Data>
+<Numero>IT6QWXEABEI</Numero>
+<ScontoMaggiorazione>
+<Tipo>SC</Tipo>
+<Importo>3.27</Importo>
+</ScontoMaggiorazione>
+<ImportoTotaleDocumento>401.19</ImportoTotaleDocumento>
+<Arrotondamento>0.00</Arrotondamento>
+</DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>404-5370224-8279528</IdDocumento>
+<Data>2026-03-04</Data>
+</DatiOrdineAcquisto>
+<DatiContratto>
+<IdDocumento>404-5370224-8279528</IdDocumento>
+<Data>2026-03-04</Data>
+</DatiContratto>
+<DatiTrasporto>
+<IndirizzoResa>
+<Indirizzo>Piazza Carita 14</Indirizzo>
+<CAP>80134</CAP>
+<Comune>Napoli</Comune>
+<Nazione>IT</Nazione>
+</IndirizzoResa>
+</DatiTrasporto>
+<FatturaPrincipale>
+<NumeroFatturaPrincipale>IT6QWXEABEI</NumeroFatturaPrincipale>
+<DataFatturaPrincipale>2026-03-04</DataFatturaPrincipale>
+</FatturaPrincipale>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-03-04</DataInizioPeriodo>
+<DataFinePeriodo>2026-03-04</DataFinePeriodo>
+<PrezzoUnitario>1.64</PrezzoUnitario>
+<ScontoMaggiorazione>
+<Tipo>SC</Tipo>
+<Importo>1.64</Importo>
+</ScontoMaggiorazione>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>OrdinatoDa</TipoDato>
+<RiferimentoTesto>Ceraldi Group S.R.L</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Viale Germania,29,66050,San Salvo,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>404-5370224-8279528</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<Descrizione>TP-Link WiFi 7 Deco BE25 Mesh WiFi, BE3600Mbps Dual-Band, Router, AP, 2 Porte Ethernet di 2,5 Gbps, 4 Antenne Interne, MLO, AI-Roaming, HomeShield, Funziona con Qualsiasi ISP, Modem e Alexa, 3pz</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-03-04</DataInizioPeriodo>
+<DataFinePeriodo>2026-03-04</DataFinePeriodo>
+<PrezzoUnitario>257.50</PrezzoUnitario>
+<PrezzoTotale>257.50</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Viale Germania,29,66050,San Salvo,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>404-5370224-8279528</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-03-04</DataInizioPeriodo>
+<DataFinePeriodo>2026-03-04</DataFinePeriodo>
+<PrezzoUnitario>1.63</PrezzoUnitario>
+<ScontoMaggiorazione>
+<Tipo>SC</Tipo>
+<Importo>1.63</Importo>
+</ScontoMaggiorazione>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Viale Germania,29,66050,San Salvo,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>404-5370224-8279528</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<Descrizione>NETGEAR Switch Ethernet 8 porte PoE Gigabit Plus GS308EP - con 8 x PoE+ @ 62W - Montaggio a parete o da scrivania</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-03-04</DataInizioPeriodo>
+<DataFinePeriodo>2026-03-04</DataFinePeriodo>
+<PrezzoUnitario>71.34</PrezzoUnitario>
+<PrezzoTotale>71.34</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Viale Germania,29,66050,San Salvo,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>404-5370224-8279528</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<Arrotondamento>0.02</Arrotondamento>
+<ImponibileImporto>328.86</ImponibileImporto>
+<Imposta>72.35</Imposta>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP19</ModalitaPagamento>
+<DataRiferimentoTerminiPagamento>2026-03-04</DataRiferimentoTerminiPagamento>
+<ImportoPagamento>401.19</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</ns2:FatturaElettronica>
