@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica versione="FPR12" 
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>SM</IdPaese>
+<IdCodice>03473</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>2/761</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>USAL8PV</CodiceDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>05533631213</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>05533631213</CodiceFiscale>
+<Anagrafica>
+<Denominazione>CERAMICHE MARA S.R.L</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA CIMILIARCO, 2</Indirizzo>
+<CAP>80026</CAP>
+<Comune>Casoria</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+<Contatti>
+<Telefono>0815847788</Telefono>
+<Email>mattonelladiscount.emilia@gmail.com</Email>
+</Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>04523831214</CodiceFiscale>
+<Anagrafica>
+<Denominazione>CERALDI GROUP SRL</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>P.ZZA CARITA,14</Indirizzo>
+<CAP>80134</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-03-02</Data>
+<Numero>2/761</Numero>
+<ImportoTotaleDocumento>464.23</ImportoTotaleDocumento>
+<Causale>PAG. ANTICIPATO</Causale>
+</DatiGeneraliDocumento>
+<DatiTrasporto>
+<DataOraRitiro>2026-03-02T09:18:00</DataOraRitiro>
+<DataInizioTrasporto>2026-03-02</DataInizioTrasporto>
+</DatiTrasporto>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>002</CodiceValore>
+</CodiceArticolo>
+<Descrizione>ANTICIPO SU ORDINE COMMISSIONATO
+
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>NR</UnitaMisura>
+<PrezzoUnitario>380.520000</PrezzoUnitario>
+<PrezzoTotale>380.52</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<ImponibileImporto>380.52</ImponibileImporto>
+<Imposta>83.71</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+</FatturaElettronicaBody>
+</p:FatturaElettronica>
