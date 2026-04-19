@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p:FatturaElettronica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>02046570426</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>M0804</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>USAL8PV</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>09336951216</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>FLA S.R.L.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA XXV APRILE,</Indirizzo>
+        <NumeroCivico>4</NumeroCivico>
+        <CAP>80017</CAP>
+        <Comune>MELITO DI NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+      <IscrizioneREA>
+        <Ufficio>NA</Ufficio>
+        <NumeroREA>NA821612</NumeroREA>
+        <CapitaleSociale>10000.00</CapitaleSociale>
+        <StatoLiquidazione>LN</StatoLiquidazione>
+      </IscrizioneREA>
+      <Contatti>
+        <Telefono>0815621178</Telefono>
+        <Fax>0815621290</Fax>
+        <Email>danielac@meking.it</Email>
+      </Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP SRL</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA CARITA' ,14</Indirizzo>
+        <NumeroCivico>SNC</NumeroCivico>
+        <CAP>80135</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+    <TerzoIntermediarioOSoggettoEmittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>02046570426</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Namirial S.p.A</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+    </TerzoIntermediarioOSoggettoEmittente>
+    <SoggettoEmittente>TZ</SoggettoEmittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-03-27</Data>
+        <Numero>804-FE</Numero>
+        <ImportoTotaleDocumento>124.59</ImportoTotaleDocumento>
+        <Causale>Vendite</Causale>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>180-18-RUOTO PASTIERA CM18 H4,5</Descrizione>
+        <Quantita>20.000000</Quantita>
+        <UnitaMisura>Pz</UnitaMisura>
+        <PrezzoUnitario>0.680000</PrezzoUnitario>
+        <PrezzoTotale>13.60</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>185-28-RUOTO PASTIERA CM 28</Descrizione>
+        <Quantita>20.000000</Quantita>
+        <UnitaMisura>Pz</UnitaMisura>
+        <PrezzoUnitario>1.270000</PrezzoUnitario>
+        <PrezzoTotale>25.40</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+        <Descrizione>182-22-RUOTO PASTIERA CM 22 H4,5</Descrizione>
+        <Quantita>30.000000</Quantita>
+        <UnitaMisura>Pz</UnitaMisura>
+        <PrezzoUnitario>0.880000</PrezzoUnitario>
+        <PrezzoTotale>26.40</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+        <Descrizione>49001-CALICE CON TACCA CL10 PZ1 ALLEGRA</Descrizione>
+        <Quantita>18.000000</Quantita>
+        <UnitaMisura>Pz</UnitaMisura>
+        <PrezzoUnitario>2.040000</PrezzoUnitario>
+        <PrezzoTotale>36.72</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>102.12</ImponibileImporto>
+        <Imposta>22.47</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP01</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-03-27</DataScadenzaPagamento>
+        <ImportoPagamento>124.59</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
