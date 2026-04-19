@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>SM</IdPaese>
+<IdCodice>03473</IdCodice></IdTrasmittente>
+<ProgressivoInvio>1/40418</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+<PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>01992440618</IdCodice></IdFiscaleIVA>
+<CodiceFiscale>01992440618</CodiceFiscale>
+<Anagrafica>
+<Denominazione>SAIMA S.p.A.</Denominazione></Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA TRIVIO QUARANTA 5</Indirizzo>
+<CAP>81020</CAP>
+<Comune>S.MARCO EVANGELISTA</Comune>
+<Provincia>CE</Provincia>
+<Nazione>IT</Nazione></Sede>
+<IscrizioneREA>
+<Ufficio>CE</Ufficio>
+<NumeroREA>135525</NumeroREA>
+<CapitaleSociale>2000000.00</CapitaleSociale>
+<SocioUnico>SM</SocioUnico>
+<StatoLiquidazione>LN</StatoLiquidazione></IscrizioneREA>
+<Contatti>
+<Telefono>0823408200</Telefono>
+<Email>info@saimaspa.it</Email></Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice></IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>CERALDI GROUP S.R.L.</Denominazione></Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>P.ZZA NAZIONALE N.46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione></Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD24</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-03-14</Data>
+<Numero>1/40418</Numero>
+<ImportoTotaleDocumento>141.17</ImportoTotaleDocumento>
+<Causale>VENDITA</Causale>
+<Causale>Assolve obblighi D.LGS 198/21 e successive modifiche</Causale><Causale>Contributo CONAI assolto ove dovuto</Causale><Causale>Contributo CONOE assolto ove dovuto</Causale><Causale>Informativa privacy https://www.saimaspa.com/privacy-clienti.pdf</Causale></DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>0001927303000789</IdDocumento></DatiOrdineAcquisto>
+<DatiDDT>
+<NumeroDDT>1/42248</NumeroDDT>
+<DataDDT>2026-03-14</DataDDT></DatiDDT>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 226</CodiceValore></CodiceArticolo>
+<Descrizione>AMIDO ARTECREMA CONFEZIONE DA 1 KG
+
+</Descrizione>
+<Quantita>12.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>4.681000</PrezzoUnitario>
+<PrezzoTotale>56.17</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 613781 - Scadenza: 31/12/2027 - Qtà: 12</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>AIA 001</CodiceValore></CodiceArticolo>
+<Descrizione>TUORLO D'UOVO PASTORIZZATO DA ALLEVAMENTO A TERRA
+
+</Descrizione>
+<Quantita>6.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>8.600000</PrezzoUnitario>
+<PrezzoTotale>51.60</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 617434 - Scadenza: 03/04/2026 - Qtà: 6</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>NOVACART 025</CodiceValore></CodiceArticolo>
+<Descrizione>PIROTTINI ROTONDI GRANDI (ART.7) MM50xH25 PZ 2000
+
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>CF</UnitaMisura>
+<PrezzoUnitario>18.544000</PrezzoUnitario>
+<PrezzoTotale>18.54</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 544802 - Scadenza: 31/12/2048 - Qtà: 1</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>10.00</AliquotaIVA>
+<ImponibileImporto>107.77</ImponibileImporto>
+<Imposta>10.78</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<ImponibileImporto>18.54</ImponibileImporto>
+<Imposta>4.08</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP05</ModalitaPagamento>
+<DataScadenzaPagamento>2026-03-14</DataScadenzaPagamento>
+<ImportoPagamento>141.17</ImportoPagamento>
+<IstitutoFinanziario>INTESA SANPAOLO SPA</IstitutoFinanziario>
+<IBAN>IT94P0306975013100000004681</IBAN>
+<ABI>03069</ABI>
+<CAB>75013</CAB>
+<BIC>BCITITMM</BIC></DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+
+</p:FatturaElettronica>
