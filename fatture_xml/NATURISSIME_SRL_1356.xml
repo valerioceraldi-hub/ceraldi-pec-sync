@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12"
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FatturaElettronicaHeader>
+		<DatiTrasmissione>
+			<IdTrasmittente>				<IdPaese>IT</IdPaese>
+				<IdCodice>08317211210</IdCodice>
+			</IdTrasmittente>
+			<ProgressivoInvio>01P2K</ProgressivoInvio>
+			<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+			<CodiceDestinatario>USAL8PV</CodiceDestinatario>
+		</DatiTrasmissione>
+			<CedentePrestatore>
+				<DatiAnagrafici>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>05157530634</IdCodice>
+					</IdFiscaleIVA>
+					<CodiceFiscale>05157530634</CodiceFiscale>
+					<Anagrafica>
+						<Denominazione>NATURISSIME SRL</Denominazione>
+					</Anagrafica>
+					<RegimeFiscale>RF01</RegimeFiscale>
+				</DatiAnagrafici>
+				<Sede>
+					<Indirizzo>VIA BOLOGNA, 34/35</Indirizzo>
+					<CAP>80142</CAP>
+					<Comune>NAPOLI</Comune>
+					<Provincia>NA</Provincia>
+					<Nazione>IT</Nazione>
+				</Sede>
+			</CedentePrestatore>
+			<CessionarioCommittente>
+				<DatiAnagrafici>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>04523831214</IdCodice>
+					</IdFiscaleIVA>
+					<CodiceFiscale>04523831214</CodiceFiscale>
+					<Anagrafica>
+						<Denominazione>CERALDI GROUP SRL</Denominazione>
+					</Anagrafica>
+				</DatiAnagrafici>
+				<Sede>
+					<Indirizzo>PIAZZA CARITA' 14</Indirizzo>
+					<CAP>80134</CAP>
+					<Comune>NAPOLI</Comune>
+					<Provincia>NA</Provincia>
+					<Nazione>IT</Nazione>
+				</Sede>
+			</CessionarioCommittente>
+			<TerzoIntermediarioOSoggettoEmittente>
+				<DatiAnagrafici>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>08317211210</IdCodice>
+					</IdFiscaleIVA>
+					<Anagrafica>
+						<Denominazione>NadirSoftware S.R.L.S.</Denominazione>
+					</Anagrafica>
+				</DatiAnagrafici>
+			</TerzoIntermediarioOSoggettoEmittente>
+			<SoggettoEmittente>TZ</SoggettoEmittente>
+	</FatturaElettronicaHeader>
+	<FatturaElettronicaBody>
+		<DatiGenerali>
+			<DatiGeneraliDocumento>
+				<TipoDocumento>TD01</TipoDocumento>
+				<Divisa>EUR</Divisa>
+				<Data>2026-03-09</Data>
+				<Numero>1356</Numero>
+				<ImportoTotaleDocumento>67.99</ImportoTotaleDocumento>
+			</DatiGeneraliDocumento>
+		</DatiGenerali>
+		<DatiBeniServizi>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>MPN</CodiceTipo>
+					<CodiceValore>L</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>CAT.A UOVA FRESCHE COD. 3 - L DA 180</Descrizione>
+				<Quantita>360.00</Quantita>
+				<UnitaMisura>NR.</UnitaMisura>
+				<PrezzoUnitario>0.1717</PrezzoUnitario>
+				<PrezzoTotale>61.81</PrezzoTotale>
+				<AliquotaIVA>10.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>COLLI</TipoDato>
+					<RiferimentoNumero>2.00</RiferimentoNumero>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>LOTTO</TipoDato>
+					<RiferimentoTesto>IT 016064 B27</RiferimentoTesto>
+					<RiferimentoData>2026-03-27</RiferimentoData>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DatiRiepilogo>
+				<AliquotaIVA>10.00</AliquotaIVA>
+				<ImponibileImporto>61.81</ImponibileImporto>
+				<Imposta>6.18</Imposta>
+				<EsigibilitaIVA>I</EsigibilitaIVA>
+			</DatiRiepilogo>
+		</DatiBeniServizi>
+		<DatiPagamento>
+			<CondizioniPagamento>TP02</CondizioniPagamento>
+			<DettaglioPagamento>
+				<ModalitaPagamento>MP01</ModalitaPagamento>
+				<DataScadenzaPagamento>2026-03-09</DataScadenzaPagamento>
+				<ImportoPagamento>67.99</ImportoPagamento>
+				<IstitutoFinanziario>BANCA UNICREDIT</IstitutoFinanziario>
+				<IBAN>IT81Y0200839843000105191351</IBAN>
+				<ABI>02008</ABI>
+				<CAB>39843</CAB>
+			</DettaglioPagamento>
+		</DatiPagamento>
+	</FatturaElettronicaBody>
+</p:FatturaElettronica>
