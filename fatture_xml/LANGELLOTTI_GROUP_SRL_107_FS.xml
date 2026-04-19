@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?><p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+<FatturaElettronicaHeader>       <DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>06628860964</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>6142947573</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>USAL8PV</CodiceDestinatario>
+</DatiTrasmissione>       <CedentePrestatore>         <DatiAnagrafici>            <IdFiscaleIVA>              <IdPaese>IT</IdPaese>             <IdCodice>07683401215</IdCodice>           </IdFiscaleIVA>           <CodiceFiscale>07683401215</CodiceFiscale>           <Anagrafica>             <Denominazione>LANGELLOTTI GROUP SRL</Denominazione>           </Anagrafica>           <RegimeFiscale>RF01</RegimeFiscale>         </DatiAnagrafici>         <Sede>           <Indirizzo>VIA PIGNASECCA, 65</Indirizzo>           <CAP>80134</CAP>           <Comune>NAPOLI</Comune>           <Provincia>NA</Provincia>           <Nazione>IT</Nazione>         </Sede>         <IscrizioneREA>           <Ufficio>NA</Ufficio>           <NumeroREA>902007</NumeroREA>                      <StatoLiquidazione>LN</StatoLiquidazione>         </IscrizioneREA>         <Contatti>                                 <Email>langellottigroupsrl@legalmail.it</Email>         </Contatti>       </CedentePrestatore>       <CessionarioCommittente>         <DatiAnagrafici>           <IdFiscaleIVA>             <IdPaese>IT</IdPaese>             <IdCodice>04523831214</IdCodice>           </IdFiscaleIVA>                      <Anagrafica>             <Denominazione>CERALDI GROUP SRL</Denominazione>           </Anagrafica>         </DatiAnagrafici>         <Sede>           <Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>           <CAP>80143</CAP>           <Comune>NAPOLI</Comune>           <Provincia>NA</Provincia>           <Nazione>IT</Nazione>         </Sede>       </CessionarioCommittente><TerzoIntermediarioOSoggettoEmittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>06628860964</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>06628860964</CodiceFiscale>
+<Anagrafica>
+<Denominazione>PA DIGITALE S.P.A.</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+</TerzoIntermediarioOSoggettoEmittente><SoggettoEmittente>TZ</SoggettoEmittente>   </FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>        <DatiGeneraliDocumento>           <TipoDocumento>TD01</TipoDocumento>           <Divisa>EUR</Divisa>           <Data>2026-03-13</Data>           <Numero>107/FS</Numero>           <ImportoTotaleDocumento>48.00</ImportoTotaleDocumento>        </DatiGeneraliDocumento>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>           <NumeroLinea>1</NumeroLinea>                                 <Descrizione>Rif.scontrino nr. 000005 del 13/03/2026</Descrizione>                      <PrezzoUnitario>0.00000000</PrezzoUnitario>           <PrezzoTotale>0.00</PrezzoTotale>           <AliquotaIVA>10.00</AliquotaIVA>                               </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>2</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>01.011583</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>8059399004986</CodiceValore>  </CodiceArticolo>            <Descrizione>LUCART SMART PLUS</Descrizione>           <Quantita>3.000</Quantita>           <PrezzoUnitario>5.32786667</PrezzoUnitario>           <PrezzoTotale>15.98</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>5</RiferimentoTesto><RiferimentoNumero>5.00</RiferimentoNumero><RiferimentoData>2026-03-13</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>3</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>01.004682</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>1212345001010</CodiceValore>  </CodiceArticolo>            <Descrizione>ASS.ART.VARIO</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>17.63640000</PrezzoUnitario>           <PrezzoTotale>17.64</PrezzoTotale>           <AliquotaIVA>10.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>5</RiferimentoTesto><RiferimentoNumero>5.00</RiferimentoNumero><RiferimentoData>2026-03-13</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>4</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>01.004682</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>1212345001010</CodiceValore>  </CodiceArticolo>            <Descrizione>ASS.ART.VARIO</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>3.63640000</PrezzoUnitario>           <PrezzoTotale>3.64</PrezzoTotale>           <AliquotaIVA>10.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>5</RiferimentoTesto><RiferimentoNumero>5.00</RiferimentoNumero><RiferimentoData>2026-03-13</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>5</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>01.004682</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>1212345001010</CodiceValore>  </CodiceArticolo>            <Descrizione>ASS.ART.VARIO</Descrizione>           <Quantita>1.000</Quantita>           <PrezzoUnitario>4.63640000</PrezzoUnitario>           <PrezzoTotale>4.64</PrezzoTotale>           <AliquotaIVA>10.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>5</RiferimentoTesto><RiferimentoNumero>5.00</RiferimentoNumero><RiferimentoData>2026-03-13</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+
+
+
+
+<DatiRiepilogo>           <AliquotaIVA>10.00</AliquotaIVA>                      <ImponibileImporto>25.91</ImponibileImporto>           <Imposta>2.59</Imposta>           <EsigibilitaIVA>I</EsigibilitaIVA>                               </DatiRiepilogo>
+<DatiRiepilogo>           <AliquotaIVA>22.00</AliquotaIVA>                      <ImponibileImporto>15.98</ImponibileImporto>           <Imposta>3.52</Imposta>           <EsigibilitaIVA>I</EsigibilitaIVA>                               </DatiRiepilogo>
+</DatiBeniServizi>
+</FatturaElettronicaBody>
+</p:FatturaElettronica>
