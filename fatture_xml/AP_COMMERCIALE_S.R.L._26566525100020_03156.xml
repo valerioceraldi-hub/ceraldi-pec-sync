@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><p:FatturaElettronica xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 fatturaordinaria_v1.2.xsd ">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>01378570350</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>3479100023</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>USAL8PV</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>07489941216</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>AP COMMERCIALE S.R.L.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA ARGINE,N.380 PALAZZINA UFFICI</Indirizzo>
+        <CAP>80147</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PZA NAZIONALE, 46</Indirizzo>
+        <CAP>80143</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-03-14</Data>
+        <Numero>26566525100020@03156</Numero>
+        <ImportoTotaleDocumento>17.95</ImportoTotaleDocumento>
+        <Causale>Negozio AP COMMERCIALE S.R.L. 80133 NAPOLI NA</Causale>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>Cod.Art. CedentePrestatore</CodiceTipo>
+          <CodiceValore>915531</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>BORSA TNT SOLE365</Descrizione>
+        <Quantita>1.0000</Quantita>
+        <UnitaMisura>PZ</UnitaMisura>
+        <PrezzoUnitario>0.24610000</PrezzoUnitario>
+        <PrezzoTotale>0.25</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <AltriDatiGestionali>
+          <TipoDato>N.DOC.COMM</TipoDato>
+          <RiferimentoTesto>99SEA002404-65250007 2732-0014</RiferimentoTesto>
+          <RiferimentoNumero>27320014.00</RiferimentoNumero>
+          <RiferimentoData>2026-03-14</RiferimentoData>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>Cod.Art. CedentePrestatore</CodiceTipo>
+          <CodiceValore>7003086</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>CROSTE DI FORMAGGIO</Descrizione>
+        <Quantita>0.7260</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>9.61540000</PrezzoUnitario>
+        <PrezzoTotale>6.98</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+        <AltriDatiGestionali>
+          <TipoDato>N.DOC.COMM</TipoDato>
+          <RiferimentoTesto>99SEA002404-65250007 2732-0014</RiferimentoTesto>
+          <RiferimentoNumero>27320014.00</RiferimentoNumero>
+          <RiferimentoData>2026-03-14</RiferimentoData>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>Cod.Art. CedentePrestatore</CodiceTipo>
+          <CodiceValore>445068</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>GRANA PADANO DOP 16 MESI</Descrizione>
+        <Quantita>0.4061</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>15.36540000</PrezzoUnitario>
+        <PrezzoTotale>6.24</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+        <AltriDatiGestionali>
+          <TipoDato>N.DOC.COMM</TipoDato>
+          <RiferimentoTesto>99SEA002404-65250007 2732-0014</RiferimentoTesto>
+          <RiferimentoNumero>27320014.00</RiferimentoNumero>
+          <RiferimentoData>2026-03-14</RiferimentoData>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>Cod.Art. CedentePrestatore</CodiceTipo>
+          <CodiceValore>488551</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>RUSSO 51 MISTA CORTA GR.500</Descrizione>
+        <Quantita>5.0000</Quantita>
+        <UnitaMisura>PZ</UnitaMisura>
+        <PrezzoUnitario>0.75000000</PrezzoUnitario>
+        <PrezzoTotale>3.75</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+        <AltriDatiGestionali>
+          <TipoDato>N.DOC.COMM</TipoDato>
+          <RiferimentoTesto>99SEA002404-65250007 2732-0014</RiferimentoTesto>
+          <RiferimentoNumero>27320014.00</RiferimentoNumero>
+          <RiferimentoData>2026-03-14</RiferimentoData>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>4.00</AliquotaIVA>
+        <Arrotondamento>0.00</Arrotondamento>
+        <ImponibileImporto>16.97</ImponibileImporto>
+        <Imposta>0.68</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <Arrotondamento>0.00</Arrotondamento>
+        <ImponibileImporto>0.25</ImponibileImporto>
+        <Imposta>0.05</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP01</ModalitaPagamento>
+        <ImportoPagamento>17.95</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+<ds:Signature Id="Signer-T-1773485768761"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2006/12/xml-c14n11"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="r-doc-Signer-T-1773485768761" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><XPath xmlns="http://www.w3.org/2002/06/xmldsig-filter2" Filter="subtract">/descendant::ds:Signature</XPath></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>qM6J/Four8oxYPPcUJvBHf0BjZIkJNnhMBJE8rooJB0=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties-Signer-T-1773485768761"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>jF4qexsG/2yds65ZbHCoLGW6vK6SKIxnNuRe2Zc69CM=</ds:DigestValue></ds:Reference><ds:Reference Id="r-keyinfo-Signer-T-1773485768761" URI="#KeyInfo-Signer-T-1773485768761"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>bRK/xH9pATCgYtNicBfnSK304DvxCA5owYj11Jh/LDU=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue-Signer-T-1773485768761">HXiUdjMathhtABFWMZf4fdfwxTWMHV8ZmevuGydZmJmI/9r44YSxLdLYY0ywPMZO1ZpFqn9cqfyu
+nuNZWYqWDsMqFm0ziPNoWzo1Oyc8jD4PESYBmWvA4mFvL2F7P49DARCmFpfBN94RYQAWrc6JR4qj
+oCrVd/tosnVABIzmeBrTYo82kFMFTHUHZHoHD0WCCS+xQjW95puC2ocLZMP2ahQ+JJsyB45CZB9k
+8dD+ft1cLePlnb2esQKg862+aSz/XtleS+QKbgXElvcYutKkl9i2d7GthjqXhjWBneRSZK1GSH7A
++f+MCwuy7rM1ZU6WBKVkqyE+sNujLDZjl30ZGA==</ds:SignatureValue><ds:KeyInfo Id="KeyInfo-Signer-T-1773485768761"><ds:X509Data><ds:X509Certificate>MIIH7TCCBdWgAwIBAgIQOQkAEabbwHd6wfknMmrUhjANBgkqhkiG9w0BAQsFADCBsjELMAkGA1UE
+BhMCSVQxDzANBgNVBAcMBkFyZXp6bzEYMBYGA1UECgwPQXJ1YmFQRUMgUy5wLkEuMRowGAYDVQRh
+DBFWQVRJVC0wMTg3OTAyMDUxNzEpMCcGA1UECwwgUXVhbGlmaWVkIFRydXN0IFNlcnZpY2UgUHJv
+dmlkZXIxMTAvBgNVBAMMKEFydWJhUEVDIEVVIFF1YWxpZmllZCBDZXJ0aWZpY2F0ZXMgQ0EgRzEw
+HhcNMjUwOTA5MTMwMDUyWhcNMjgwOTA5MTMwMDUyWjCBjTELMAkGA1UEBhMCSVQxDjAMBgNVBAQM
+BUZVU0NPMRMwEQYDVQQqDApBTEVTU0FORFJBMR8wHQYDVQQFExZUSU5JVC1GU0NMU044Mk02OEY4
+MzlDMRkwFwYDVQQDDBBBTEVTU0FORFJBIEZVU0NPMR0wGwYDVQQuExRXU1JFRi0zMTQ1Nzg2NTE2
+ODU3MzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL+Get5cvAUumPBqmtjzJcmdaa88
+jUhuxKLP0CIzLeX506mGAAVMTIAHHRFKBIwYXp5jV689xin4CG4lITVmFPw/nrOmAGNl9dCIk0RY
+jQfsKckbcvx6AJSqAWtMGSD0OaTTXCjmkom3f/MnlDPgF3PY93xFnWg/NVjfS9wuE0ww2gkcCyT+
+04s00IaZJp2RUDBmQQjawObh8ZDxL5AAXvW1R2yQQloHuJqfW1IJ+/WUPce82I/oIpzuc+TZwGug
+f8WssfNm4SFVGQ1cM7FaiyATcByXkCMfiTbMWqd1Y1WIPVrjQMqJ1EJLP98R9UDqP+fAXIqsBcLX
+a/ds3FwGWnsCAwEAAaOCAyAwggMcMB8GA1UdIwQYMBaAFMZvO4V70SaxeJpCpCVpDPb/eqBnMH8G
+CCsGAQUFBwEBBHMwcTA4BggrBgEFBQcwAoYsaHR0cDovL2NhY2VydC5wZWMuaXQvY2VydHMvYXJ1
+YmFwZWMtZWlkYXMtZzEwNQYIKwYBBQUHMAGGKWh0dHA6Ly9vY3NwMDEucGVjLml0L3ZhL2FydWJh
+cGVjLWVpZGFzLWcxMBsGA1UdEgQUMBKBEGluZm9AYXJ1YmFwZWMuaXQwggEpBgNVHSAEggEgMIIB
+HDAJBgcEAIvsQAECMIIBBQYLKwYBBAGB6C0BBwIwgfUwQQYIKwYBBQUHAgEWNWh0dHBzOi8vd3d3
+LnBlYy5pdC9yZXBvc2l0b3J5L2FydWJhcGVjLXF1YWxpZi1jcHMucGRmMIGvBggrBgEFBQcCAjCB
+ogyBn0lsIHByZXNlbnRlIGNlcnRpZmljYXRvIMOoIHZhbGlkbyBzb2xvIHBlciBmaXJtZSBhcHBv
+c3RlIGNvbiBwcm9jZWR1cmEgYXV0b21hdGljYS4gVGhlIGNlcnRpZmljYXRlIG1heSBvbmx5IGJl
+IHVzZWQgZm9yIHVuYXR0ZW5kZWQvYXV0b21hdGljIGRpZ2l0YWwgc2lnbmF0dXJlLjAGBgQrTBAG
+MIG/BggrBgEFBQcBAwSBsjCBrzAIBgYEAI5GAQEwCwYGBACORgEDAgEUMAgGBgQAjkYBBDCBiwYG
+BACORgEFMIGAMD4WOGh0dHBzOi8vd3d3LnBlYy5pdC9yZXBvc2l0b3J5L2FydWJhcGVjLXF1YWxp
+Zi1wZHMtaXQucGRmEwJpdDA+FjhodHRwczovL3d3dy5wZWMuaXQvcmVwb3NpdG9yeS9hcnViYXBl
+Yy1xdWFsaWYtcGRzLWVuLnBkZhMCZW4wPQYDVR0fBDYwNDAyoDCgLoYsaHR0cDovL2NybDAxLnBl
+Yy5pdC92YS9hcnViYXBlYy1laWRhcy1nMS9jcmwwHQYDVR0OBBYEFIxEiGQYr9VpBQpRvAv1MEfZ
+YZOkMA4GA1UdDwEB/wQEAwIGQDANBgkqhkiG9w0BAQsFAAOCAgEAHK5D7C2hvq8kDwa8eGyxhhnI
+HAfBBEwdPSHY2I7SLXjBi/yno9+OBdZZVHT4BhacICEnXeONgXJk3rxUcvLjGUnbFHNIh65MaRv3
+Xp0KRlLvMIyn/iWNRoUJBinc5iFOtcwne2C75dNuOggqOsjhtkMed8B/5D25Zyt5UG/dVO2lqZ+C
+4nH8edeIrwR2HFcMO2ISFwHUsgsbhnmRFmE9cc+bpi+M8YvcZ/pcnz9Y99+itzqVCkPvJnTzgMbs
+uMIqDInJ7cXlitCWBLeigrJdFKvyE69gcxOAt47WFFyDxEs8zrylQx/2lipftjnw0HWVDaKh5/8B
+e0yXNKPhWADnWrePnphvNzIchdZbrzWZalXiRhKMYgVvg6LKJ9CdEAMgW6XbflNhAL08AcGSyBwN
+r3zjX3EZr+JehpPukCWpWRMODe/wHwzRAj8UBn1x2ur96OSmzFLAU7i5MqWI5AgSYcaZEhzkcxEX
+yt6IVCmI8DsSHhoCggsy2mdDUYbsKTJD0cIl1RxEVjTc1wZMchM0LtmeV9tneB8oRsJoIn1hjAiS
+Ls3oR4lmN1Gd+X9dStf+m+2JuSlQoVv/K1f+jKOnUsyhLzbuKlPHu2bRiKSplsGGoXsdRpCrQjyH
+y2lLYsT8ZenzFasehKGg11EPczI5wbU39V6D6PF0K8hkrTvq2yo=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#Signer-T-1773485768761">
+		<xades:SignedProperties Id="SignedProperties-Signer-T-1773485768761">
+			<xades:SignedSignatureProperties>
+				<xades:SigningTime>2026-03-14T11:56:08+01:00</xades:SigningTime>
+				<xades:SigningCertificate>
+					<xades:Cert>
+						<xades:CertDigest>
+							<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+							<ds:DigestValue>A+1iswpg/R6EZgRgMC2bULdJuQYJA9higtI0lBvX+BA=</ds:DigestValue>
+						</xades:CertDigest>
+						<xades:IssuerSerial><ds:X509IssuerName>CN=ArubaPEC EU Qualified Certificates CA G1,OU=Qualified Trust Service Provider,2.5.4.97=#0c1156415449542d3031383739303230353137,O=ArubaPEC S.p.A.,L=Arezzo,C=IT</ds:X509IssuerName><ds:X509SerialNumber>75812727829985956229879282023959024774</ds:X509SerialNumber></xades:IssuerSerial>
+					</xades:Cert>
+				</xades:SigningCertificate>
+			</xades:SignedSignatureProperties>
+		
+			<xades:SignedDataObjectProperties>
+				<xades:DataObjectFormat ObjectReference="#r-doc-Signer-T-1773485768761">
+					<xades:MimeType>text/xml</xades:MimeType>
+				</xades:DataObjectFormat>
+			
+				<xades:DataObjectFormat ObjectReference="#r-keyinfo-Signer-T-1773485768761">
+					<xades:MimeType>text/xml</xades:MimeType>
+				</xades:DataObjectFormat>
+			</xades:SignedDataObjectProperties>
+		</xades:SignedProperties>
+	</xades:QualifyingProperties></ds:Object></ds:Signature></p:FatturaElettronica>
