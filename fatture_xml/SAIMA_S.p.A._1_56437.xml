@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>SM</IdPaese>
+<IdCodice>03473</IdCodice></IdTrasmittente>
+<ProgressivoInvio>1/56437</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+<PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>01992440618</IdCodice></IdFiscaleIVA>
+<CodiceFiscale>01992440618</CodiceFiscale>
+<Anagrafica>
+<Denominazione>SAIMA S.p.A.</Denominazione></Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA TRIVIO QUARANTA 5</Indirizzo>
+<CAP>81020</CAP>
+<Comune>S.MARCO EVANGELISTA</Comune>
+<Provincia>CE</Provincia>
+<Nazione>IT</Nazione></Sede>
+<IscrizioneREA>
+<Ufficio>CE</Ufficio>
+<NumeroREA>135525</NumeroREA>
+<CapitaleSociale>2000000.00</CapitaleSociale>
+<SocioUnico>SM</SocioUnico>
+<StatoLiquidazione>LN</StatoLiquidazione></IscrizioneREA>
+<Contatti>
+<Telefono>0823408200</Telefono>
+<Email>info@saimaspa.it</Email></Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice></IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>CERALDI GROUP S.R.L.</Denominazione></Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>P.ZZA NAZIONALE N.46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione></Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD24</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-08</Data>
+<Numero>1/56437</Numero>
+<ImportoTotaleDocumento>110.15</ImportoTotaleDocumento>
+<Causale>VENDITA</Causale>
+<Causale>Assolve obblighi D.LGS 198/21 e successive modifiche</Causale><Causale>Contributo CONAI assolto ove dovuto</Causale><Causale>Contributo CONOE assolto ove dovuto</Causale><Causale>Informativa privacy https://www.saimaspa.com/privacy-clienti.pdf</Causale></DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>0001946414001084</IdDocumento></DatiOrdineAcquisto>
+<DatiOrdineAcquisto>
+<IdDocumento>0001946881001093</IdDocumento></DatiOrdineAcquisto>
+<DatiDDT>
+<NumeroDDT>1/58767</NumeroDDT>
+<DataDDT>2026-04-08</DataDDT></DatiDDT>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>CASILLO 004</CodiceValore></CodiceArticolo>
+<Descrizione>SEMOLA D'AUTORE PER RIPIENO DI SFOGLIATELLA IN CONFEZIO DA KG 5
+
+</Descrizione>
+<Quantita>20.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>1.378000</PrezzoUnitario>
+<PrezzoTotale>27.56</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 616157 - Scadenza: 09/12/2026 - Qtà: 20</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>DEBIC 004</CodiceValore></CodiceArticolo>
+<Descrizione>PANNA SPRAY ZUCCHERATA ML 700
+
+</Descrizione>
+<Quantita>3.000000</Quantita>
+<UnitaMisura>CF</UnitaMisura>
+<PrezzoUnitario>5.781000</PrezzoUnitario>
+<PrezzoTotale>17.34</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 614635 - Scadenza: 16/06/2026 - Qtà: 3</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>BRAIMS 111</CodiceValore></CodiceArticolo>
+<Descrizione>MELANGE PLUS HOMILLINA GATEAUX DA KG 10 (4156)
+
+</Descrizione>
+<Quantita>10.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>2.783000</PrezzoUnitario>
+<PrezzoTotale>27.83</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 615526 - Scadenza: 31/05/2026 - Qtà: 10</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>ROBO RO38601</CodiceValore></CodiceArticolo>
+<Descrizione>*MONODOSE MIELE MILLEFIORI ESPOSITORE DA 6GRX250PZ
+
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>CF</UnitaMisura>
+<PrezzoUnitario>30.415000</PrezzoUnitario>
+<PrezzoTotale>30.42</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 598590 - Scadenza: 30/08/2026 - Qtà: 1</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>4.00</AliquotaIVA>
+<ImponibileImporto>55.39</ImponibileImporto>
+<Imposta>2.22</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+<DatiRiepilogo>
+<AliquotaIVA>10.00</AliquotaIVA>
+<ImponibileImporto>47.76</ImponibileImporto>
+<Imposta>4.78</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP05</ModalitaPagamento>
+<DataScadenzaPagamento>2026-04-08</DataScadenzaPagamento>
+<ImportoPagamento>110.15</ImportoPagamento>
+<IstitutoFinanziario>INTESA SANPAOLO SPA</IstitutoFinanziario>
+<IBAN>IT94P0306975013100000004681</IBAN>
+<ABI>03069</ABI>
+<CAB>75013</CAB>
+<BIC>BCITITMM</BIC></DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+
+</p:FatturaElettronica>
