@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>
+<p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>05262890014</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>E26423381</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>USAL8PV</CodiceDestinatario>
+<ContattiTrasmittente>
+</ContattiTrasmittente>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>09429840151</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>01014660417</CodiceFiscale>
+<Anagrafica>
+<Denominazione>EDENRED ITALIA Srl</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA PIRELLI 18</Indirizzo>
+<CAP>20124</CAP>
+<Comune>MILANO</Comune>
+<Provincia>MI</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+<Contatti>
+</Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>04523831214</IdCodice></IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>CERALDIGROUP SRL</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-09</Data>
+<Numero>423381</Numero>
+<ImportoTotaleDocumento>1649.65</ImportoTotaleDocumento>
+</DatiGeneraliDocumento>
+<DatiContratto>
+<RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+<IdDocumento>710960/11272023</IdDocumento>
+<Data>2023-11-27</Data>
+</DatiContratto>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>BUONI PASTO TMS      0001-0001        S10EBX1   308    5,00    1540,00 SEDE-REPARTO</Descrizione>
+<Quantita>308.00</Quantita>
+<PrezzoUnitario>5.00</PrezzoUnitario>
+<PrezzoTotale>1540.00</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<TipoCessionePrestazione>AC</TipoCessionePrestazione>
+<Descrizione>RIMBORSO SPESE          3,00% SU    1540,00                     46,20</Descrizione><PrezzoUnitario>46.20</PrezzoUnitario>
+<PrezzoTotale>46.20</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>4.00</AliquotaIVA>
+<ImponibileImporto>1586.20</ImponibileImporto>
+<Imposta>63.45</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP05</ModalitaPagamento>
+<DataRiferimentoTerminiPagamento>2026-04-09</DataRiferimentoTerminiPagamento>
+<GiorniTerminiPagamento>0</GiorniTerminiPagamento>
+<ImportoPagamento>1649.65</ImportoPagamento>
+<IBAN>IT28T0333201600000001112420</IBAN>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</p:FatturaElettronica>
