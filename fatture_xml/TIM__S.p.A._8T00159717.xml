@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<p:FatturaElettronica versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>00488410010</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>s5xrL</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>0000000</CodiceDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>00488410010</IdCodice>
+                </IdFiscaleIVA>
+                <CodiceFiscale>00488410010</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>TIM  S.p.A.</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Via Gaetano Negri</Indirizzo>
+                <NumeroCivico>1</NumeroCivico>
+                <CAP>20123</CAP>
+                <Comune>MILANO</Comune>
+                <Provincia>MI</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+            <IscrizioneREA>
+                <Ufficio>MI</Ufficio>
+                <NumeroREA>1580695</NumeroREA>
+                <CapitaleSociale>11677002855.10</CapitaleSociale>
+                <SocioUnico>SM</SocioUnico>
+                <StatoLiquidazione>LN</StatoLiquidazione>
+            </IscrizioneREA>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04523831214</IdCodice>
+                </IdFiscaleIVA>
+                <CodiceFiscale>04523831214</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>CERALDI GROUP SRL</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>
+                <CAP>80100</CAP>
+                <Comune>NAPOLI</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2026-03-11</Data>
+                <Numero>8T00159717</Numero>
+                <ImportoTotaleDocumento>23.06</ImportoTotaleDocumento>
+                <Causale>Fattura Marzo 26: Periodo 01/02/26 - 28/02/26 </Causale>
+            </DatiGeneraliDocumento>
+            <DatiContratto>
+                <IdDocumento>0815523488</IdDocumento>
+                <CodiceCommessaConvenzione>UTTT1</CodiceCommessaConvenzione>
+            </DatiContratto>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <Descrizione>Noleggio Wi-Fi Impresa Semplice</Descrizione>
+                <DataInizioPeriodo>2026-02-01</DataInizioPeriodo>
+                <DataFinePeriodo>2026-02-28</DataFinePeriodo>
+                <PrezzoUnitario>15.00</PrezzoUnitario>
+                <PrezzoTotale>15.00</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <AltriDatiGestionali>
+                    <TipoDato>UTTT1</TipoDato>
+                    <RiferimentoTesto>0815523488</RiferimentoTesto>
+                </AltriDatiGestionali>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>2</NumeroLinea>
+                <Descrizione>Servizio di produzione e invio fattura</Descrizione>
+                <PrezzoUnitario>3.90</PrezzoUnitario>
+                <PrezzoTotale>3.90</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <AltriDatiGestionali>
+                    <TipoDato>UTTT1</TipoDato>
+                    <RiferimentoTesto>0815523488</RiferimentoTesto>
+                </AltriDatiGestionali>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <ImponibileImporto>18.90</ImponibileImporto>
+                <Imposta>4.16</Imposta>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP18</ModalitaPagamento>
+                <DataScadenzaPagamento>2026-04-10</DataScadenzaPagamento>
+                <ImportoPagamento>23.06</ImportoPagamento>
+                <CodicePagamento>896522650810552348800000230673</CodicePagamento>
+            </DettaglioPagamento>
+        </DatiPagamento>
+    
+    </FatturaElettronicaBody>
+</p:FatturaElettronica>
