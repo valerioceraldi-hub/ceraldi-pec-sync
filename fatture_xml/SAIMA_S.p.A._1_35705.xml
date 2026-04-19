@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>SM</IdPaese>
+<IdCodice>03473</IdCodice></IdTrasmittente>
+<ProgressivoInvio>1/35705</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+<PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>01992440618</IdCodice></IdFiscaleIVA>
+<CodiceFiscale>01992440618</CodiceFiscale>
+<Anagrafica>
+<Denominazione>SAIMA S.p.A.</Denominazione></Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA TRIVIO QUARANTA 5</Indirizzo>
+<CAP>81020</CAP>
+<Comune>S.MARCO EVANGELISTA</Comune>
+<Provincia>CE</Provincia>
+<Nazione>IT</Nazione></Sede>
+<IscrizioneREA>
+<Ufficio>CE</Ufficio>
+<NumeroREA>135525</NumeroREA>
+<CapitaleSociale>2000000.00</CapitaleSociale>
+<SocioUnico>SM</SocioUnico>
+<StatoLiquidazione>LN</StatoLiquidazione></IscrizioneREA>
+<Contatti>
+<Telefono>0823408200</Telefono>
+<Email>info@saimaspa.it</Email></Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice></IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>CERALDI GROUP S.R.L.</Denominazione></Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>P.ZZA NAZIONALE N.46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione></Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD24</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-03-07</Data>
+<Numero>1/35705</Numero>
+<ImportoTotaleDocumento>411.10</ImportoTotaleDocumento>
+<Causale>VENDITA</Causale>
+<Causale>Assolve obblighi D.LGS 198/21 e successive modifiche</Causale><Causale>Contributo CONAI assolto ove dovuto</Causale><Causale>Contributo CONOE assolto ove dovuto</Causale><Causale>Informativa privacy https://www.saimaspa.com/privacy-clienti.pdf</Causale></DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>0001921295000691</IdDocumento></DatiOrdineAcquisto>
+<DatiDDT>
+<NumeroDDT>1/37216</NumeroDDT>
+<DataDDT>2026-03-07</DataDDT></DatiDDT>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 1474</CodiceValore></CodiceArticolo>
+<Descrizione>ALBICOCCHE INTERE PELLECCHIELLA IN SCIROPPO DA KG 5
+
+</Descrizione>
+<Quantita>5.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>7.887000</PrezzoUnitario>
+<PrezzoTotale>39.44</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 612857 - Scadenza: 31/12/2027 - Qtà: 5</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>GIUSO 1079</CodiceValore></CodiceArticolo>
+<Descrizione>CONFETTURA ALBICOCCA EXTRA AMORD.(75% FRUTTA)KG 1,65(04047115B)
+
+</Descrizione>
+<Quantita>1.650000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>10.254000</PrezzoUnitario>
+<PrezzoTotale>16.92</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 590083 - Scadenza: 14/02/2028 - Qtà: 1,65</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 226</CodiceValore></CodiceArticolo>
+<Descrizione>AMIDO ARTECREMA CONFEZIONE DA 1 KG
+
+</Descrizione>
+<Quantita>10.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>4.681000</PrezzoUnitario>
+<PrezzoTotale>46.81</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 613781 - Scadenza: 31/12/2027 - Qtà: 10</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>AIA 001</CodiceValore></CodiceArticolo>
+<Descrizione>TUORLO D'UOVO PASTORIZZATO DA ALLEVAMENTO A TERRA
+
+</Descrizione>
+<Quantita>6.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>8.600000</PrezzoUnitario>
+<PrezzoTotale>51.60</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 616762 - Scadenza: 24/03/2026 - Qtà: 6</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>5</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 126</CodiceValore></CodiceArticolo>
+<Descrizione>NUOVA BIANCALIEVE CREMA DA MONTARE
+
+</Descrizione>
+<Quantita>12.000000</Quantita>
+<UnitaMisura>LT</UnitaMisura>
+<PrezzoUnitario>2.610000</PrezzoUnitario>
+<PrezzoTotale>31.32</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 615423 - Scadenza: 29/12/2026 - Qtà: 12</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>6</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>CASILLO 004</CodiceValore></CodiceArticolo>
+<Descrizione>SEMOLA D'AUTORE PER RIPIENO DI SFOGLIATELLA IN CONFEZIO DA KG 5
+
+</Descrizione>
+<Quantita>5.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>1.378000</PrezzoUnitario>
+<PrezzoTotale>6.89</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 614566 - Scadenza: 09/12/2026 - Qtà: 5</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>7</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 065</CodiceValore></CodiceArticolo>
+<Descrizione>ZUCCHERO IN GRANELLA MEDIA
+
+</Descrizione>
+<Quantita>10.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>1.461000</PrezzoUnitario>
+<PrezzoTotale>14.61</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 604346 - Scadenza: 31/07/2027 - Qtà: 10</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>8</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>GLF 002</CodiceValore></CodiceArticolo>
+<Descrizione>CREMA RIO GRAN TRADIZIONE NOCCIOLA DA KG 13
+
+</Descrizione>
+<Quantita>13.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>4.557000</PrezzoUnitario>
+<PrezzoTotale>59.24</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 613647 - Scadenza: 29/11/2026 - Qtà: 13</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>9</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>GLF 029</CodiceValore></CodiceArticolo>
+<Descrizione>CREMA RIO TRADIZIONE PISTACCHIO IN CONFEZIONE DA KG 5 (DC00BM)
+
+</Descrizione>
+<Quantita>5.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>10.297000</PrezzoUnitario>
+<PrezzoTotale>51.49</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 612624 - Scadenza: 13/11/2026 - Qtà: 5</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>10</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>LIEVITALIA 001</CodiceValore></CodiceArticolo>
+<Descrizione>LIEVITO DI BIRRA PER PANIFICAZIONE
+
+</Descrizione>
+<Quantita>5.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>3.450000</PrezzoUnitario>
+<PrezzoTotale>17.25</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 615487 - Scadenza: 20/03/2026 - Qtà: 5</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>11</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>EUROVO 012</CodiceValore></CodiceArticolo>
+<Descrizione>EUROVO UOVA SFUSE L IN GUSCIO IN CASSA DA PZ 180 (0102)
+
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>CT</UnitaMisura>
+<PrezzoUnitario>38.527000</PrezzoUnitario>
+<PrezzoTotale>38.53</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 617400 - Scadenza: 26/03/2026 - Qtà: 1</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>10.00</AliquotaIVA>
+<ImponibileImporto>367.21</ImponibileImporto>
+<Imposta>36.72</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+<DatiRiepilogo>
+<AliquotaIVA>4.00</AliquotaIVA>
+<ImponibileImporto>6.89</ImponibileImporto>
+<Imposta>0.28</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP05</ModalitaPagamento>
+<DataScadenzaPagamento>2026-03-07</DataScadenzaPagamento>
+<ImportoPagamento>411.10</ImportoPagamento>
+<IstitutoFinanziario>INTESA SANPAOLO SPA</IstitutoFinanziario>
+<IBAN>IT94P0306975013100000004681</IBAN>
+<ABI>03069</ABI>
+<CAB>75013</CAB>
+<BIC>BCITITMM</BIC></DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+
+</p:FatturaElettronica>
