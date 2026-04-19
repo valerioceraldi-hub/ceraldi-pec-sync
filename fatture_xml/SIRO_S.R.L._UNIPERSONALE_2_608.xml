@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="windows-1252"?>                                                                                                                                                                               
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>                                                                                                                                                                
+<p:FatturaElettronica versione="FPR12"                                                                                                                                                                                      
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"                                                                                                                                                                               
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"                                                                                                                                                     
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                                                                                                                      
+  <FatturaElettronicaHeader>
+   <DatiTrasmissione>
+    <IdTrasmittente>
+     <IdPaese>SM</IdPaese>
+                            <IdCodice>03473</IdCodice>
+    </IdTrasmittente>
+         <ProgressivoInvio>2/608</ProgressivoInvio>
+    <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+    <CodiceDestinatario>0000000</CodiceDestinatario>
+    <PECDestinatario>Cercaldigroupsrl@legalmail.it</PECDestinatario>                               
+   </DatiTrasmissione>
+   <CedentePrestatore>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04104640612</IdCodice>
+     </IdFiscaleIVA>
+          <CodiceFiscale>04104640612</CodiceFiscale>
+     <Anagrafica>
+                                                              <Denominazione>SIRO S.R.L. UNIPERSONALE</Denominazione>
+     </Anagrafica>
+     <RegimeFiscale>RF01</RegimeFiscale>
+    </DatiAnagrafici>
+    <Sede>
+                                             <Indirizzo>VIA PAOLO COLLELA, 3</Indirizzo>
+     <CAP>81030</CAP>
+                                                         <Comune>TEVEROLA</Comune>
+     <Provincia>CE</Provincia>  
+     <Nazione>IT</Nazione>
+    </Sede>
+    <IscrizioneREA>
+     <Ufficio>CE</Ufficio>
+                   <NumeroREA>298865</NumeroREA>
+            <CapitaleSociale>60000.00</CapitaleSociale>
+     <SocioUnico>SM</SocioUnico>
+     <StatoLiquidazione>LN</StatoLiquidazione>
+    </IscrizioneREA>
+    <Contatti>
+     <Email>amministrazione@sirosrl.com</Email>                                 
+    </Contatti>
+   </CedentePrestatore>
+   <CessionarioCommittente>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04523831214</IdCodice>
+     </IdFiscaleIVA>
+     <Anagrafica>
+                                                                   <Denominazione>CERALDI GROUP S.R.L</Denominazione>
+     </Anagrafica>
+    </DatiAnagrafici>
+    <Sede>
+                                                <Indirizzo>Piazza Carità, 14</Indirizzo>
+     <CAP>80134</CAP>
+                                                           <Comune>NAPOLI</Comune>
+     <Provincia>NA</Provincia>
+     <Nazione>IT</Nazione>
+    </Sede>
+   </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+   <DatiGenerali>
+    <DatiGeneraliDocumento>
+     <TipoDocumento>TD01</TipoDocumento>
+     <Divisa>EUR</Divisa>
+     <Data>2026-04-01</Data>
+                    <Numero>2/608</Numero>
+     <ImportoTotaleDocumento>         876.25</ImportoTotaleDocumento>
+     <Causale>VENDITA</Causale>                                                                                                                                                                                             
+    </DatiGeneraliDocumento>
+    <DatiTrasporto>
+     <DataOraRitiro>2026-04-01T11:31:00</DataOraRitiro>
+     <DataInizioTrasporto>2026-04-01</DataInizioTrasporto>
+    </DatiTrasporto>
+   </DatiGenerali>
+   <DatiBeniServizi>
+    <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BC106</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>VINO MOIO 57 CL.75 - CAMPANIA
+                                                                                                                                                                          
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             6.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>             7.822400</PrezzoUnitario>
+     <PrezzoTotale>                46.93</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB372</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC POMPELMO 200ML CTX24
+                                                                                                                                                                  
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.475410</PrezzoUnitario>
+     <PrezzoTotale>                11.48</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB399</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC PERA 200ML CTX24
+                                                                                                                                                                      
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.549180</PrezzoUnitario>
+     <PrezzoTotale>                23.10</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB374</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC MELA VERDE 200ML CTX24
+                                                                                                                                                                
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.549180</PrezzoUnitario>
+     <PrezzoTotale>                11.55</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB400</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC ALBICOCCA 200ML CTX24
+                                                                                                                                                                 
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.549180</PrezzoUnitario>
+     <PrezzoTotale>                23.10</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB103</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>CAMPARI SODA CL.10 CTX100
+                                                                                                                                                                              
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C8</UnitaMisura>
+     <PrezzoUnitario>            70.491800</PrezzoUnitario>
+     <PrezzoTotale>                70.49</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>7</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB146</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>TONICA FEVER TREE INDIAN CL.20 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            20.081970</PrezzoUnitario>
+     <PrezzoTotale>                40.16</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>8</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB148</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>TONICA FEVER TREE MEDITERRANEA CL.20 CTX24
+                                                                                                                                                             
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            20.081970</PrezzoUnitario>
+     <PrezzoTotale>                40.16</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>9</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB200</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>RED BULL ENERGY DRINK LATTINA CL.25 CTX24
+                                                                                                                                                              
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            19.672130</PrezzoUnitario>
+     <PrezzoTotale>                39.34</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>10</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB105</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>CRODINO CL.10 CTX48
+                                                                                                                                                                                    
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            21.721310</PrezzoUnitario>
+     <PrezzoTotale>                21.72</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>11</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB450</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BIRRA PERONI GRAN RISERVA DOPPIO MALTO NERA CL.33 CTX24  - ITALIA
+                                                                                                                                      
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C3</UnitaMisura>
+     <PrezzoUnitario>            22.622950</PrezzoUnitario>
+     <PrezzoTotale>                22.62</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>12</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB500</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BIRRA PERONI CL.33 CTX24 - ITALIA
+                                                                                                                                                                      
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            12.704920</PrezzoUnitario>
+     <PrezzoTotale>                25.41</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>13</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA211</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>WHISKY FOUR ROSES CL.100            BOURBON
+                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            15.196720</PrezzoUnitario>
+     <PrezzoTotale>                15.20</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>14</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA521</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>RUM BACARDI CARTA BLANCA CL.100        CUBA
+                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            10.819670</PrezzoUnitario>
+     <PrezzoTotale>                21.64</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>15</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA828</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>VERMOUTH PUNT &amp; MES CL.100
+                                                                                                                                                                         
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             6.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>             8.000000</PrezzoUnitario>
+     <PrezzoTotale>                48.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>16</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB138</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>LEMONSODA VAP CL.20 CTX24
+                                                                                                                                                                              
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>             9.262300</PrezzoUnitario>
+     <PrezzoTotale>                18.52</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>17</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA338</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COGNAC HENNESSY V.S. CL.70
+                                                                                                                                                                             
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            24.590160</PrezzoUnitario>
+     <PrezzoTotale>                24.59</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>18</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA103</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ACQUA VITASNELLA CL.150 CTX6
+                                                                                                                                                                           
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C6</UnitaMisura>
+     <PrezzoUnitario>             2.254100</PrezzoUnitario>
+     <PrezzoTotale>                22.54</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>19</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA38</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA SORGESANA VAP CL.33 CTX24
+                                                                                                                                                                        
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>             7.581970</PrezzoUnitario>
+     <PrezzoTotale>                37.91</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>20</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA12</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA ELECTA PREMIUM PET CL.50 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C6</UnitaMisura>
+     <PrezzoUnitario>             4.350000</PrezzoUnitario>
+     <PrezzoTotale>                43.50</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>21</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA11</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA LETE VAP - VETRO CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C7</UnitaMisura>
+     <PrezzoUnitario>             9.750820</PrezzoUnitario>
+     <PrezzoTotale>                48.75</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>22</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA61</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA FERRARELLE CL.150 CTX6
+                                                                                                                                                                           
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C6</UnitaMisura>
+     <PrezzoUnitario>             2.247540</PrezzoUnitario>
+     <PrezzoTotale>                22.48</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>23</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA30</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA FERRARELLE CL.50 CTX24
+                                                                                                                                                                           
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>             3.721310</PrezzoUnitario>
+     <PrezzoTotale>                37.21</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>24</NumeroLinea>
+     <TipoCessionePrestazione>AC</TipoCessionePrestazione>
+     <Descrizione>SPESE DI TRASPORTO</Descrizione>
+     <PrezzoUnitario>             1.840000</PrezzoUnitario>
+     <PrezzoTotale>                 1.84</PrezzoTotale>
+      <AliquotaIVA>22.00</AliquotaIVA>
+    </DettaglioLinee>
+    <DatiRiepilogo>
+      <AliquotaIVA>22.00</AliquotaIVA>
+     <ImponibileImporto>718.24         </ImponibileImporto>
+     <Imposta>158.01         </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+   </DatiBeniServizi>
+   <DatiPagamento>
+    <CondizioniPagamento>TP02</CondizioniPagamento>
+    <DettaglioPagamento>
+     <ModalitaPagamento>MP05</ModalitaPagamento>
+     <DataScadenzaPagamento>2026-04-01</DataScadenzaPagamento>
+     <ImportoPagamento>876.25</ImportoPagamento>         
+    </DettaglioPagamento>
+   </DatiPagamento>
+  </FatturaElettronicaBody>
+ </p:FatturaElettronica>
