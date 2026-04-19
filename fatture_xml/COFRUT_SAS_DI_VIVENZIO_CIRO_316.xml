@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>01879020517</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>4955</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>03617950633</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>03617950633</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>COFRUT SAS DI VIVENZIO CIRO </Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA LUFRANO LOC. LUFRANO</Indirizzo>
+        <CAP>80040</CAP>
+        <Comune>VOLLA</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP SRL </Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAA CARITA', 14</Indirizzo>
+        <CAP>80134</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD24</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-03-14</Data>
+        <Numero>316</Numero>
+        <ImportoTotaleDocumento>50.00</ImportoTotaleDocumento>
+        <Causale>FT da DDT / BDNOO IT32906</Causale>
+      </DatiGeneraliDocumento>
+      <DatiDDT>
+        <NumeroDDT>V01/14</NumeroDDT>
+        <DataDDT>2026-03-13</DataDDT>
+        <RiferimentoNumeroLinea>2</RiferimentoNumeroLinea>
+      </DatiDDT>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>D.D.T. V01-14 13/03/2026</Descrizione>
+        <PrezzoUnitario>0.00</PrezzoUnitario>
+        <PrezzoTotale>0.00</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>CODICE</CodiceTipo>
+          <CodiceValore>TG8</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>Tarocco Gallo cal. 8 Cat. 1* ORIG. IT - SICILIA -</Descrizione>
+        <Quantita>35.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>1.37362</PrezzoUnitario>
+        <PrezzoTotale>48.08</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>4.00</AliquotaIVA>
+        <SpeseAccessorie>0.00</SpeseAccessorie>
+        <ImponibileImporto>48.08</ImponibileImporto>
+        <Imposta>1.92</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP01</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-03-14</DataScadenzaPagamento>
+        <ImportoPagamento>50.00</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+    <Allegati>
+      <NomeAttachment>2026-0-316.pdf</NomeAttachment>
+      <FormatoAttachment>PDF</FormatoAttachment>
+      <Attachment>JVBERi0xLjQNCiWAgYKDDQoxIDAgb2JqDQo8PCAvQ3JlYXRvciA8Pg0KL1RpdGxlIDw+DQovQXV0
+aG9yIDw+DQovUHJvZHVjZXIgPDUyNjU3MDZmNzI3NDQyNzU2OTZjNjQ2NTcyPg0KL0tleXdvcmRz
+IDw+DQovU3ViamVjdCA8PiA+Pg0KZW5kb2JqDQoyIDAgb2JqDQpbL1BERiAvVGV4dCAvSW1hZ2VC
+IC9JbWFnZUMgL0ltYWdlSV0NCmVuZG9iag0KMyAwIG9iag0KPDwgL1R5cGUgL0V4dEdTdGF0ZQ0K
+L1NBIHRydWUNCj4+DQplbmRvYmoNCjUgMCBvYmoNCjw8IC9MZW5ndGggMzAyOSAgICAgDQovRmls
+dGVyIC9GbGF0ZURlY29kZQ0KPj4NCnN0cmVhbQ0KeJy1W1tTGzkWfqeK/6CXrZ2ZShTdL/NmLsm4
+4sGMMdmq7OyDB5iUtwAnDmGr8uv3O2rbkrpNgtMAFQek7qNPR+fyHUkILphY/Zu82d8T3Fv2v/29
+f/+HCXZJv4egWPm5/LC/pyKPMQovmVWOhyiECfgx4GVlpGJSpn6Hp6/29w5IzLeHkWhf/6sHkN5y
+qYPzvhxAO40fhdE6jXD2/RGsUdwpJ0Ql8qbqKCZz/Sih2kQulcHztczcvrtIbQHHhtgWuWnfWaQJ
+ngdvfGxPvejYXaiBJGWNd22huWP3yUcDQNYF25597thZaCTFmSDbMnN7R+QnmobjygohqDtyr0Nw
+kRnJlYk+OEZvRKtlsr9/7e/d1kDIiA+m+3uvBsv57Jo5Nv0bVs6aTsmM9VxaEyIsREvoi02B6Kez
+i8Xt3eJnNv3v/t4x3v4jQdGaA0d0ukTiME0TtTI9kVjJnbSwrArI6XJxubjbAsVq0goGfA6taKe4
+sNZHVYH548vs9m5+N+vqxUExqglDGzDScUtLKfuC0ZFrrbSswZzftGFQAFFWNgEkw7BpffquDpxJ
+BOusrEAc8iFvwzBRYOLSIUQXMGi9TAiw7J5AhKMoKYWrgAxvPi6WW8wkxhSebYUFeiKVyL4ma5Be
+jIDGY8tmr75+7UABEkFeXDkP4hMtmVd9jURifYyyEXMqoRxdfb5Yzr/OF7dXFZ4fT4Oekm8ItsqC
+UqQ8K+U6CX7aCbzyhkcl2r4/6jj+d3MBIpRUzlAoDYHrCCc2KRfkDic1NC2FeWx+QYCjV1Vsy8wd
+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
+Bo+TGxNub+uVkrfufAm8jtBP5zUgQRRJmzPlssM3d5Qw2iO305ygy2XWxrbQomNXocqFdGNNtpGW
+HbsK1XTS4hHedUto2bGrUAOzo3c7Oi07dhbqUI6CEuu2TsuOnXWaw6yJ6fKeMfmcpAntueOx6yTo
+YpOPiE8ipjQcfLNOuUM3R0fa5o1PqurgweCUZCUpYUU6DCeWISiQUEVhwg5eYztsEyOEdPojUbaG
+9YEHP+bjzuH8Y06ZpE0T6hhkbm8vyKctbEErun4kE9kxaeK9j/4L4bSd1sxzMr/6OL9efFiwLfFz
+Swou8szTE06tLCVh/wjCWWSYp8dhYKIwSUUXZAsg2wjeOrrbtJcXXQlHJjYse+9aVtIznOPzya7n
+n2u/1hRxHcrYtl/njo1pSpdos5PuWYiOR+aMxptWMr/5i3YsOjRH+oSFeP3TY1HKcSWNp8vWBZZ3
+s+X8Cq8swQV/VOEwqODNKuaVCs8d+bAnO6qQDcfUzxEFhOImrG9Ezy6vbr9iot/coHuOT5REKcKj
+/pWSfFpiatY0W059PaepRprgjkwSHipGvptnY/ILuvVLu+UmXRG9qdq3ZS+sU6q3JBH6VHrBi5/s
+cpnVllvXmJGiUn3FPy+2Xm8vsUDlxMlBoEssvS4uY3ourEzabFyHbmtw9nH2YdYFlGEh0YG30vk2
+6LRDyeNsMnvT/9a95FGl5Q92o6AG1O3i9mFgj7GH1S1w/KTpnlz7wlBu33JfyKa/evDEztL8Bflj
+9dc8jyMz/sHbQkRl1mcn49PhgB0dn02HJ4PpYDIcVzP+P9gBZOsNCmVuZHN0cmVhbQ0KZW5kb2Jq
+DQoxNCAwIG9iag0KPDwgL1R5cGUgL1BhZ2UNCi9QYXJlbnQgNCAwIFINCi9NZWRpYUJveCBbMCAw
+IDU5NSA4NDEuODkwMjJdDQovUmVzb3VyY2VzIDw8DQovWE9iamVjdCA8PA0KPj4NCi9Gb250IDw8
+DQovQXJpYWwgNiAwIFINCi9BcmlhbCxCb2xkIDEwIDAgUg0KPj4NCi9Qcm9jU2V0IDIgMCBSDQov
+RXh0R1N0YXRlIDw8IC9HUzEgMyAwIFIgPj4NCj4+DQovQW5ub3RzIFsNCl0NCi9Db250ZW50cyA1
+IDAgUg0KPj4NCmVuZG9iag0KNCAwIG9iag0KPDwgL1R5cGUgL1BhZ2VzDQovS2lkc1sNCjE0IDAg
+Ug0KXQ0KL0NvdW50IDENCj4+DQplbmRvYmoNCjE1IDAgb2JqDQo8PCAvVHlwZSAvQ2F0YWxvZw0K
+L1BhZ2VzIDQgMCBSDQo+Pg0KZW5kb2JqDQo2IDAgb2JqDQo8PCAvVHlwZSAvRm9udA0KL1N1YnR5
+cGUgL1RydWVUeXBlDQovTmFtZSAvQXJpYWwNCi9CYXNlRm9udCAvQXJpYWwNCi9GaXJzdENoYXIg
+MzANCi9MYXN0Q2hhciAyNTUNCi9Gb250RGVzY3JpcHRvciA4IDAgUg0KL1dpZHRocyA5IDAgUg0K
+L0VuY29kaW5nIDcgMCBSDQo+Pg0KZW5kb2JqDQo4IDAgb2JqDQo8PCAvVHlwZSAvRm9udERlc2Ny
+aXB0b3INCi9Gb250TmFtZSAvQXJpYWwNCi9Bc2NlbnQgOTA1LjANCi9DYXBIZWlnaHQgOTA1LjAN
+Ci9EZXNjZW50IC0yMTIuMA0KL0ZsYWdzIDMyDQovRm9udEJCb3ggWyAtMjUwLjAgLTIxMi4wIDI2
+NjUuMCA5MDUuMCBdDQovSXRhbGljQW5nbGUgMA0KL1N0ZW1WIDANCj4+DQplbmRvYmoNCjkgMCBv
+YmoNClsNCjc1MC4wIDc1MC4wIDI3OC4wIDI3OC4wIDM1NS4wIDU1Ni4wIDU1Ni4wIDg4OS4wIDY2
+Ny4wIDE5MS4wIDMzMy4wIDMzMy4wIDM4OS4wIDU4NC4wIDI3OC4wIDMzMy4wIDI3OC4wIDI3OC4w
+IDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1
+Ni4wIDI3OC4wIDI3OC4wIDU4NC4wIDU4NC4wIDU4NC4wIDU1Ni4wIDEwMTUuMCA2NjcuMCA2Njcu
+MCA3MjIuMCA3MjIuMCA2NjcuMCA2MTEuMCA3NzguMCA3MjIuMCAyNzguMCA1MDAuMCA2NjcuMCA1
+NTYuMCA4MzMuMCA3MjIuMCA3NzguMCA2NjcuMCA3NzguMCA3MjIuMCA2NjcuMCA2MTEuMCA3MjIu
+MCA2NjcuMCA5NDQuMCA2NjcuMCA2NjcuMCA2MTEuMCAyNzguMCAyNzguMCAyNzguMCA0NjkuMCA1
+NTYuMCAzMzMuMCA1NTYuMCA1NTYuMCA1MDAuMCA1NTYuMCA1NTYuMCAyNzguMCA1NTYuMCA1NTYu
+MCAyMjIuMCAyMjIuMCA1MDAuMCAyMjIuMCA4MzMuMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCAz
+MzMuMCA1MDAuMCAyNzguMCA1NTYuMCA1MDAuMCA3MjIuMCA1MDAuMCA1MDAuMCA1MDAuMCAzMzQu
+MCAyNjAuMCAzMzQuMCA1ODQuMCA3NTAuMCA1NTYuMCA3NTAuMCAyMjIuMCA1NTYuMCAzMzMuMCAx
+MDAwLjAgNTU2LjAgNTU2LjAgMzMzLjAgMTAwMC4wIDY2Ny4wIDMzMy4wIDEwMDAuMCA3NTAuMCA2
+MTEuMCA3NTAuMCA3NTAuMCAyMjIuMCAyMjIuMCAzMzMuMCAzMzMuMCAzNTAuMCA1NTYuMCAxMDAw
+LjAgMzMzLjAgMTAwMC4wIDUwMC4wIDMzMy4wIDk0NC4wIDc1MC4wIDUwMC4wIDY2Ny4wIDI3OC4w
+IDMzMy4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDU1Ni4wIDI2MC4wIDU1Ni4wIDMzMy4wIDczNy4wIDM3
+MC4wIDU1Ni4wIDU4NC4wIDMzMy4wIDczNy4wIDU1Mi4wIDQwMC4wIDU0OS4wIDMzMy4wIDMzMy4w
+IDMzMy4wIDU3Ni4wIDUzNy4wIDMzMy4wIDMzMy4wIDMzMy4wIDM2NS4wIDU1Ni4wIDgzNC4wIDgz
+NC4wIDgzNC4wIDYxMS4wIDY2Ny4wIDY2Ny4wIDY2Ny4wIDY2Ny4wIDY2Ny4wIDY2Ny4wIDEwMDAu
+MCA3MjIuMCA2NjcuMCA2NjcuMCA2NjcuMCA2NjcuMCAyNzguMCAyNzguMCAyNzguMCAyNzguMCA3
+MjIuMCA3MjIuMCA3NzguMCA3NzguMCA3NzguMCA3NzguMCA3NzguMCA1ODQuMCA3NzguMCA3MjIu
+MCA3MjIuMCA3MjIuMCA3MjIuMCA2NjcuMCA2NjcuMCA2MTEuMCA1NTYuMCA1NTYuMCA1NTYuMCA1
+NTYuMCA1NTYuMCA1NTYuMCA4ODkuMCA1MDAuMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCAyNzgu
+MCAyNzguMCAyNzguMCAyNzguMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCA1
+NTYuMCA1NDkuMCA2MTEuMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCA1MDAuMCA1NTYuMCA1MDAu
+MCANCl0NCmVuZG9iag0KNyAwIG9iag0KPDwgL1R5cGUgL0VuY29kaW5nDQovQmFzZUVuY29kaW5n
+IC9XaW5BbnNpRW5jb2RpbmcNCj4+DQplbmRvYmoNCjEwIDAgb2JqDQo8PCAvVHlwZSAvRm9udA0K
+L1N1YnR5cGUgL1RydWVUeXBlDQovTmFtZSAvQXJpYWwsQm9sZA0KL0Jhc2VGb250IC9BcmlhbCxC
+b2xkDQovRmlyc3RDaGFyIDMwDQovTGFzdENoYXIgMjU1DQovRm9udERlc2NyaXB0b3IgMTIgMCBS
+DQovV2lkdGhzIDEzIDAgUg0KL0VuY29kaW5nIDExIDAgUg0KPj4NCmVuZG9iag0KMTIgMCBvYmoN
+Cjw8IC9UeXBlIC9Gb250RGVzY3JpcHRvcg0KL0ZvbnROYW1lIC9BcmlhbCxCb2xkDQovQXNjZW50
+IDkwNS4wDQovQ2FwSGVpZ2h0IDkwNS4wDQovRGVzY2VudCAtMjEyLjANCi9GbGFncyAzMg0KL0Zv
+bnRCQm94IFsgLTI1MC4wIC0yMTIuMCAyNjI4LjAgOTA1LjAgXQ0KL0l0YWxpY0FuZ2xlIDANCi9T
+dGVtViAwDQo+Pg0KZW5kb2JqDQoxMyAwIG9iag0KWw0KNzUwLjAgNzUwLjAgMjc4LjAgMzMzLjAg
+NDc0LjAgNTU2LjAgNTU2LjAgODg5LjAgNzIyLjAgMjM4LjAgMzMzLjAgMzMzLjAgMzg5LjAgNTg0
+LjAgMjc4LjAgMzMzLjAgMjc4LjAgMjc4LjAgNTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAg
+NTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAgMzMzLjAgMzMzLjAgNTg0LjAgNTg0LjAgNTg0
+LjAgNjExLjAgOTc1LjAgNzIyLjAgNzIyLjAgNzIyLjAgNzIyLjAgNjY3LjAgNjExLjAgNzc4LjAg
+NzIyLjAgMjc4LjAgNTU2LjAgNzIyLjAgNjExLjAgODMzLjAgNzIyLjAgNzc4LjAgNjY3LjAgNzc4
+LjAgNzIyLjAgNjY3LjAgNjExLjAgNzIyLjAgNjY3LjAgOTQ0LjAgNjY3LjAgNjY3LjAgNjExLjAg
+MzMzLjAgMjc4LjAgMzMzLjAgNTg0LjAgNTU2LjAgMzMzLjAgNTU2LjAgNjExLjAgNTU2LjAgNjEx
+LjAgNTU2LjAgMzMzLjAgNjExLjAgNjExLjAgMjc4LjAgMjc4LjAgNTU2LjAgMjc4LjAgODg5LjAg
+NjExLjAgNjExLjAgNjExLjAgNjExLjAgMzg5LjAgNTU2LjAgMzMzLjAgNjExLjAgNTU2LjAgNzc4
+LjAgNTU2LjAgNTU2LjAgNTAwLjAgMzg5LjAgMjgwLjAgMzg5LjAgNTg0LjAgNzUwLjAgNTU2LjAg
+NzUwLjAgMjc4LjAgNTU2LjAgNTAwLjAgMTAwMC4wIDU1Ni4wIDU1Ni4wIDMzMy4wIDEwMDAuMCA2
+NjcuMCAzMzMuMCAxMDAwLjAgNzUwLjAgNjExLjAgNzUwLjAgNzUwLjAgMjc4LjAgMjc4LjAgNTAw
+LjAgNTAwLjAgMzUwLjAgNTU2LjAgMTAwMC4wIDMzMy4wIDEwMDAuMCA1NTYuMCAzMzMuMCA5NDQu
+MCA3NTAuMCA1MDAuMCA2NjcuMCAyNzguMCAzMzMuMCA1NTYuMCA1NTYuMCA1NTYuMCA1NTYuMCAy
+ODAuMCA1NTYuMCAzMzMuMCA3MzcuMCAzNzAuMCA1NTYuMCA1ODQuMCAzMzMuMCA3MzcuMCA1NTIu
+MCA0MDAuMCA1NDkuMCAzMzMuMCAzMzMuMCAzMzMuMCA1NzYuMCA1NTYuMCAzMzMuMCAzMzMuMCAz
+MzMuMCAzNjUuMCA1NTYuMCA4MzQuMCA4MzQuMCA4MzQuMCA2MTEuMCA3MjIuMCA3MjIuMCA3MjIu
+MCA3MjIuMCA3MjIuMCA3MjIuMCAxMDAwLjAgNzIyLjAgNjY3LjAgNjY3LjAgNjY3LjAgNjY3LjAg
+Mjc4LjAgMjc4LjAgMjc4LjAgMjc4LjAgNzIyLjAgNzIyLjAgNzc4LjAgNzc4LjAgNzc4LjAgNzc4
+LjAgNzc4LjAgNTg0LjAgNzc4LjAgNzIyLjAgNzIyLjAgNzIyLjAgNzIyLjAgNjY3LjAgNjY3LjAg
+NjExLjAgNTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAgNTU2LjAgODg5LjAgNTU2LjAgNTU2
+LjAgNTU2LjAgNTU2LjAgNTU2LjAgMjc4LjAgMjc4LjAgMjc4LjAgMjc4LjAgNjExLjAgNjExLjAg
+NjExLjAgNjExLjAgNjExLjAgNjExLjAgNjExLjAgNTQ5LjAgNjExLjAgNjExLjAgNjExLjAgNjEx
+LjAgNjExLjAgNTU2LjAgNjExLjAgNTU2LjAgDQpdDQplbmRvYmoNCjExIDAgb2JqDQo8PCAvVHlw
+ZSAvRW5jb2RpbmcNCi9CYXNlRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZw0KPj4NCmVuZG9iag0K
+eHJlZg0KMCAxNg0KMDAwMDAwMDAwMCA2NTUzNSBmDQowMDAwMDAwMDE3IDAwMDAwIG4NCjAwMDAw
+MDAxNDMgMDAwMDAgbg0KMDAwMDAwMDE5OCAwMDAwMCBuDQowMDAwMDAzNjA5IDAwMDAwIG4NCjAw
+MDAwMDAyNTAgMDAwMDAgbg0KMDAwMDAwMzczMSAwMDAwMCBuDQowMDAwMDA1NDg3IDAwMDAwIG4N
+CjAwMDAwMDM5MDUgMDAwMDAgbg0KMDAwMDAwNDA5OSAwMDAwMCBuDQowMDAwMDA1NTYwIDAwMDAw
+IG4NCjAwMDAwMDczMzYgMDAwMDAgbg0KMDAwMDAwNTc0OCAwMDAwMCBuDQowMDAwMDA1OTQ4IDAw
+MDAwIG4NCjAwMDAwMDMzNjUgMDAwMDAgbg0KMDAwMDAwMzY3NiAwMDAwMCBuDQp0cmFpbGVyDQo8
+PCAvU2l6ZSAxNg0KL0luZm8gMSAwIFINCi9Sb290IDE1IDAgUg0KPj4NCnN0YXJ0eHJlZg0KNzQx
+MA0KJSVFT0YNCg==</Attachment>
+    </Allegati>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
