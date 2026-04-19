@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl"
+href="Foglio_di_stile_fatturaordinaria_v1.2.1.xsl"?>
+<ns2:FatturaElettronica versione="FPR12" xmlns:ns2="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>04654171216</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>395258</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>LX4UQQ5</CodiceDestinatario>
+            <PECDestinatario>ceraldigroupsrl@legalmail.it</PECDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>00986800613</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>G.I.A.L. GENERALE INGROSSO ALIMENTARE S.R.L.</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Viale San Josemaria Escriva'</Indirizzo>
+                <NumeroCivico>62</NumeroCivico>
+                <CAP>81100</CAP>
+                <Comune>Caserta</Comune>
+                <Provincia>CE</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+            <IscrizioneREA>
+                <Ufficio>CE</Ufficio>
+                <NumeroREA>96411</NumeroREA>
+                <CapitaleSociale>70000.00</CapitaleSociale>
+                <SocioUnico>SM</SocioUnico>
+                <StatoLiquidazione>LN</StatoLiquidazione>
+            </IscrizioneREA>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04523831214</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>CERALDI GROUP SRL CAFFETT.</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>PIAZZA CARITA', 14</Indirizzo>
+                <CAP>80100</CAP>
+                <Comune>NAPOLI</Comune>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD24</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2026-03-31</Data>
+                <Numero>V1-8016</Numero>
+                <ImportoTotaleDocumento>1053.88</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <Descrizione>(1856 09/03/26)  -  (1858 09/03/26)  -  (1892 10/03/26)  -  (1932 11/03/26)  -  (1969 12/03/26)</Descrizione>
+                <PrezzoUnitario>0.00000</PrezzoUnitario>
+                <PrezzoTotale>0.00</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>2</NumeroLinea>
+                <Descrizione>(2002 13/03/26)  -  (2037 14/03/26)  -  (2078 16/03/26)  -  (2114 17/03/26)  -  (2151 18/03/26)</Descrizione>
+                <PrezzoUnitario>0.00000</PrezzoUnitario>
+                <PrezzoTotale>0.00</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>3</NumeroLinea>
+                <Descrizione>(2187 19/03/26)  -  (2228 20/03/26)  -  (2265 21/03/26)  -  (2309 23/03/26)  -  (2349 24/03/26)</Descrizione>
+                <PrezzoUnitario>0.00000</PrezzoUnitario>
+                <PrezzoTotale>0.00</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>4</NumeroLinea>
+                <Descrizione>(2383 25/03/26)  -  (2425 26/03/26)  -  (2453 26/03/26)  -  (2462 27/03/26)  -  (2501 28/03/26)</Descrizione>
+                <PrezzoUnitario>0.00000</PrezzoUnitario>
+                <PrezzoTotale>0.00</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>5</NumeroLinea>
+                <Descrizione>(2540 30/03/26)  -  (2576 31/03/26)</Descrizione>
+                <PrezzoUnitario>0.00000</PrezzoUnitario>
+                <PrezzoTotale>0.00</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>6</NumeroLinea>
+                <Descrizione>LATTE AQ.INT.4/4 YMA BAR</Descrizione>
+                <Quantita>324.000</Quantita>
+                <UnitaMisura>LT</UnitaMisura>
+                <PrezzoUnitario>1.12500</PrezzoUnitario>
+                <PrezzoTotale>364.50</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>7</NumeroLinea>
+                <Descrizione>LATTE AP.P.S.4/4 S/LATTOS</Descrizione>
+                <Quantita>24.000</Quantita>
+                <UnitaMisura>LT</UnitaMisura>
+                <PrezzoUnitario>1.25000</PrezzoUnitario>
+                <PrezzoTotale>30.00</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>8</NumeroLinea>
+                <Descrizione>PREP.SPRAY  ML.250 HOPLA</Descrizione>
+                <Quantita>12.000</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>1.54545</PrezzoUnitario>
+                <PrezzoTotale>18.55</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>9</NumeroLinea>
+                <Descrizione>IMETTE   GR.200       YMA</Descrizione>
+                <Quantita>96.000</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>1.20192</PrezzoUnitario>
+                <PrezzoTotale>115.38</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>10</NumeroLinea>
+                <Descrizione>BURRO  G.  8 PORZIO. PARM</Descrizione>
+                <Quantita>1.000</Quantita>
+                <UnitaMisura>KG</UnitaMisura>
+                <PrezzoUnitario>6.34615</PrezzoUnitario>
+                <PrezzoTotale>6.35</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>11</NumeroLinea>
+                <Descrizione>MASCARPONE G.250      YMA</Descrizione>
+                <Quantita>16.000</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>2.06730</PrezzoUnitario>
+                <PrezzoTotale>33.08</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>12</NumeroLinea>
+                <Descrizione>LATTE   1000 INT.UHT  YMA</Descrizione>
+                <Quantita>108.000</Quantita>
+                <UnitaMisura>LT</UnitaMisura>
+                <PrezzoUnitario>0.96153</PrezzoUnitario>
+                <PrezzoTotale>103.85</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>13</NumeroLinea>
+                <Descrizione>LATTE   1000 SCR.UHT  YMA</Descrizione>
+                <Quantita>12.000</Quantita>
+                <UnitaMisura>LT</UnitaMisura>
+                <PrezzoUnitario>0.81730</PrezzoUnitario>
+                <PrezzoTotale>9.81</PrezzoTotale>
+                <AliquotaIVA>4.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>14</NumeroLinea>
+                <Descrizione>SOYA CLASSIC LT.1 VALSOIA</Descrizione>
+                <Quantita>20.000</Quantita>
+                <UnitaMisura>LT</UnitaMisura>
+                <PrezzoUnitario>1.02459</PrezzoUnitario>
+                <PrezzoTotale>20.49</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>15</NumeroLinea>
+                <Descrizione>AVENA  DRINK LT.1 VALSOIA</Descrizione>
+                <Quantita>10.000</Quantita>
+                <UnitaMisura>LT</UnitaMisura>
+                <PrezzoUnitario>1.10655</PrezzoUnitario>
+                <PrezzoTotale>11.07</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>16</NumeroLinea>
+                <Descrizione>P.CRUDO S/O        ASSISI</Descrizione>
+                <Quantita>7.730</Quantita>
+                <UnitaMisura>KG</UnitaMisura>
+                <PrezzoUnitario>9.77272</PrezzoUnitario>
+                <PrezzoTotale>75.54</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>17</NumeroLinea>
+                <Descrizione>P.COTTO S/P.ROSSO SENDERO</Descrizione>
+                <Quantita>17.770</Quantita>
+                <UnitaMisura>KG</UnitaMisura>
+                <PrezzoUnitario>6.36363</PrezzoUnitario>
+                <PrezzoTotale>113.08</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>18</NumeroLinea>
+                <Descrizione>PORCH.MONTAGNA1/2 SENFTER</Descrizione>
+                <Quantita>4.470</Quantita>
+                <UnitaMisura>KG</UnitaMisura>
+                <PrezzoUnitario>7.54545</PrezzoUnitario>
+                <PrezzoTotale>33.73</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>19</NumeroLinea>
+                <Descrizione>WUDY CLAS.4XG.125 AIA</Descrizione>
+                <Quantita>24.000</Quantita>
+                <UnitaMisura>CF</UnitaMisura>
+                <PrezzoUnitario>1.68181</PrezzoUnitario>
+                <PrezzoTotale>40.36</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>20</NumeroLinea>
+                <Descrizione>WUDY CLASS. G.300 AIA</Descrizione>
+                <Quantita>15.000</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>1.00000</PrezzoUnitario>
+                <PrezzoTotale>15.00</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>4.00</AliquotaIVA>
+                <ImponibileImporto>662.97</ImponibileImporto>
+                <Imposta>26.52</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+            </DatiRiepilogo>
+            <DatiRiepilogo>
+                <AliquotaIVA>10.00</AliquotaIVA>
+                <ImponibileImporto>296.26</ImponibileImporto>
+                <Imposta>29.63</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+            </DatiRiepilogo>
+            <DatiRiepilogo>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <ImponibileImporto>31.56</ImponibileImporto>
+                <Imposta>6.94</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP01</ModalitaPagamento>
+                <DataScadenzaPagamento>2026-03-31</DataScadenzaPagamento>
+                <ImportoPagamento>1053.88</ImportoPagamento>
+            </DettaglioPagamento>
+        </DatiPagamento>
+    </FatturaElettronicaBody>
+</ns2:FatturaElettronica>
