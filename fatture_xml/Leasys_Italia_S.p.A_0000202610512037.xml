@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 file:///F:/Progetti/Altova/2018/pa/invoice_extcsv2xmlpa2020/Schema/Schema_VFPR12%20mod.xsd" xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+	<FatturaElettronicaHeader xmlns="">
+		<DatiTrasmissione>
+			<IdTrasmittente>
+				<IdPaese>IT</IdPaese>
+				<IdCodice>05262890014</IdCodice>
+			</IdTrasmittente>
+			<ProgressivoInvio>1</ProgressivoInvio>
+			<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+			<CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+		</DatiTrasmissione>
+		<CedentePrestatore>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>06714021000</IdCodice>
+				</IdFiscaleIVA>
+				<Anagrafica>
+					<Denominazione>Leasys Italia S.p.A</Denominazione>
+				</Anagrafica>
+				<RegimeFiscale>RF01</RegimeFiscale>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>C.so Orbassano n. 367</Indirizzo>
+				<CAP>10137</CAP>
+				<Comune>Torino</Comune>
+				<Provincia>TO</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+			<IscrizioneREA>
+				<Ufficio>TO</Ufficio>
+				<NumeroREA>960205</NumeroREA>
+				<CapitaleSociale>77979400.00</CapitaleSociale>
+				<StatoLiquidazione>LN</StatoLiquidazione>
+			</IscrizioneREA>
+		</CedentePrestatore>
+		<CessionarioCommittente>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>04523831214</IdCodice>
+				</IdFiscaleIVA>
+				<CodiceFiscale>04523831214</CodiceFiscale>
+				<Anagrafica>
+					<Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+				</Anagrafica>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>
+				<CAP>80143</CAP>
+				<Comune>NAPOLI</Comune>
+				<Provincia>NA</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+		</CessionarioCommittente>
+	</FatturaElettronicaHeader>
+	<FatturaElettronicaBody xmlns="">
+		<DatiGenerali>
+			<DatiGeneraliDocumento>
+				<TipoDocumento>TD01</TipoDocumento>
+				<Divisa>EUR</Divisa>
+				<Data>2026-03-27</Data>
+				<Numero>0000202610512037</Numero>
+				<ImportoTotaleDocumento>24.40</ImportoTotaleDocumento>
+			</DatiGeneraliDocumento>
+			<DatiContratto>
+				<IdDocumento>1203652735</IdDocumento>
+				<Data>2025-12-04</Data>
+			</DatiContratto>
+		</DatiGenerali>
+		<DatiBeniServizi>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<Descrizione>HB411GV X3 xDrive 20d Msport</Descrizione>
+				<Quantita>1.00</Quantita>
+				<UnitaMisura>EURO</UnitaMisura>
+				<PrezzoUnitario>10.00</PrezzoUnitario>
+				<PrezzoTotale>10.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>UTILIZZATORE CERALDI GROUP S.R.L. codice 1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>EXT REFERENCE 1184586404-5020682842</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>CAUSALE: Addebito spese amministrative per infrazioni</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>al codice della strada n. verbale 232456334388</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>data del verbale 04.12.2025</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>articolo violazione NB1</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>emittente FIRENZE AUTOSTRADE PER LITALIA</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>data notifica del verbale 04.02.2026</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>data gestione multa 19.02.2026</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>2</NumeroLinea>
+				<Descrizione>HB411GV X3 xDrive 20d Msport</Descrizione>
+				<Quantita>1.00</Quantita>
+				<UnitaMisura>EURO</UnitaMisura>
+				<PrezzoUnitario>10.00</PrezzoUnitario>
+				<PrezzoTotale>10.00</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>UTILIZZATORE CERALDI GROUP S.R.L. codice 1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>EXT REFERENCE 1184586404-5020682842</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>CAUSALE: Addebito spese amministrative per infrazioni</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>al codice della strada n. verbale 20260033061</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>data del verbale 30.01.2026</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>articolo violazione NB1</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>emittente COMUNE DI NAPOLI</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>data notifica del verbale 10.02.2026</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>data gestione multa 11.02.2026</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DatiRiepilogo>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<ImponibileImporto>20.00</ImponibileImporto>
+				<Imposta>4.40</Imposta>
+				<EsigibilitaIVA>I</EsigibilitaIVA>
+				<RiferimentoNormativo>Vend. IVA 22%</RiferimentoNormativo>
+			</DatiRiepilogo>
+		</DatiBeniServizi>
+		<DatiPagamento>
+			<CondizioniPagamento>TP02</CondizioniPagamento>
+			<DettaglioPagamento>
+				<ModalitaPagamento>MP05</ModalitaPagamento>
+				<DataRiferimentoTerminiPagamento>2026-03-27</DataRiferimentoTerminiPagamento>
+				<GiorniTerminiPagamento>30</GiorniTerminiPagamento>
+				<DataScadenzaPagamento>2026-04-30</DataScadenzaPagamento>
+				<ImportoPagamento>24.40</ImportoPagamento>
+				<IstitutoFinanziario>Unicredit 000500014931</IstitutoFinanziario>
+				<IBAN>IT96P0200809440000500014931</IBAN>
+				<ABI>02008</ABI>
+				<CAB>09440</CAB>
+			</DettaglioPagamento>
+		</DatiPagamento>
+	</FatturaElettronicaBody>
+</FatturaElettronica>
