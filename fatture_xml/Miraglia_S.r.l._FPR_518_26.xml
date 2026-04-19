@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FatturaElettronica versione="FPR12" xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader xmlns="">
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>01879020517</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>518</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+      <PECDestinatario>ceraldigroupsrl@gamil.com</PECDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>05956621212</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>05956621212</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>Miraglia S.r.l.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA LUIGI SERIO 4/6</Indirizzo>
+        <NumeroCivico>4/6</NumeroCivico>
+        <CAP>80142</CAP>
+        <Comune>Napoli</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+      <Contatti>
+        <Telefono>081282540</Telefono>
+        <Email>olivemiraglia1890@live.it</Email>
+      </Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>04523831214</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA NAZIONALE, 46</Indirizzo>
+        <CAP>80143</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody xmlns="">
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-03-23</Data>
+        <Numero>FPR 518/26</Numero>
+        <ImportoTotaleDocumento>41.25</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>DENOCCIOLATE NERE KALAMON IN ACQUA E SALE PROVENIENZA GRECIA POLIGROS </Descrizione>
+        <Quantita>5.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>7.50</PrezzoUnitario>
+        <PrezzoTotale>37.50</PrezzoTotale>
+        <AliquotaIVA>10.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>10.00</AliquotaIVA>
+        <ImponibileImporto>37.50</ImponibileImporto>
+        <Imposta>3.75</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <Beneficiario>MIRAGLIA SRL </Beneficiario>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-03-23</DataScadenzaPagamento>
+        <ImportoPagamento>41.25</ImportoPagamento>
+        <IstitutoFinanziario>CREDEM </IstitutoFinanziario>
+        <IBAN>IT98A0303203400010000209068</IBAN>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</FatturaElettronica>
