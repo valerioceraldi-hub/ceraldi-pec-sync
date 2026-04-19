@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+ <FatturaElettronicaHeader>
+   <DatiTrasmissione>
+     <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>08714741215</IdCodice>
+     </IdTrasmittente>
+     <ProgressivoInvio>00AIP</ProgressivoInvio>
+     <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+     <CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+     <ContattiTrasmittente>
+        <Telefono>0818508234</Telefono>
+        <Email>info@pegasogest.it</Email>
+     </ContattiTrasmittente>
+   </DatiTrasmissione>
+   <CedentePrestatore>
+     <DatiAnagrafici>
+        <IdFiscaleIVA>
+           <IdPaese>IT</IdPaese>
+           <IdCodice>09809491211</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>09809491211</CodiceFiscale>
+        <Anagrafica>
+           <Denominazione>ZAMPINO NG SRL</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+     </DatiAnagrafici>
+     <Sede>
+        <Indirizzo>CORSO RESINA, 326</Indirizzo>
+        <CAP>80056</CAP>
+        <Comune>ERCOLANO</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+     </Sede>
+     <Contatti>
+        <Telefono>0815732058</Telefono>
+        <Fax>0815735644</Fax>
+        <Email>zampinong@gmail.com</Email>
+     </Contatti>
+   </CedentePrestatore>
+   <CessionarioCommittente>
+     <DatiAnagrafici>
+        <IdFiscaleIVA>
+           <IdPaese>IT</IdPaese>
+           <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+           <Denominazione>CERALDI GROUP SRL</Denominazione>
+        </Anagrafica>
+     </DatiAnagrafici>
+     <Sede>
+        <Indirizzo>PIAZZA CARITA  , 14</Indirizzo>
+        <CAP>80134</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+     </Sede>
+   </CessionarioCommittente>
+   <TerzoIntermediarioOSoggettoEmittente>
+     <DatiAnagrafici>
+        <IdFiscaleIVA>
+           <IdPaese>IT</IdPaese>
+           <IdCodice>08714741215</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>08714741215</CodiceFiscale>
+        <Anagrafica>
+           <Denominazione>Future Technology S.R.L.</Denominazione>
+        </Anagrafica>
+     </DatiAnagrafici>
+   </TerzoIntermediarioOSoggettoEmittente>
+   <SoggettoEmittente>TZ</SoggettoEmittente>
+ </FatturaElettronicaHeader>
+ <FatturaElettronicaBody>
+   <DatiGenerali>
+     <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-03-06</Data>
+        <Numero>329/C</Numero>
+        <ImportoTotaleDocumento>550.50</ImportoTotaleDocumento>
+     </DatiGeneraliDocumento>
+     <DatiTrasporto>
+        <DataInizioTrasporto>2026-03-06</DataInizioTrasporto>
+        <IndirizzoResa>
+           <Indirizzo>PIAZZA NAZIONALE, 46</Indirizzo>
+           <CAP>80143</CAP>
+           <Comune>NAPOLI</Comune>
+           <Provincia>NA</Provincia>
+           <Nazione>IT</Nazione>
+        </IndirizzoResa>
+     </DatiTrasporto>
+   </DatiGenerali>
+   <DatiBeniServizi>
+     <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+     <Descrizione>VASO FRM AZR</Descrizione>
+     <Quantita>2.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>155.73770000</PrezzoUnitario>
+     <PrezzoTotale>311.48</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     <AltriDatiGestionali>
+        <TipoDato>AswSwHouse</TipoDato>
+        <RiferimentoTesto>Future Technology Pegaso Gest 2.0427.09</RiferimentoTesto>
+        <RiferimentoNumero>67460.57</RiferimentoNumero>
+        <RiferimentoData>2026-03-05</RiferimentoData>
+     </AltriDatiGestionali>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+     <Descrizione>COPRIVASO FRM AZR</Descrizione>
+     <Quantita>2.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>45.08200000</PrezzoUnitario>
+     <PrezzoTotale>90.16</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+     <Descrizione>GOMITO FF 3/4 OTT</Descrizione>
+     <Quantita>2.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>2.29510000</PrezzoUnitario>
+     <PrezzoTotale>4.59</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+     <Descrizione>TRONCH 3/4 OTT CM 20</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>4.83610000</PrezzoUnitario>
+     <PrezzoTotale>4.84</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+     <Descrizione>TRONCH 1/2 OTT CM 30</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>3.27870000</PrezzoUnitario>
+     <PrezzoTotale>3.28</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+     <Descrizione>NIPLES M 1/2 X 20</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>2.04920000</PrezzoUnitario>
+     <PrezzoTotale>2.05</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>7</NumeroLinea>
+     <Descrizione>CANOTTO VASO</Descrizione>
+     <Quantita>2.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>2.45900000</PrezzoUnitario>
+     <PrezzoTotale>4.92</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>8</NumeroLinea>
+     <Descrizione>BRIGLIA</Descrizione>
+     <Quantita>2.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>0.40980000</PrezzoUnitario>
+     <PrezzoTotale>0.82</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>9</NumeroLinea>
+     <Descrizione>CURVA TECN VASO</Descrizione>
+     <Quantita>2.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>6.14750000</PrezzoUnitario>
+     <PrezzoTotale>12.30</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>10</NumeroLinea>
+     <Descrizione>BIANCOSAN</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>7.37700000</PrezzoUnitario>
+     <PrezzoTotale>7.38</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>11</NumeroLinea>
+     <Descrizione>PILETTA SALT 1 1/4</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>6.14750000</PrezzoUnitario>
+     <PrezzoTotale>6.15</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>12</NumeroLinea>
+     <Descrizione>RID 1 1/4 X 1 1/2</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>2.45900000</PrezzoUnitario>
+     <PrezzoTotale>2.46</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DettaglioLinee>
+        <NumeroLinea>13</NumeroLinea>
+     <Descrizione>RID 40X32</Descrizione>
+     <Quantita>1.0000</Quantita>
+     <UnitaMisura>CAD</UnitaMisura>
+     <PrezzoUnitario>0.82790000</PrezzoUnitario>
+     <PrezzoTotale>0.83</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA>
+     </DettaglioLinee>
+     <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <SpeseAccessorie>0.00</SpeseAccessorie>
+        <Arrotondamento>-0.11</Arrotondamento>
+        <ImponibileImporto>451.14</ImponibileImporto>
+        <Imposta>99.25</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+     </DatiRiepilogo>
+   </DatiBeniServizi>
+   <DatiPagamento>
+     <CondizioniPagamento>TP02</CondizioniPagamento>
+     <DettaglioPagamento>
+        <ModalitaPagamento>MP01</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-03-06</DataScadenzaPagamento>
+        <ImportoPagamento>550.50</ImportoPagamento>
+     </DettaglioPagamento>
+   </DatiPagamento>
+ </FatturaElettronicaBody>
+</p:FatturaElettronica>
