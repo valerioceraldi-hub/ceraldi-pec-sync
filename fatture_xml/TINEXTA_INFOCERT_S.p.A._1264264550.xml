@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><FatturaElettronica xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12">
+<FatturaElettronicaHeader xmlns="">
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>07945211006</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>1264264550</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+<PECDestinatario>ceraldigroupsrl@legalmail.it</PECDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>07945211006</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>07945211006</CodiceFiscale>
+<Anagrafica>
+<Denominazione>TINEXTA INFOCERT S.p.A.</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Indirizzo>Piazzale Flaminio 1/B</Indirizzo>
+<CAP>00196</CAP>
+<Comune>ROMA</Comune>
+<Provincia>RM</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+<IscrizioneREA xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Ufficio>RM</Ufficio>
+<NumeroREA>RM-1064345</NumeroREA>
+<CapitaleSociale>2211753600.00</CapitaleSociale>
+<SocioUnico>SM</SocioUnico>
+<StatoLiquidazione>LN</StatoLiquidazione>
+</IscrizioneREA>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>04523831214</CodiceFiscale>
+<Anagrafica>
+<Denominazione>Ceraldi Group srl</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Indirizzo>Piazza Nazionale, 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+<TerzoIntermediarioOSoggettoEmittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>07945211006</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>InfoCert S.p.A.</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+</TerzoIntermediarioOSoggettoEmittente>
+<SoggettoEmittente>TZ</SoggettoEmittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody xmlns="">
+<DatiGenerali xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-03-12</Data>
+<Numero>1264264550</Numero>
+<ImportoTotaleDocumento>68.20</ImportoTotaleDocumento>
+<Causale>Cod. Cliente: X1ULB4 </Causale>
+<Causale> - FATTURA GIA' PAGATA</Causale>
+</DatiGeneraliDocumento>
+</DatiGenerali>
+<DatiBeniServizi xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>ART</CodiceTipo>
+<CodiceValore>FD-GOSIGN-ESS-A</CodiceValore>
+</CodiceArticolo>
+<Descrizione>GoSign Essential - 1 ANNO</Descrizione>
+<Quantita>1.00</Quantita>
+<PrezzoUnitario>6.90</PrezzoUnitario>
+<PrezzoTotale>6.90</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>ART</CodiceTipo>
+<CodiceValore>ID-SPID-PG-A</CodiceValore>
+</CodiceArticolo>
+<Descrizione>SPID InfoCert ID Aziendale - 1 ANNO</Descrizione>
+<Quantita>1.00</Quantita>
+<PrezzoUnitario>49.00</PrezzoUnitario>
+<PrezzoTotale>49.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<ImponibileImporto>55.90</ImponibileImporto>
+<Imposta>12.30</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+</FatturaElettronicaBody>
+<ds:Signature Id="id-7edd182956b36697b2930e0f72a1225c"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="r-id-7edd182956b36697b2930e0f72a1225c-1" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><dsig-filter2:XPath xmlns:dsig-filter2="http://www.w3.org/2002/06/xmldsig-filter2" Filter="subtract">/descendant::ds:Signature</dsig-filter2:XPath></ds:Transform><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>8vKXuAaTNtFQ4utOGnsg0kRjbhN3AbZDlqn+2wss5B8=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-7edd182956b36697b2930e0f72a1225c"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>Q9lSycfVCKEkNZ44t2Mep1taAhj/1ZQEi/ckGf0ZrvI=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-7edd182956b36697b2930e0f72a1225c">D2cEb7VPbuhrA8ZtnhRdr+IXQNujgvg4G62nOtWjvdGehvgMelHVgbxyY4dmo49hh9uhxyMxRgWj9DtLVA3G2BkeLDSaSxrMfZUs5Pt7BPqcxHt12uoILM2oKNnDJSA6BvwvNbr1OvwoL4Kc8XJ4wNSOGX/9YrbwedAZVHpqajzWsgf39LvC1hJ1KsIIFB3iZOnS5HxlVN6ut8SgeOrXLPRk7bQCybgpC1zFb/kYyIm19WhQ0Gg3K8j8eknv5YPsMpWnfNIESkOlpUtaFMOrIrC25rrHYKEbpkORurSN//lltYYlHBylYwT8BBb4XdyxpYoZMcShDkiaNH8c0Q2Gtg==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-7edd182956b36697b2930e0f72a1225c"><xades:SignedProperties Id="xades-id-7edd182956b36697b2930e0f72a1225c"><xades:SignedSignatureProperties><xades:SigningTime>2026-03-13T12:04:59Z</xades:SigningTime><xades:SigningCertificateV2><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><ds:DigestValue>lcwbhQK/sYQFvu5THQ+jHl3zTuEVQAgQuWnCwl73Tl5anDh/Ocz/NnKiEUSHbTAUdZaZbLm1vgL/p9qGZ+wsvQ==</ds:DigestValue></xades:CertDigest><xades:IssuerSerialV2>MIG0MIGrpIGoMIGlMQswCQYDVQQGEwJJVDEYMBYGA1UECgwPSW5mb0NlcnQgUy5wLkEuMSkwJwYDVQQLDCBRdWFsaWZpZWQgVHJ1c3QgU2VydmljZSBQcm92aWRlcjEaMBgGA1UEYQwRVkFUSVQtMDc5NDUyMTEwMDYxNTAzBgNVBAMMLEluZm9DZXJ0IFF1YWxpZmllZCBFbGVjdHJvbmljIFNpZ25hdHVyZSBDQSA0AgQBPd20</xades:IssuerSerialV2></xades:Cert></xades:SigningCertificateV2></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#r-id-7edd182956b36697b2930e0f72a1225c-1"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></FatturaElettronica>
