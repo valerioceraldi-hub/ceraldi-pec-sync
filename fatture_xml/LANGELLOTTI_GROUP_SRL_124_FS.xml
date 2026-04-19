@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?><p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+<FatturaElettronicaHeader>       <DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>06628860964</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>1747068170</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>USAL8PV</CodiceDestinatario>
+</DatiTrasmissione>       <CedentePrestatore>         <DatiAnagrafici>            <IdFiscaleIVA>              <IdPaese>IT</IdPaese>             <IdCodice>07683401215</IdCodice>           </IdFiscaleIVA>           <CodiceFiscale>07683401215</CodiceFiscale>           <Anagrafica>             <Denominazione>LANGELLOTTI GROUP SRL</Denominazione>           </Anagrafica>           <RegimeFiscale>RF01</RegimeFiscale>         </DatiAnagrafici>         <Sede>           <Indirizzo>VIA PIGNASECCA, 65</Indirizzo>           <CAP>80134</CAP>           <Comune>NAPOLI</Comune>           <Provincia>NA</Provincia>           <Nazione>IT</Nazione>         </Sede>         <IscrizioneREA>           <Ufficio>NA</Ufficio>           <NumeroREA>902007</NumeroREA>                      <StatoLiquidazione>LN</StatoLiquidazione>         </IscrizioneREA>         <Contatti>                                 <Email>langellottigroupsrl@legalmail.it</Email>         </Contatti>       </CedentePrestatore>       <CessionarioCommittente>         <DatiAnagrafici>           <IdFiscaleIVA>             <IdPaese>IT</IdPaese>             <IdCodice>04523831214</IdCodice>           </IdFiscaleIVA>                      <Anagrafica>             <Denominazione>CERALDI GROUP SRL</Denominazione>           </Anagrafica>         </DatiAnagrafici>         <Sede>           <Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>           <CAP>80143</CAP>           <Comune>NAPOLI</Comune>           <Provincia>NA</Provincia>           <Nazione>IT</Nazione>         </Sede>       </CessionarioCommittente><TerzoIntermediarioOSoggettoEmittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>06628860964</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>06628860964</CodiceFiscale>
+<Anagrafica>
+<Denominazione>PA DIGITALE S.P.A.</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+</TerzoIntermediarioOSoggettoEmittente><SoggettoEmittente>TZ</SoggettoEmittente>   </FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>        <DatiGeneraliDocumento>           <TipoDocumento>TD01</TipoDocumento>           <Divisa>EUR</Divisa>           <Data>2026-03-26</Data>           <Numero>124/FS</Numero>           <ImportoTotaleDocumento>5.00</ImportoTotaleDocumento>        </DatiGeneraliDocumento>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>           <NumeroLinea>1</NumeroLinea>                                 <Descrizione>Rif.scontrino nr. 000127 del 26/03/2026</Descrizione>                      <PrezzoUnitario>0.00000000</PrezzoUnitario>           <PrezzoTotale>0.00</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                               </DettaglioLinee>                  
+<DettaglioLinee>           <NumeroLinea>2</NumeroLinea>                       <CodiceArticolo>    <CodiceTipo>ART</CodiceTipo>    <CodiceValore>01.011582</CodiceValore>  </CodiceArticolo>  <CodiceArticolo>    <CodiceTipo>EAN</CodiceTipo>    <CodiceValore>8005892340731</CodiceValore>  </CodiceArticolo>            <Descrizione>LUCART TOVAGLIOLI DOPPIO VELO</Descrizione>           <Quantita>5.000</Quantita>           <PrezzoUnitario>0.81968000</PrezzoUnitario>           <PrezzoTotale>4.10</PrezzoTotale>           <AliquotaIVA>22.00</AliquotaIVA>                      <AltriDatiGestionali><TipoDato>NUM SCONTR</TipoDato><RiferimentoTesto>127</RiferimentoTesto><RiferimentoNumero>127.00</RiferimentoNumero><RiferimentoData>2026-03-26</RiferimentoData></AltriDatiGestionali>         </DettaglioLinee>                  
+
+
+
+
+<DatiRiepilogo>           <AliquotaIVA>22.00</AliquotaIVA>                      <ImponibileImporto>4.10</ImponibileImporto>           <Imposta>0.90</Imposta>           <EsigibilitaIVA>I</EsigibilitaIVA>                               </DatiRiepilogo>
+</DatiBeniServizi>
+</FatturaElettronicaBody>
+</p:FatturaElettronica>
