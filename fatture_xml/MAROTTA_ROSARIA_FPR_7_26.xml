@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FatturaElettronica versione="FPR12" xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader xmlns="">
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>01879020517</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>7</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+      <PECDestinatario>ceraldigroupsrl@legalmail.it</PECDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>07914040634</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>MRTRSR70T60F839Z</CodiceFiscale>
+        <Anagrafica>
+          <Nome>ROSARIA</Nome>
+          <Cognome>MAROTTA</Cognome>
+        </Anagrafica>
+        <AlboProfessionale>ORDINE DOTTORI COMMERCIALISTI </AlboProfessionale>
+        <ProvinciaAlbo>NA</ProvinciaAlbo>
+        <NumeroIscrizioneAlbo>3709/3718A</NumeroIscrizioneAlbo>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA TOLEDO </Indirizzo>
+        <NumeroCivico>265</NumeroCivico>
+        <CAP>80132</CAP>
+        <Comune>Napoli</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+      <Contatti>
+        <Fax>081416116</Fax>
+        <Email>rosaria.marotta@email.it</Email>
+      </Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>04523831214</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>P.ZZA NAZIONALE </Indirizzo>
+        <NumeroCivico>46</NumeroCivico>
+        <CAP>80132</CAP>
+        <Comune>Napoli</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody xmlns="">
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-03-04</Data>
+        <Numero>FPR 7/26</Numero>
+        <DatiRitenuta>
+          <TipoRitenuta>RT01</TipoRitenuta>
+          <ImportoRitenuta>210.00</ImportoRitenuta>
+          <AliquotaRitenuta>20.00</AliquotaRitenuta>
+          <CausalePagamento>A</CausalePagamento>
+        </DatiRitenuta>
+        <DatiCassaPrevidenziale>
+          <TipoCassa>TC02</TipoCassa>
+          <AlCassa>4.00</AlCassa>
+          <ImportoContributoCassa>42.00</ImportoContributoCassa>
+          <ImponibileCassa>1050.00</ImponibileCassa>
+          <AliquotaIVA>22.00</AliquotaIVA>
+        </DatiCassaPrevidenziale>
+        <ImportoTotaleDocumento>1332.24</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>compenso  IV trim 2025</Descrizione>
+        <Quantita>1.00</Quantita>
+        <PrezzoUnitario>1050.00</PrezzoUnitario>
+        <PrezzoTotale>1050.00</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <Ritenuta>SI</Ritenuta>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>1092.00</ImponibileImporto>
+        <Imposta>240.24</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-03-04</DataScadenzaPagamento>
+        <ImportoPagamento>1122.24</ImportoPagamento>
+        <IstitutoFinanziario>DEUTSCHE BANK</IstitutoFinanziario>
+        <IBAN>IT45Z0310403400000000822175</IBAN>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</FatturaElettronica>
