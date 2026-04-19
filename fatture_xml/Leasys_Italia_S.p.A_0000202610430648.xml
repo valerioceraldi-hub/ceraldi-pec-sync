@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 file:///F:/Progetti/Altova/2018/pa/invoice_extcsv2xmlpa2020/Schema/Schema_VFPR12%20mod.xsd" xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+	<FatturaElettronicaHeader xmlns="">
+		<DatiTrasmissione>
+			<IdTrasmittente>
+				<IdPaese>IT</IdPaese>
+				<IdCodice>05262890014</IdCodice>
+			</IdTrasmittente>
+			<ProgressivoInvio>1</ProgressivoInvio>
+			<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+			<CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+		</DatiTrasmissione>
+		<CedentePrestatore>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>06714021000</IdCodice>
+				</IdFiscaleIVA>
+				<Anagrafica>
+					<Denominazione>Leasys Italia S.p.A</Denominazione>
+				</Anagrafica>
+				<RegimeFiscale>RF01</RegimeFiscale>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>C.so Orbassano n. 367</Indirizzo>
+				<CAP>10137</CAP>
+				<Comune>Torino</Comune>
+				<Provincia>TO</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+			<IscrizioneREA>
+				<Ufficio>TO</Ufficio>
+				<NumeroREA>960205</NumeroREA>
+				<CapitaleSociale>77979400.00</CapitaleSociale>
+				<StatoLiquidazione>LN</StatoLiquidazione>
+			</IscrizioneREA>
+		</CedentePrestatore>
+		<CessionarioCommittente>
+			<DatiAnagrafici>
+				<IdFiscaleIVA>
+					<IdPaese>IT</IdPaese>
+					<IdCodice>04523831214</IdCodice>
+				</IdFiscaleIVA>
+				<CodiceFiscale>04523831214</CodiceFiscale>
+				<Anagrafica>
+					<Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+				</Anagrafica>
+			</DatiAnagrafici>
+			<Sede>
+				<Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>
+				<CAP>80143</CAP>
+				<Comune>NAPOLI</Comune>
+				<Provincia>NA</Provincia>
+				<Nazione>IT</Nazione>
+			</Sede>
+		</CessionarioCommittente>
+	</FatturaElettronicaHeader>
+	<FatturaElettronicaBody xmlns="">
+		<DatiGenerali>
+			<DatiGeneraliDocumento>
+				<TipoDocumento>TD01</TipoDocumento>
+				<Divisa>EUR</Divisa>
+				<Data>2026-03-09</Data>
+				<Numero>0000202610430648</Numero>
+				<ImportoTotaleDocumento>1119.48</ImportoTotaleDocumento>
+			</DatiGeneraliDocumento>
+			<DatiOrdineAcquisto>
+				<IdDocumento>4833211</IdDocumento>
+			</DatiOrdineAcquisto>
+			<DatiContratto>
+				<IdDocumento>1203652735</IdDocumento>
+				<Data>2025-12-04</Data>
+			</DatiContratto>
+		</DatiGenerali>
+		<DatiBeniServizi>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<Descrizione>CANONE LOCAZIONE HB411GV X3 xDrive 20d Msport</Descrizione>
+				<Quantita>1.00</Quantita>
+				<UnitaMisura>EURO</UnitaMisura>
+				<DataInizioPeriodo>2026-04-01</DataInizioPeriodo>
+				<DataFinePeriodo>2026-04-30</DataFinePeriodo>
+				<PrezzoUnitario>641.64</PrezzoUnitario>
+				<PrezzoTotale>641.64</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>UTILIZZATORE CERALDI GROUP S.R.L. codice 1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>EXT REFERENCE 1184586404-5020682842</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<Descrizione>CANONE SERVIZIO HB411GV X3 xDrive 20d Msport</Descrizione>
+				<Quantita>1.00</Quantita>
+				<UnitaMisura>EURO</UnitaMisura>
+				<DataInizioPeriodo>2026-04-01</DataInizioPeriodo>
+				<DataFinePeriodo>2026-04-30</DataFinePeriodo>
+				<PrezzoUnitario>275.97</PrezzoUnitario>
+				<PrezzoTotale>275.97</PrezzoTotale>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>UTILIZZATORE CERALDI GROUP S.R.L. codice 1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>EXT REFERENCE 1184586404-5020682842</RiferimentoTesto>
+				</AltriDatiGestionali>
+				<AltriDatiGestionali>
+					<TipoDato>NOTE</TipoDato>
+					<RiferimentoTesto>1184586404</RiferimentoTesto>
+				</AltriDatiGestionali>
+			</DettaglioLinee>
+			<DatiRiepilogo>
+				<AliquotaIVA>22.00</AliquotaIVA>
+				<ImponibileImporto>917.61</ImponibileImporto>
+				<Imposta>201.87</Imposta>
+				<EsigibilitaIVA>I</EsigibilitaIVA>
+				<RiferimentoNormativo>Vend. IVA 22%</RiferimentoNormativo>
+			</DatiRiepilogo>
+		</DatiBeniServizi>
+		<DatiPagamento>
+			<CondizioniPagamento>TP02</CondizioniPagamento>
+			<DettaglioPagamento>
+				<ModalitaPagamento>MP05</ModalitaPagamento>
+				<DataRiferimentoTerminiPagamento>2026-03-09</DataRiferimentoTerminiPagamento>
+				<GiorniTerminiPagamento>30</GiorniTerminiPagamento>
+				<DataScadenzaPagamento>2026-04-30</DataScadenzaPagamento>
+				<ImportoPagamento>1119.48</ImportoPagamento>
+				<IstitutoFinanziario>Unicredit 000500014931</IstitutoFinanziario>
+				<IBAN>IT96P0200809440000500014931</IBAN>
+				<ABI>02008</ABI>
+				<CAB>09440</CAB>
+			</DettaglioPagamento>
+		</DatiPagamento>
+	</FatturaElettronicaBody>
+</FatturaElettronica>
