@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>05006900962</IdCodice></IdTrasmittente>
+      <ProgressivoInvio>OHHJH46976</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+      
+      <PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>00321980260</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>00321980260</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>Villa Sandi SpA</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Erizzo, 113/A</Indirizzo>
+        <CAP>31035</CAP>
+        <Comune>Crocetta del Montello </Comune>
+        <Provincia>TV</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+      <IscrizioneREA>
+        <Ufficio>TV</Ufficio>
+        <NumeroREA>TV 114407</NumeroREA>
+        <CapitaleSociale>1593821.00</CapitaleSociale>
+        <SocioUnico>SU</SocioUnico>
+        <StatoLiquidazione>LN</StatoLiquidazione>
+      </IscrizioneREA>
+      <Contatti>
+        <Telefono>0423 8607</Telefono>
+        <Fax>0423 665009</Fax>
+        <Email>info@villasandi.it</Email>
+      </Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>04523831214</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP SRL</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA NAZIONALE, 46</Indirizzo>
+        <CAP>80143</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-04-13</Data>
+        <Numero>26-V3002777</Numero>
+        <ImportoTotaleDocumento>381.79</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+      <DatiOrdineAcquisto>
+        <IdDocumento>146</IdDocumento>
+        <Data>2026-04-10</Data>
+      </DatiOrdineAcquisto>
+      <DatiDDT>
+        <NumeroDDT>26-V3002777</NumeroDDT>
+        <DataDDT>2026-04-13</DataDDT>
+      </DatiDDT>
+      <DatiTrasporto>
+        <DatiAnagraficiVettore>
+          <IdFiscaleIVA>
+            <IdPaese>IT</IdPaese>
+            <IdCodice>00227660289</IdCodice>
+          </IdFiscaleIVA>
+          <CodiceFiscale>00227660289</CodiceFiscale>
+          <Anagrafica>
+            <Denominazione>ANGELO FINESSO SPA</Denominazione>
+          </Anagrafica>
+        </DatiAnagraficiVettore>
+        <CausaleTrasporto>Documento di Vendita</CausaleTrasporto>
+        <NumeroColli>24</NumeroColli>
+        <UnitaMisuraPeso>Chilo</UnitaMisuraPeso>
+        <PesoLordo>217.92</PesoLordo>
+        <DataInizioTrasporto>2026-04-10</DataInizioTrasporto>
+      </DatiTrasporto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+        <Descrizione>VSB/Extra Dry Ca Divo</Descrizione>
+        <Quantita>20.00</Quantita>
+        <UnitaMisura>NR</UnitaMisura>
+        <PrezzoUnitario>25.80</PrezzoUnitario>
+        <ScontoMaggiorazione>
+          <Tipo>SC</Tipo>
+          <Percentuale>30.00</Percentuale>
+        </ScontoMaggiorazione>
+        <ScontoMaggiorazione>
+          <Tipo>SC</Tipo>
+          <Percentuale>5.00</Percentuale>
+        </ScontoMaggiorazione>
+        <ScontoMaggiorazione>
+          <Tipo>SC</Tipo>
+          <Percentuale>4.00</Percentuale>
+        </ScontoMaggiorazione>
+        <PrezzoTotale>329.41</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+        <Descrizione>VSB/Extra Dry Ca Divo</Descrizione>
+        <Quantita>4.00</Quantita>
+        <UnitaMisura>NR</UnitaMisura>
+        <PrezzoUnitario>16.47</PrezzoUnitario>
+        <PrezzoTotale>65.88</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+        <Descrizione>Omaggi beni a terzi deducib</Descrizione>
+        <Quantita>4.00</Quantita>
+        <PrezzoUnitario>-16.47</PrezzoUnitario>
+        <PrezzoTotale>-65.88</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+        <Descrizione>Sconto cassa 5 % su 329,41 pari a 16,47</Descrizione>
+        <Quantita>1.00</Quantita>
+        <PrezzoUnitario>-16.4705</PrezzoUnitario>
+        <PrezzoTotale>-16.47</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>312.94</ImponibileImporto>
+        <Imposta>68.85</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP03</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-04-13</DataScadenzaPagamento>
+        <ImportoPagamento>381.79</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
