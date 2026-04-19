@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>TMMCLD62T17F839U</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>00223</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>0000000</CodiceDestinatario>
+            <PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>08486771218</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>GTM DETERSIVI DI TOMMASINO CLAUDIO</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>VIA MONTESANTO 16</Indirizzo>
+                <CAP>80131</CAP>
+                <Comune>NAPOLI</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04523831214</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>CERALDI GROUP SRL</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>PIAZZA CARITA 14</Indirizzo>
+                <CAP>80134</CAP>
+                <Comune>NAPOLI</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2026-04-02</Data>
+                <Numero>10/2026</Numero>
+                <ImportoTotaleDocumento>25.00</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>INTERNO</CodiceTipo>
+                    <CodiceValore>0000021254</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>WETTEX PANNO EXTRA VETRI LISCIO 1PZ</Descrizione>
+                <Quantita>10.00</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>2.04918</PrezzoUnitario>
+                <PrezzoTotale>20.4918</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <ImponibileImporto>20.49</ImponibileImporto>
+                <Imposta>4.51</Imposta>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+    </FatturaElettronicaBody>
+</p:FatturaElettronica>
