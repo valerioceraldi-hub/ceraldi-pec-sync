@@ -1,0 +1,143 @@
+<ns2:FatturaElettronica xmlns:ns2="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>08973230967</IdCodice></IdTrasmittente><ProgressivoInvio>FJvo9</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>KRRH6B9</CodiceDestinatario><PECDestinatario>Ceraldigroupsrl@legalmail.it</PECDestinatario></DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>13397910962</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Amazon Business EU S.a.r.l, Sede Secondaria</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>38 avenue John F. Kennedy</Indirizzo>
+<CAP>01855</CAP>
+<Comune>Lussemburgo</Comune>
+<Nazione>LU</Nazione>
+</Sede>
+<StabileOrganizzazione>
+<Indirizzo>Viale Monte Grappa 3/5</Indirizzo>
+<CAP>20124</CAP>
+<Comune>Milano</Comune>
+<Nazione>IT</Nazione>
+</StabileOrganizzazione>
+<RiferimentoAmministrazione>P.IVA: 13397910962</RiferimentoAmministrazione>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Ceraldi group srl</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Piazza Nazionale 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>napoli</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-22</Data>
+<Numero>IT61CBDQABEI</Numero>
+<ImportoTotaleDocumento>71.66</ImportoTotaleDocumento>
+<Arrotondamento>0.00</Arrotondamento>
+</DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>405-2963465-8517162</IdDocumento>
+<Data>2026-04-21</Data>
+</DatiOrdineAcquisto>
+<DatiContratto>
+<IdDocumento>405-2963465-8517162</IdDocumento>
+<Data>2026-04-21</Data>
+</DatiContratto>
+<DatiTrasporto>
+<IndirizzoResa>
+<Indirizzo>Piazza Carita 14</Indirizzo>
+<CAP>80134</CAP>
+<Comune>Napoli</Comune>
+<Nazione>IT</Nazione>
+</IndirizzoResa>
+</DatiTrasporto>
+<FatturaPrincipale>
+<NumeroFatturaPrincipale>IT61CBDQABEI</NumeroFatturaPrincipale>
+<DataFatturaPrincipale>2026-04-22</DataFatturaPrincipale>
+</FatturaPrincipale>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-22</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-22</DataFinePeriodo>
+<PrezzoUnitario>0.00</PrezzoUnitario>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>OrdinatoDa</TipoDato>
+<RiferimentoTesto>Ceraldi Group S.R.L</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Amazonstrasse 1,86836,Graben,DE</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>405-2963465-8517162</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<Descrizione>SONOFF ZBBridge-U Gateway Zigbee, Smart home Matter Hub, supporta ZigBee, connessione WiFi ed Ethernet, Zigee 3.0 Bridge per sistema di allarme, compatibile Google Home, SmartThings, Home Assistant.</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-22</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-22</DataFinePeriodo>
+<PrezzoUnitario>58.74</PrezzoUnitario>
+<PrezzoTotale>58.74</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Amazonstrasse 1,86836,Graben,DE</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>405-2963465-8517162</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<Arrotondamento>-0.01</Arrotondamento>
+<ImponibileImporto>58.73</ImponibileImporto>
+<Imposta>12.92</Imposta>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP08</ModalitaPagamento>
+<DataRiferimentoTerminiPagamento>2026-04-22</DataRiferimentoTerminiPagamento>
+<ImportoPagamento>71.66</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</ns2:FatturaElettronica>
