@@ -3210,8 +3210,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-21T20:37:09.324629+00:00"
+    },
+    {
+      "id": "pec_Amazon_Business_EU_S_a_r_l__Se_IT61CBDQABEI_20260422",
+      "tipo": "fattura",
+      "fornitore": "Amazon Business EU S.a.r.l, Sede Secondaria",
+      "numero": "IT61CBDQABEI",
+      "data": "2026-04-22",
+      "importo": 71.66,
+      "scadenza": "",
+      "pagamento": "",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/Amazon_Business_EU_S.a.r.l__Sede_Seconda_IT61CBDQABEI.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (21/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-21T23:53:38.919738+00:00"
     }
   ],
-  "lastSync": "2026-04-21T20:37:10.544516+00:00",
-  "newCount": 2
+  "lastSync": "2026-04-21T23:53:39.829203+00:00",
+  "newCount": 1
 }
