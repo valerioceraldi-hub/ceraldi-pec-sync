@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><FatturaElettronica xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" versione="FPR12">
+<FatturaElettronicaHeader xmlns="">
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>IT</IdPaese>
+<IdCodice>07945211006</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>1</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>01924961004</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>07978810583</CodiceFiscale>
+<Anagrafica>
+<Denominazione>ALD Automotive Italia S.r.l.</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Viale Luca Gaurico, 187</Indirizzo>
+<CAP>00143</CAP>
+<Comune>Roma</Comune>
+<Provincia>RM</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+<IscrizioneREA>
+<Ufficio>RM</Ufficio>
+<NumeroREA>636604</NumeroREA>
+<CapitaleSociale>140400000.00</CapitaleSociale>
+<SocioUnico>SU</SocioUnico>
+<StatoLiquidazione>LN</StatoLiquidazione>
+</IscrizioneREA>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>CERALDI GROUP SRL</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>PIAZZA NAZIONALE 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+<TerzoIntermediarioOSoggettoEmittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>07945211006</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>InfoCert S.p.A.</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+</TerzoIntermediarioOSoggettoEmittente>
+<SoggettoEmittente>TZ</SoggettoEmittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody xmlns="">
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-17</Data>
+<Numero>INR0537654</Numero>
+<ImportoTotaleDocumento>850.34</ImportoTotaleDocumento>
+</DatiGeneraliDocumento>
+<DatiContratto>
+<RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+<IdDocumento>6074667</IdDocumento>
+<Data>2025-01-11</Data>
+</DatiContratto>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>CANONE DI NOLEGGIO GX037HJ BMW X1 SDRIVE 18D X-LINE DCT FP 6074667 2026-06-01 2026-06-30</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-06-01</DataInizioPeriodo>
+<DataFinePeriodo>2026-06-30</DataFinePeriodo>
+<PrezzoUnitario>697.00</PrezzoUnitario>
+<PrezzoTotale>697.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Dett. 1</TipoDato>
+<RiferimentoTesto>Targa: GX037HJ BMW X1 SDRIVE 18D X-LINE DCT FP</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Noleggio</TipoDato>
+<RiferimentoTesto>CANONE DI NOLEGGIO Imponibile: 494.58</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Servizio</TipoDato>
+<RiferimentoTesto>Canone di Servizio Imponibile: 202.42</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Cod. Cli.</TipoDato>
+<RiferimentoTesto>Codice Cliente: 700913195</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Rif.</TipoDato>
+<RiferimentoTesto>Riferimento: CERALDI,VALERIO</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>6074667</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Telaio</TipoDato>
+<RiferimentoTesto>WBA11EG0505104648</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Data Immat</TipoDato>
+<RiferimentoTesto>2024-10-31</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>CC</TipoDato>
+<RiferimentoTesto>1995</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>CV</TipoDato>
+<RiferimentoTesto>150</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Scad Bollo</TipoDato>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<ImponibileImporto>697.00</ImponibileImporto>
+<Imposta>153.34</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+<RiferimentoNormativo>IVA 22 %</RiferimentoNormativo>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<Beneficiario>ALD Automotive Italia S.r.l.</Beneficiario>
+<ModalitaPagamento>MP20</ModalitaPagamento>
+<ImportoPagamento>850.34</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+<ds:Signature Id="id-9e624d7c50e9aab14cea042b4bbaef6a"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="r-id-9e624d7c50e9aab14cea042b4bbaef6a-1" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><dsig-filter2:XPath xmlns:dsig-filter2="http://www.w3.org/2002/06/xmldsig-filter2" Filter="subtract">/descendant::ds:Signature</dsig-filter2:XPath></ds:Transform><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>w1Fbqdy5qH0bj4rW4OOyZHGqrnZK8Nl4BPAAQTvdPEs=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-9e624d7c50e9aab14cea042b4bbaef6a"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>ywu2X231DCyQr6wjZKgDyp0jc9RR/PVAKeICWKxhSJc=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-9e624d7c50e9aab14cea042b4bbaef6a">OaF0ktz8PAMVHoAdPpnnn1hKUNXRE84hJlWYMRuFm4FnGW+dzR8tJIgPcR3/y6aarGq9uIzz3ZpCeaceXvI36CIiH4KEHSPyiP1eN/HYhlvOovqZLdF+knljFrhbnDObgniBZdC8vbR8CVBpe6mvEWPkklm9cg05PhCeVLo9FulTsTknLC5o2mbwFFUWBTPRnnS1KdPuGb2H/PFuBivrzsx+5rRU++UPPrPm7wfrnwq9nG7NMGRHvEd8ia04oxmSVyQCHMp19iAz+jMNUdoF2KmFA4tff6dMnfLzHqJ+I2MsZtdeJsUsE/+Jd2jboLfmk1nc5T9XA9EfT326Y0b6zQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-9e624d7c50e9aab14cea042b4bbaef6a"><xades:SignedProperties Id="xades-id-9e624d7c50e9aab14cea042b4bbaef6a"><xades:SignedSignatureProperties><xades:SigningTime>2026-04-21T10:05:32Z</xades:SigningTime><xades:SigningCertificateV2><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><ds:DigestValue>lcwbhQK/sYQFvu5THQ+jHl3zTuEVQAgQuWnCwl73Tl5anDh/Ocz/NnKiEUSHbTAUdZaZbLm1vgL/p9qGZ+wsvQ==</ds:DigestValue></xades:CertDigest><xades:IssuerSerialV2>MIG0MIGrpIGoMIGlMQswCQYDVQQGEwJJVDEYMBYGA1UECgwPSW5mb0NlcnQgUy5wLkEuMSkwJwYDVQQLDCBRdWFsaWZpZWQgVHJ1c3QgU2VydmljZSBQcm92aWRlcjEaMBgGA1UEYQwRVkFUSVQtMDc5NDUyMTEwMDYxNTAzBgNVBAMMLEluZm9DZXJ0IFF1YWxpZmllZCBFbGVjdHJvbmljIFNpZ25hdHVyZSBDQSA0AgQBPd20</xades:IssuerSerialV2></xades:Cert></xades:SigningCertificateV2></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#r-id-9e624d7c50e9aab14cea042b4bbaef6a-1"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></FatturaElettronica>
