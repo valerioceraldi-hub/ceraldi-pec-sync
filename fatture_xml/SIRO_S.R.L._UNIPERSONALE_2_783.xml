@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="windows-1252"?>                                                                                                                                                                               
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>                                                                                                                                                                
+<p:FatturaElettronica versione="FPR12"                                                                                                                                                                                      
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"                                                                                                                                                                               
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"                                                                                                                                                     
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                                                                                                                      
+  <FatturaElettronicaHeader>
+   <DatiTrasmissione>
+    <IdTrasmittente>
+     <IdPaese>SM</IdPaese>
+                            <IdCodice>03473</IdCodice>
+    </IdTrasmittente>
+         <ProgressivoInvio>2/783</ProgressivoInvio>
+    <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+    <CodiceDestinatario>0000000</CodiceDestinatario>
+    <PECDestinatario>Cercaldigroupsrl@legalmail.it</PECDestinatario>                               
+   </DatiTrasmissione>
+   <CedentePrestatore>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04104640612</IdCodice>
+     </IdFiscaleIVA>
+          <CodiceFiscale>04104640612</CodiceFiscale>
+     <Anagrafica>
+                                                              <Denominazione>SIRO S.R.L. UNIPERSONALE</Denominazione>
+     </Anagrafica>
+     <RegimeFiscale>RF01</RegimeFiscale>
+    </DatiAnagrafici>
+    <Sede>
+                                             <Indirizzo>VIA PAOLO COLLELA, 3</Indirizzo>
+     <CAP>81030</CAP>
+                                                         <Comune>TEVEROLA</Comune>
+     <Provincia>CE</Provincia>  
+     <Nazione>IT</Nazione>
+    </Sede>
+    <IscrizioneREA>
+     <Ufficio>CE</Ufficio>
+                   <NumeroREA>298865</NumeroREA>
+            <CapitaleSociale>60000.00</CapitaleSociale>
+     <SocioUnico>SM</SocioUnico>
+     <StatoLiquidazione>LN</StatoLiquidazione>
+    </IscrizioneREA>
+    <Contatti>
+     <Email>amministrazione@sirosrl.com</Email>                                 
+    </Contatti>
+   </CedentePrestatore>
+   <CessionarioCommittente>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04523831214</IdCodice>
+     </IdFiscaleIVA>
+     <Anagrafica>
+                                                                   <Denominazione>CERALDI GROUP S.R.L</Denominazione>
+     </Anagrafica>
+    </DatiAnagrafici>
+    <Sede>
+                                                <Indirizzo>Piazza Carità, 14</Indirizzo>
+     <CAP>80134</CAP>
+                                                           <Comune>NAPOLI</Comune>
+     <Provincia>NA</Provincia>
+     <Nazione>IT</Nazione>
+    </Sede>
+   </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+   <DatiGenerali>
+    <DatiGeneraliDocumento>
+     <TipoDocumento>TD01</TipoDocumento>
+     <Divisa>EUR</Divisa>
+     <Data>2026-04-17</Data>
+                    <Numero>2/783</Numero>
+     <ImportoTotaleDocumento>         988.00</ImportoTotaleDocumento>
+     <Causale>VENDITA</Causale>                                                                                                                                                                                             
+    </DatiGeneraliDocumento>
+    <DatiTrasporto>
+     <DataOraRitiro>2026-04-17T08:38:00</DataOraRitiro>
+     <DataInizioTrasporto>2026-04-17</DataInizioTrasporto>
+    </DatiTrasporto>
+   </DatiGenerali>
+   <DatiBeniServizi>
+    <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB116</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>CHIN8 NERI CL.20 CTX24
+                                                                                                                                                                                 
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.934430</PrezzoUnitario>
+     <PrezzoTotale>                11.93</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA7890</CodiceValore>                             
+     </CodiceArticolo>
+     <Descrizione>GIN ROKU JAPANISE 43° CL.70
+                                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            20.901640</PrezzoUnitario>
+     <PrezzoTotale>                20.90</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA750</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>GIN TANQUERAY CL.100
+                                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             6.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            14.590160</PrezzoUnitario>
+     <PrezzoTotale>                87.54</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA266</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BAILEYS ORIGINAL IRISH CREAM CL.100
+                                                                                                                                                                    
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            12.295080</PrezzoUnitario>
+     <PrezzoTotale>                24.59</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA833</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BITTER CAMPARI CL.100
+                                                                                                                                                                                  
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            12.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            11.885250</PrezzoUnitario>
+     <PrezzoTotale>               142.62</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB172</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ESTATHE PESCA LATTINA CL.33 CTX24
+                                                                                                                                                                      
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             3.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.737700</PrezzoUnitario>
+     <PrezzoTotale>                47.21</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>7</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB374</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC MELA VERDE 200ML CTX24
+                                                                                                                                                                
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.549180</PrezzoUnitario>
+     <PrezzoTotale>                11.55</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>8</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB404</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC ANANAS 200ML CTX24
+                                                                                                                                                                    
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             3.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            14.300540</PrezzoUnitario>
+     <PrezzoTotale>                42.90</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>9</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB186</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SPRITE VETRO VAP CL.33 CTX24
+                                                                                                                                                                           
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                15.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>10</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB143</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SCHWEPPES LIMONE CL.18  CTX24
+                                                                                                                                                                          
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             3.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            13.114750</PrezzoUnitario>
+     <PrezzoTotale>                39.34</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>11</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB118</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SANBITTER ROSSO CL.10 CTX40
+                                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            16.229510</PrezzoUnitario>
+     <PrezzoTotale>                32.46</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>12</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB161</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>LURISIA LIMONATA VAP CL.27.5 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            25.266390</PrezzoUnitario>
+     <PrezzoTotale>                50.53</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>13</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB105</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>CRODINO CL.10 CTX48
+                                                                                                                                                                                    
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            21.721310</PrezzoUnitario>
+     <PrezzoTotale>                43.44</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>14</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB159</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCA COLA ZERO VETRO VAP CL.33 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                75.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>15</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB422</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BIRRA LEFFE BLONDE CL.33 CTX24 - BELGIO
+                                                                                                                                                                
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            27.868850</PrezzoUnitario>
+     <PrezzoTotale>                27.87</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>16</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA12</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA ELECTA PREMIUM PET CL.50 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            15.000000</Quantita>
+             <UnitaMisura>C6</UnitaMisura>
+     <PrezzoUnitario>             4.350270</PrezzoUnitario>
+     <PrezzoTotale>                65.25</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>17</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA11</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA LETE VAP - VETRO CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C7</UnitaMisura>
+     <PrezzoUnitario>             9.750820</PrezzoUnitario>
+     <PrezzoTotale>                48.75</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>18</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB149</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>GINGER ALE FEVER TREE CL.20 CTX24
+                                                                                                                                                                      
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            21.311480</PrezzoUnitario>
+     <PrezzoTotale>                21.31</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>19</NumeroLinea>
+     <TipoCessionePrestazione>AC</TipoCessionePrestazione>
+     <Descrizione>SPESE DI TRASPORTO</Descrizione>
+     <PrezzoUnitario>             1.650000</PrezzoUnitario>
+     <PrezzoTotale>                 1.65</PrezzoTotale>
+      <AliquotaIVA>22.00</AliquotaIVA>
+    </DettaglioLinee>
+    <DatiRiepilogo>
+      <AliquotaIVA>22.00</AliquotaIVA>
+     <ImponibileImporto>809.84         </ImponibileImporto>
+     <Imposta>178.16         </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+   </DatiBeniServizi>
+   <DatiPagamento>
+    <CondizioniPagamento>TP02</CondizioniPagamento>
+    <DettaglioPagamento>
+     <ModalitaPagamento>MP05</ModalitaPagamento>
+     <DataScadenzaPagamento>2026-04-17</DataScadenzaPagamento>
+     <ImportoPagamento>988.00</ImportoPagamento>         
+    </DettaglioPagamento>
+   </DatiPagamento>
+  </FatturaElettronicaBody>
+ </p:FatturaElettronica>
