@@ -3246,8 +3246,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-22T11:42:50.733642+00:00"
+    },
+    {
+      "id": "pec_EUROUOVA_SRL_1214_20260421",
+      "tipo": "fattura",
+      "fornitore": "EUROUOVA SRL",
+      "numero": "1214",
+      "data": "2026-04-21",
+      "importo": 72.6,
+      "scadenza": "2026-04-21",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/EUROUOVA_SRL_1214.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (22/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-22T15:12:39.810021+00:00"
     }
   ],
-  "lastSync": "2026-04-22T13:25:07.016610+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-22T15:12:40.916008+00:00",
+  "newCount": 1
 }
