@@ -3282,8 +3282,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-23T09:27:00.771330+00:00"
+    },
+    {
+      "id": "pec_FoodNess_SpA_0001089_A3_20260422",
+      "tipo": "fattura",
+      "fornitore": "FoodNess SpA",
+      "numero": "0001089/A3",
+      "data": "2026-04-22",
+      "importo": 141.46,
+      "scadenza": "2026-05-31",
+      "pagamento": "assegno",
+      "bonIban": "IT95V0538766380000001000506",
+      "numDdt": "F3-2026-0001066",
+      "xmlGithubPath": "fatture_xml/FoodNess_SpA_0001089_A3.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (23/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-23T15:52:01.879417+00:00"
     }
   ],
-  "lastSync": "2026-04-23T13:26:37.410108+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-23T15:52:03.325582+00:00",
+  "newCount": 1
 }
