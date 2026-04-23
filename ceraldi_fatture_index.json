@@ -3264,8 +3264,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-22T15:12:39.810021+00:00"
+    },
+    {
+      "id": "pec_KIMBO_S_P_A__0070013453_20260422",
+      "tipo": "fattura",
+      "fornitore": "KIMBO S.P.A.",
+      "numero": "0070013453",
+      "data": "2026-04-22",
+      "importo": 1097.47,
+      "scadenza": "2026-04-22",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "5010111143",
+      "xmlGithubPath": "fatture_xml/KIMBO_S.P.A._0070013453.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (23/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-23T09:27:00.771330+00:00"
     }
   ],
-  "lastSync": "2026-04-23T06:05:02.589623+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-23T09:27:01.762948+00:00",
+  "newCount": 1
 }
