@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Generato da e-Bill Tracking - Tekne il 2026-04-23 22:55:38.7469033+02:00--><p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 https://www.fatturapa.gov.it/export/documenti/fatturapa/v1.2.1/Schema_del_file_xml_FatturaPA_versione_1.2.1a.xsd" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>07207660486</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>255978735</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+      <ContattiTrasmittente>
+        <Telefono>0516033311</Telefono>
+        <Email>open.business_varhub@vargroup.it</Email>
+      </ContattiTrasmittente>
+      <PECDestinatario>INFO@CERALDICAFFE.IT</PECDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>06119081211</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>F.LLI SOMMELLA</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA BRACCO 4/8</Indirizzo>
+        <CAP>80100</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP SRL</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA CARITA' 14</Indirizzo>
+        <CAP>80100</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-04-23</Data>
+        <Numero>355</Numero>
+        <ImportoTotaleDocumento>11.90</ImportoTotaleDocumento>
+        <Causale>Assolve gli obblighi di cui all'articolo 62 comma 1, del decreto legge 24 gennaio 2012 n.1, convertito, con modificazioni, della legge 24 marzo 2012, n.27.  Le suddette condizioni si riferiscono alle </Causale>
+        <Causale>consegne riepilogative nel presente documento. CONTRIBUTO CONAI ASSOLTO Riferimento: SCONTRINO - N.Documento 83 / N.Transazione 113  Term. N.  3 del 23/04/2026</Causale>
+      </DatiGeneraliDocumento>
+      <DatiTrasporto>
+        <IndirizzoResa>
+          <Indirizzo>PIAZZA CARITA' 14</Indirizzo>
+          <CAP>80100</CAP>
+          <Comune>NAPOLI</Comune>
+          <Provincia>NA</Provincia>
+          <Nazione>IT</Nazione>
+        </IndirizzoResa>
+      </DatiTrasporto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>UOVA MEDIE X6 ALLEVATO A TERRA</Descrizione>
+        <Quantita>7.00</Quantita>
+        <PrezzoUnitario>1.54545455</PrezzoUnitario>
+        <PrezzoTotale>10.82</PrezzoTotale>
+        <AliquotaIVA>10.00</AliquotaIVA>
+        <AltriDatiGestionali>
+          <TipoDato>SCONTRINO</TipoDato>
+          <RiferimentoTesto>113</RiferimentoTesto>
+          <RiferimentoNumero>83.00</RiferimentoNumero>
+          <RiferimentoData>2026-04-23</RiferimentoData>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>10.00</AliquotaIVA>
+        <ImponibileImporto>10.82</ImponibileImporto>
+        <Imposta>1.08</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP01</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-04-24</DataScadenzaPagamento>
+        <ImportoPagamento>11.90</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
