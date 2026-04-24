@@ -3336,8 +3336,44 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-23T19:09:59.614074+00:00"
+    },
+    {
+      "id": "pec_F_LLI_SOMMELLA_355_20260423",
+      "tipo": "fattura",
+      "fornitore": "F.LLI SOMMELLA",
+      "numero": "355",
+      "data": "2026-04-23",
+      "importo": 11.9,
+      "scadenza": "2026-04-24",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/F.LLI_SOMMELLA_355.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (24/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-24T02:32:36.988231+00:00"
+    },
+    {
+      "id": "pec_San_Carlo_Gruppo_Alimentare_S__217AX8F01730_20260417",
+      "tipo": "fattura",
+      "fornitore": "San Carlo Gruppo Alimentare S.P.A",
+      "numero": "217AX8F01730",
+      "data": "2026-04-17",
+      "importo": 67.58,
+      "scadenza": "2026-04-17",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "26DDT30001194874",
+      "xmlGithubPath": "fatture_xml/San_Carlo_Gruppo_Alimentare_S.P.A_217AX8F01730.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (24/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-24T02:32:37.874783+00:00"
     }
   ],
-  "lastSync": "2026-04-23T22:42:12.798005+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-24T02:32:38.631129+00:00",
+  "newCount": 2
 }
