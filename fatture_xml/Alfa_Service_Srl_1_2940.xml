@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica versione="FPR12" 
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>SM</IdPaese>
+<IdCodice>03473</IdCodice>
+</IdTrasmittente>
+<ProgressivoInvio>1/2940</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>USAL8PV</CodiceDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>06626921214</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>06626921214</CodiceFiscale>
+<Anagrafica>
+<Denominazione>Alfa Service Srl</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Piazza Leonardo 21/b</Indirizzo>
+<CAP>80129</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+<Contatti>
+<Telefono>+39 32977625</Telefono>
+<Email>alfaservicenapoli@gmail.com</Email>
+</Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<CodiceFiscale>04523831214</CodiceFiscale>
+<Anagrafica>
+<Denominazione>CERALDI GROUP SRL</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>PIAZZA CARITA' 14</Indirizzo>
+<CAP>80100</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-20</Data>
+<Numero>1/2940</Numero>
+<ImportoTotaleDocumento>267.48</ImportoTotaleDocumento>
+<Causale>Vendite</Causale>
+</DatiGeneraliDocumento>
+<DatiTrasporto>
+<NumeroColli>10</NumeroColli>
+<UnitaMisuraPeso>Kg</UnitaMisuraPeso>
+<PesoLordo>81.00</PesoLordo>
+<DataOraRitiro>2026-04-20T13:29:00</DataOraRitiro>
+<DataInizioTrasporto>2026-04-20</DataInizioTrasporto>
+<IndirizzoResa>
+<Indirizzo>PIAZZA CARITA' 14</Indirizzo>
+<CAP>80100</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione>
+</IndirizzoResa>
+</DatiTrasporto>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>227</CodiceValore>
+</CodiceArticolo>
+<Descrizione>CANNUCCE DRITTE 21 CM TRASPARENTI CF 1000 PZ
+CANNUCCE DRITTE 21 CM TRASPARENTI CF 1000 PZ
+</Descrizione>
+<Quantita>5.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>4.000000</PrezzoUnitario>
+<PrezzoTotale>20.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>ISAP300</CodiceValore>
+</CodiceArticolo>
+<Descrizione>ISAP BICCHIERI KRISTAL 300 CC CF 50 PZ
+ISAP BICCHIERI KRISTAL 300 CC CF 50 PZ
+</Descrizione>
+<Quantita>11.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>1.650000</PrezzoUnitario>
+<PrezzoTotale>18.15</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>1786</CodiceValore>
+</CodiceArticolo>
+<Descrizione>STRISCIA ORO LARGA 10 KG
+STRISCIA ORO LARGA 10 KG
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>24.500000</PrezzoUnitario>
+<PrezzoTotale>24.50</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>5848</CodiceValore>
+</CodiceArticolo>
+<Descrizione>PIROTTINI BABA CRYSTAL GRANDE 11X6 PZ 400
+PIROTTINI BABA CRYSTAL GRANDE 11X6 PZ 400
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>23.000000</PrezzoUnitario>
+<PrezzoTotale>23.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>5</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>BLACK/M</CodiceValore>
+</CodiceArticolo>
+<Descrizione>GUANTI NITRILE NERO MIS. M 100PZ
+GUANTI NITRILE NERO MIS. M 100PZ
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>2.900000</PrezzoUnitario>
+<PrezzoTotale>2.90</PrezzoTotale>
+<AliquotaIVA>5.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>6</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>BLACK/L</CodiceValore>
+</CodiceArticolo>
+<Descrizione>GUANTI NITRILE NERO MIS. L 100PZ
+GUANTI NITRILE NERO MIS. L 100PZ
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>2.900000</PrezzoUnitario>
+<PrezzoTotale>2.90</PrezzoTotale>
+<AliquotaIVA>5.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>7</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>15021</CodiceValore>
+</CodiceArticolo>
+<Descrizione>TOVAGLIOLI 15X15 EXTRA 1SCELTA 9KG
+TOVAGLIOLI 15X15 EXTRA 1SCELTA 9KG
+</Descrizione>
+<Quantita>2.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>23.000000</PrezzoUnitario>
+<PrezzoTotale>46.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>8</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>2161</CodiceValore>
+</CodiceArticolo>
+<Descrizione>PELLICOLA NUDA H 300MM
+PELLICOLA NUDA H 300MM
+</Descrizione>
+<Quantita>3.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>4.200000</PrezzoUnitario>
+<PrezzoTotale>12.60</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>9</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>4927</CodiceValore>
+</CodiceArticolo>
+<Descrizione>NAVETTE FONDO ORO 10 KG -N.1
+NAVETTE FONDO ORO 10 KG -N.1
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>17.000000</PrezzoUnitario>
+<PrezzoTotale>17.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>10</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>4928</CodiceValore>
+</CodiceArticolo>
+<Descrizione>NAVETTE FONDO ORO 10 KG -N.2
+NAVETTE FONDO ORO 10 KG -N.2
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>17.000000</PrezzoUnitario>
+<PrezzoTotale>17.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>11</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>4929</CodiceValore>
+</CodiceArticolo>
+<Descrizione>NAVETTE FONDO ORO 10 KG -N.3
+NAVETTE FONDO ORO 10 KG -N.3
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>17.000000</PrezzoUnitario>
+<PrezzoTotale>17.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>12</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>4930</CodiceValore>
+</CodiceArticolo>
+<Descrizione>NAVETTE FONDO ORO 10 KG -N.4
+NAVETTE FONDO ORO 10 KG -N.4
+</Descrizione>
+<Quantita>1.000000</Quantita>
+<UnitaMisura>PZ</UnitaMisura>
+<PrezzoUnitario>17.000000</PrezzoUnitario>
+<PrezzoTotale>17.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>13</NumeroLinea>
+<TipoCessionePrestazione>AC</TipoCessionePrestazione>
+<Descrizione>SPESE DI TRASPORTO</Descrizione>
+<PrezzoUnitario>2.000000</PrezzoUnitario>
+<PrezzoTotale>2.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<ImponibileImporto>214.25</ImponibileImporto>
+<Imposta>47.14</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+<DatiRiepilogo>
+<AliquotaIVA>5.00</AliquotaIVA>
+<ImponibileImporto>5.80</ImponibileImporto>
+<Imposta>0.29</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+</FatturaElettronicaBody>
+</p:FatturaElettronica>
