@@ -1,0 +1,199 @@
+<ns2:FatturaElettronica xmlns:ns2="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>08973230967</IdCodice></IdTrasmittente><ProgressivoInvio>FNg5U</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>KRRH6B9</CodiceDestinatario><PECDestinatario>Ceraldigroupsrl@legalmail.it</PECDestinatario></DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>13397910962</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Amazon Business EU S.a.r.l, Sede Secondaria</Denominazione>
+</Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>38 avenue John F. Kennedy</Indirizzo>
+<CAP>01855</CAP>
+<Comune>Lussemburgo</Comune>
+<Nazione>LU</Nazione>
+</Sede>
+<StabileOrganizzazione>
+<Indirizzo>Viale Monte Grappa 3/5</Indirizzo>
+<CAP>20124</CAP>
+<Comune>Milano</Comune>
+<Nazione>IT</Nazione>
+</StabileOrganizzazione>
+<RiferimentoAmministrazione>P.IVA: 13397910962</RiferimentoAmministrazione>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice>
+</IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>Ceraldi group srl</Denominazione>
+</Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>Piazza Nazionale 46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>napoli</Comune>
+<Nazione>IT</Nazione>
+</Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD01</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-04-28</Data>
+<Numero>IT61F7AFABEI</Numero>
+<ScontoMaggiorazione>
+<Tipo>SC</Tipo>
+<Importo>3.27</Importo>
+</ScontoMaggiorazione>
+<ImportoTotaleDocumento>49.98</ImportoTotaleDocumento>
+<Arrotondamento>0.00</Arrotondamento>
+</DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>402-2836161-4153967</IdDocumento>
+<Data>2026-04-28</Data>
+</DatiOrdineAcquisto>
+<DatiContratto>
+<IdDocumento>402-2836161-4153967</IdDocumento>
+<Data>2026-04-28</Data>
+</DatiContratto>
+<DatiTrasporto>
+<IndirizzoResa>
+<Indirizzo>Piazza Carita 14</Indirizzo>
+<CAP>80134</CAP>
+<Comune>Napoli</Comune>
+<Nazione>IT</Nazione>
+</IndirizzoResa>
+</DatiTrasporto>
+<FatturaPrincipale>
+<NumeroFatturaPrincipale>IT61F7AFABEI</NumeroFatturaPrincipale>
+<DataFatturaPrincipale>2026-04-28</DataFatturaPrincipale>
+</FatturaPrincipale>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-28</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-28</DataFinePeriodo>
+<PrezzoUnitario>1.63</PrezzoUnitario>
+<ScontoMaggiorazione>
+<Tipo>SC</Tipo>
+<Importo>1.63</Importo>
+</ScontoMaggiorazione>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>OrdinatoDa</TipoDato>
+<RiferimentoTesto>Ceraldi Group S.R.L</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Via Galileo Ferraris 66,80142,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>402-2836161-4153967</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<Descrizione>Costi di spedizione</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-28</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-28</DataFinePeriodo>
+<PrezzoUnitario>1.64</PrezzoUnitario>
+<ScontoMaggiorazione>
+<Tipo>SC</Tipo>
+<Importo>1.64</Importo>
+</ScontoMaggiorazione>
+<PrezzoTotale>0.00</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Via Galileo Ferraris 66,80142,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>402-2836161-4153967</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<Descrizione>TP-Link Mercusys MS105GP PoE+ Switch 5 Porte Gigabit con 4 PoE+, 30W per Porta PoE, 65W su Tutte le Porte, 802.3af/at, Cassa in Metallo, Durevole e silenzioso, Sdoppiatore Ethernet, PlugePlay</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-28</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-28</DataFinePeriodo>
+<PrezzoUnitario>20.48</PrezzoUnitario>
+<PrezzoTotale>20.48</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Via Galileo Ferraris 66,80142,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>402-2836161-4153967</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<Descrizione>TP-Link Mercusys MS105GP PoE+ Switch 5 Porte Gigabit con 4 PoE+, 30W per Porta PoE, 65W su Tutte le Porte, 802.3af/at, Cassa in Metallo, Durevole e silenzioso, Sdoppiatore Ethernet, PlugePlay</Descrizione>
+<Quantita>1.00</Quantita>
+<DataInizioPeriodo>2026-04-28</DataInizioPeriodo>
+<DataFinePeriodo>2026-04-28</DataFinePeriodo>
+<PrezzoUnitario>20.48</PrezzoUnitario>
+<PrezzoTotale>20.48</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>Spedito da</TipoDato>
+<RiferimentoTesto>Via Galileo Ferraris 66,80142,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Spedito a</TipoDato>
+<RiferimentoTesto>Piazza Carita 14,80134,Napoli,IT</RiferimentoTesto>
+</AltriDatiGestionali>
+<AltriDatiGestionali>
+<TipoDato>Contratto</TipoDato>
+<RiferimentoTesto>402-2836161-4153967</RiferimentoTesto>
+</AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>22.00</AliquotaIVA>
+<Arrotondamento>0.04</Arrotondamento>
+<ImponibileImporto>41.00</ImponibileImporto>
+<Imposta>9.02</Imposta>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP19</ModalitaPagamento>
+<DataRiferimentoTerminiPagamento>2026-04-28</DataRiferimentoTerminiPagamento>
+<ImportoPagamento>49.98</ImportoPagamento>
+</DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+</ns2:FatturaElettronica>
