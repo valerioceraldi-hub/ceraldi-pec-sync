@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="windows-1252"?>                                                                                                                                                                               
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>                                                                                                                                                                
+<p:FatturaElettronica versione="FPR12"                                                                                                                                                                                      
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"                                                                                                                                                                               
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"                                                                                                                                                     
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                                                                                                                      
+  <FatturaElettronicaHeader>
+   <DatiTrasmissione>
+    <IdTrasmittente>
+     <IdPaese>SM</IdPaese>
+                            <IdCodice>03473</IdCodice>
+    </IdTrasmittente>
+         <ProgressivoInvio>2/838</ProgressivoInvio>
+    <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+    <CodiceDestinatario>0000000</CodiceDestinatario>
+    <PECDestinatario>Cercaldigroupsrl@legalmail.it</PECDestinatario>                               
+   </DatiTrasmissione>
+   <CedentePrestatore>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04104640612</IdCodice>
+     </IdFiscaleIVA>
+          <CodiceFiscale>04104640612</CodiceFiscale>
+     <Anagrafica>
+                                                              <Denominazione>SIRO S.R.L. UNIPERSONALE</Denominazione>
+     </Anagrafica>
+     <RegimeFiscale>RF01</RegimeFiscale>
+    </DatiAnagrafici>
+    <Sede>
+                                             <Indirizzo>VIA PAOLO COLLELA, 3</Indirizzo>
+     <CAP>81030</CAP>
+                                                         <Comune>TEVEROLA</Comune>
+     <Provincia>CE</Provincia>  
+     <Nazione>IT</Nazione>
+    </Sede>
+    <IscrizioneREA>
+     <Ufficio>CE</Ufficio>
+                   <NumeroREA>298865</NumeroREA>
+            <CapitaleSociale>60000.00</CapitaleSociale>
+     <SocioUnico>SM</SocioUnico>
+     <StatoLiquidazione>LN</StatoLiquidazione>
+    </IscrizioneREA>
+    <Contatti>
+     <Email>amministrazione@sirosrl.com</Email>                                 
+    </Contatti>
+   </CedentePrestatore>
+   <CessionarioCommittente>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04523831214</IdCodice>
+     </IdFiscaleIVA>
+     <Anagrafica>
+                                                                   <Denominazione>CERALDI GROUP S.R.L</Denominazione>
+     </Anagrafica>
+    </DatiAnagrafici>
+    <Sede>
+                                                <Indirizzo>Piazza Carità, 14</Indirizzo>
+     <CAP>80134</CAP>
+                                                           <Comune>NAPOLI</Comune>
+     <Provincia>NA</Provincia>
+     <Nazione>IT</Nazione>
+    </Sede>
+   </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+   <DatiGenerali>
+    <DatiGeneraliDocumento>
+     <TipoDocumento>TD01</TipoDocumento>
+     <Divisa>EUR</Divisa>
+     <Data>2026-04-22</Data>
+                    <Numero>2/838</Numero>
+     <ImportoTotaleDocumento>         145.09</ImportoTotaleDocumento>
+     <Causale>VENDITA</Causale>                                                                                                                                                                                             
+    </DatiGeneraliDocumento>
+    <DatiTrasporto>
+     <DataOraRitiro>2026-04-22T10:00:00</DataOraRitiro>
+     <DataInizioTrasporto>2026-04-22</DataInizioTrasporto>
+    </DatiTrasporto>
+   </DatiGenerali>
+   <DatiBeniServizi>
+    <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>EA524</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BICCHIERE CALICE VINO BIANCO CL.44.5 CTX6 - DIVINO BORMIOLI
+                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>P1</UnitaMisura>
+     <PrezzoUnitario>            11.893200</PrezzoUnitario>
+     <PrezzoTotale>               118.93</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DatiRiepilogo>
+      <AliquotaIVA>22.00</AliquotaIVA>
+     <ImponibileImporto>118.93         </ImponibileImporto>
+     <Imposta>26.16          </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+   </DatiBeniServizi>
+   <DatiPagamento>
+    <CondizioniPagamento>TP02</CondizioniPagamento>
+    <DettaglioPagamento>
+     <ModalitaPagamento>MP01</ModalitaPagamento>
+     <DataScadenzaPagamento>2026-04-22</DataScadenzaPagamento>
+     <ImportoPagamento>145.09</ImportoPagamento>         
+    </DettaglioPagamento>
+   </DatiPagamento>
+  </FatturaElettronicaBody>
+ </p:FatturaElettronica>
