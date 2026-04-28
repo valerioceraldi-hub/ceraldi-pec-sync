@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="windows-1252"?>                                                                                                                                                                               
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>                                                                                                                                                                
+<p:FatturaElettronica versione="FPR12"                                                                                                                                                                                      
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"                                                                                                                                                                               
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"                                                                                                                                                     
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                                                                                                                      
+  <FatturaElettronicaHeader>
+   <DatiTrasmissione>
+    <IdTrasmittente>
+     <IdPaese>SM</IdPaese>
+                            <IdCodice>03473</IdCodice>
+    </IdTrasmittente>
+         <ProgressivoInvio>2/836</ProgressivoInvio>
+    <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+    <CodiceDestinatario>0000000</CodiceDestinatario>
+    <PECDestinatario>Cercaldigroupsrl@legalmail.it</PECDestinatario>                               
+   </DatiTrasmissione>
+   <CedentePrestatore>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04104640612</IdCodice>
+     </IdFiscaleIVA>
+          <CodiceFiscale>04104640612</CodiceFiscale>
+     <Anagrafica>
+                                                              <Denominazione>SIRO S.R.L. UNIPERSONALE</Denominazione>
+     </Anagrafica>
+     <RegimeFiscale>RF01</RegimeFiscale>
+    </DatiAnagrafici>
+    <Sede>
+                                             <Indirizzo>VIA PAOLO COLLELA, 3</Indirizzo>
+     <CAP>81030</CAP>
+                                                         <Comune>TEVEROLA</Comune>
+     <Provincia>CE</Provincia>  
+     <Nazione>IT</Nazione>
+    </Sede>
+    <IscrizioneREA>
+     <Ufficio>CE</Ufficio>
+                   <NumeroREA>298865</NumeroREA>
+            <CapitaleSociale>60000.00</CapitaleSociale>
+     <SocioUnico>SM</SocioUnico>
+     <StatoLiquidazione>LN</StatoLiquidazione>
+    </IscrizioneREA>
+    <Contatti>
+     <Email>amministrazione@sirosrl.com</Email>                                 
+    </Contatti>
+   </CedentePrestatore>
+   <CessionarioCommittente>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04523831214</IdCodice>
+     </IdFiscaleIVA>
+     <Anagrafica>
+                                                                   <Denominazione>CERALDI GROUP S.R.L</Denominazione>
+     </Anagrafica>
+    </DatiAnagrafici>
+    <Sede>
+                                                <Indirizzo>Piazza Carità, 14</Indirizzo>
+     <CAP>80134</CAP>
+                                                           <Comune>NAPOLI</Comune>
+     <Provincia>NA</Provincia>
+     <Nazione>IT</Nazione>
+    </Sede>
+   </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+   <DatiGenerali>
+    <DatiGeneraliDocumento>
+     <TipoDocumento>TD01</TipoDocumento>
+     <Divisa>EUR</Divisa>
+     <Data>2026-04-22</Data>
+                    <Numero>2/836</Numero>
+     <ImportoTotaleDocumento>         578.01</ImportoTotaleDocumento>
+     <Causale>VENDITA</Causale>                                                                                                                                                                                             
+    </DatiGeneraliDocumento>
+    <DatiTrasporto>
+     <DataOraRitiro>2026-04-22T10:00:00</DataOraRitiro>
+     <DataInizioTrasporto>2026-04-22</DataInizioTrasporto>
+    </DatiTrasporto>
+   </DatiGenerali>
+   <DatiBeniServizi>
+    <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>DA117</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ZUCCHERO DOLC LINEA BOX 300 BS
+                                                                                                                                                                         
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             4.000000</Quantita>
+             <UnitaMisura>P2</UnitaMisura>
+     <PrezzoUnitario>             5.454550</PrezzoUnitario>
+     <PrezzoTotale>                21.82</PrezzoTotale>
+     <AliquotaIVA>10.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA824</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>APERITIVO L'APE CL.100 BAGNOLI
+                                                                                                                                                                         
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            18.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>             4.262300</PrezzoUnitario>
+     <PrezzoTotale>                76.72</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB164</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>FANTA ORANGE VETRO VAP CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                15.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB186</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SPRITE VETRO VAP CL.33 CTX24
+                                                                                                                                                                           
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                15.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB177</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCA COLA LATTINA CL.33 CTX24 SLEEK
+                                                                                                                                                                    
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.311480</PrezzoUnitario>
+     <PrezzoTotale>                22.62</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB159</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCA COLA ZERO VETRO VAP CL.33 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                75.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>7</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB158</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCA COLA VETRO VAP CL.33 CTX24
+                                                                                                                                                                        
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                75.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>8</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA38</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA SORGESANA VAP CL.33 CTX24
+                                                                                                                                                                        
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             9.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>             7.581970</PrezzoUnitario>
+     <PrezzoTotale>                68.24</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>9</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA11</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA LETE VAP - VETRO CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C7</UnitaMisura>
+     <PrezzoUnitario>             9.750000</PrezzoUnitario>
+     <PrezzoTotale>                97.50</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>10</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA38</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA SORGESANA VAP CL.33 CTX24
+                                                                                                                                                                        
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>             7.581970</PrezzoUnitario>
+     <PrezzoTotale>                 7.58</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>11</NumeroLinea>
+     <TipoCessionePrestazione>AC</TipoCessionePrestazione>
+     <Descrizione>SPESE DI TRASPORTO</Descrizione>
+     <PrezzoUnitario>             1.450000</PrezzoUnitario>
+     <PrezzoTotale>                 1.45</PrezzoTotale>
+      <AliquotaIVA>22.00</AliquotaIVA>
+    </DettaglioLinee>
+    <DatiRiepilogo>
+      <AliquotaIVA>10.00</AliquotaIVA>
+     <ImponibileImporto>21.82          </ImponibileImporto>
+     <Imposta>2.18           </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+    <DatiRiepilogo>
+      <AliquotaIVA>22.00</AliquotaIVA>
+     <ImponibileImporto>454.11         </ImponibileImporto>
+     <Imposta>99.90          </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+   </DatiBeniServizi>
+   <DatiPagamento>
+    <CondizioniPagamento>TP02</CondizioniPagamento>
+    <DettaglioPagamento>
+     <ModalitaPagamento>MP05</ModalitaPagamento>
+     <DataScadenzaPagamento>2026-04-22</DataScadenzaPagamento>
+     <ImportoPagamento>578.01</ImportoPagamento>         
+    </DettaglioPagamento>
+   </DatiPagamento>
+  </FatturaElettronicaBody>
+ </p:FatturaElettronica>
