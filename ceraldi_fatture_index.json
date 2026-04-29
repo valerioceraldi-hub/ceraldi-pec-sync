@@ -3858,8 +3858,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-29T13:53:35.781072+00:00"
+    },
+    {
+      "id": "pec_LANGELLOTTI_GROUP_SRL_184_FS_20260428",
+      "tipo": "fattura",
+      "fornitore": "LANGELLOTTI GROUP SRL",
+      "numero": "184/FS",
+      "data": "2026-04-28",
+      "importo": 3.6,
+      "scadenza": "",
+      "pagamento": "",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/LANGELLOTTI_GROUP_SRL_184_FS.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (29/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-29T15:55:28.403217+00:00"
     }
   ],
-  "lastSync": "2026-04-29T13:53:37.726748+00:00",
+  "lastSync": "2026-04-29T15:55:29.832577+00:00",
   "newCount": 1
 }
