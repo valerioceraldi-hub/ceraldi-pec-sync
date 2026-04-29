@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ns3:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:p="http://www.fatturapa.gov.it/sdi/fatturapa/v1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>03141290548</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>0029787081</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>0000000</CodiceDestinatario>
+            <PECDestinatario>Ceraldigroupsrl@gmail.com</PECDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>08577391215</IdCodice>
+                </IdFiscaleIVA>
+                <CodiceFiscale>08577391215</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>A 2000 Costruzioni S.r.l</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>VIALE PLINIO, 111</Indirizzo>
+                <CAP>80047</CAP>
+                <Comune>S. Giuseppe Vesuviano</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+            <Contatti>
+                <Telefono>0815022993</Telefono>
+                <Email>info@a2000costruzioni.it</Email>
+            </Contatti>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04523831214</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>Ceraldi Group S.r.l.</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Piazza Nazionale, 46</Indirizzo>
+                <CAP>80143</CAP>
+                <Comune>Napoli</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2026-04-28</Data>
+                <Numero>FEP 38_26</Numero>
+                <ImportoTotaleDocumento>9760.00</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice fornitore</CodiceTipo>
+                    <CodiceValore>PG</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>Vi rimettiamo fattura per lavori di manutenzione ordinaria e straordinaria presso il Ceraldi Caffè sito in Piazza Carità n.14, Napoli - CIL n.6601/2025 PG/25901/2026 - 5 acconto</Descrizione>
+                <Quantita>1.00</Quantita>
+                <UnitaMisura>NR</UnitaMisura>
+                <PrezzoUnitario>8000.00</PrezzoUnitario>
+                <PrezzoTotale>8000.00</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <ImponibileImporto>8000.00</ImponibileImporto>
+                <Imposta>1760.00</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+                <RiferimentoNormativo>D.p.r. 633/72</RiferimentoNormativo>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP05</ModalitaPagamento>
+                <DataScadenzaPagamento>2026-05-28</DataScadenzaPagamento>
+                <ImportoPagamento>9760.00</ImportoPagamento>
+                <IstitutoFinanziario>Monte dei Paschi di Siena</IstitutoFinanziario>
+                <IBAN>IT40O0103074790000001767662</IBAN>
+                <CodicePagamento>BB30G</CodicePagamento>
+            </DettaglioPagamento>
+        </DatiPagamento>
+    </FatturaElettronicaBody>
+</ns3:FatturaElettronica>
