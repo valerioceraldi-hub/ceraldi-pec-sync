@@ -3876,8 +3876,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-29T15:55:28.403217+00:00"
+    },
+    {
+      "id": "pec_VANDEMOORTELE_EUROPE_NV________8528011772_20260429",
+      "tipo": "fattura",
+      "fornitore": "VANDEMOORTELE EUROPE NV,           (SEDE SECONDARIA ITALIA)",
+      "numero": "8528011772",
+      "data": "2026-04-29",
+      "importo": 217.35,
+      "scadenza": "",
+      "pagamento": "bonifico",
+      "bonIban": "",
+      "numDdt": "386362126",
+      "xmlGithubPath": "fatture_xml/VANDEMOORTELE_EUROPE_NV_____________SEDE_8528011772.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (29/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-29T19:23:31.573646+00:00"
     }
   ],
-  "lastSync": "2026-04-29T17:28:01.327621+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-29T19:23:33.354511+00:00",
+  "newCount": 1
 }
