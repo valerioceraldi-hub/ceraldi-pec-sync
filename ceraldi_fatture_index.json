@@ -3840,8 +3840,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-29T06:22:16.798743+00:00"
+    },
+    {
+      "id": "pec_Alfa_Service_Srl_1_3168_20260427",
+      "tipo": "fattura",
+      "fornitore": "Alfa Service Srl",
+      "numero": "1/3168",
+      "data": "2026-04-27",
+      "importo": 209.23,
+      "scadenza": "",
+      "pagamento": "",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/Alfa_Service_Srl_1_3168.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (29/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-29T13:53:35.781072+00:00"
     }
   ],
-  "lastSync": "2026-04-29T10:04:43.323301+00:00",
-  "newCount": 0
+  "lastSync": "2026-04-29T13:53:37.726748+00:00",
+  "newCount": 1
 }
