@@ -4020,8 +4020,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-30T10:05:47.664199+00:00"
+    },
+    {
+      "id": "pec_SUD_INGROSSO_DI_VINCENZO_SRL_1_8405_20260428",
+      "tipo": "fattura",
+      "fornitore": "SUD INGROSSO DI VINCENZO SRL",
+      "numero": "1/8405",
+      "data": "2026-04-28",
+      "importo": 283.91,
+      "scadenza": "2026-04-28",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/SUD_INGROSSO_DI_VINCENZO_SRL_1_8405.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (30/04/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-04-30T13:51:31.717414+00:00"
     }
   ],
-  "lastSync": "2026-04-30T10:05:49.598504+00:00",
-  "newCount": 6
+  "lastSync": "2026-04-30T13:51:40.223525+00:00",
+  "newCount": 1
 }
