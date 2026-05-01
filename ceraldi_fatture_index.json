@@ -4038,8 +4038,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-04-30T13:51:31.717414+00:00"
+    },
+    {
+      "id": "pec_EDENRED_ITALIA_Srl_481827_20260429",
+      "tipo": "fattura",
+      "fornitore": "EDENRED ITALIA Srl",
+      "numero": "481827",
+      "data": "2026-04-29",
+      "importo": 412.41,
+      "scadenza": "",
+      "pagamento": "",
+      "bonIban": "IT28T0333201600000001112420",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/EDENRED_ITALIA_Srl_481827.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (01/05/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-05-01T02:54:33.802905+00:00"
     }
   ],
-  "lastSync": "2026-04-30T22:52:41.083143+00:00",
-  "newCount": 0
+  "lastSync": "2026-05-01T02:54:35.281194+00:00",
+  "newCount": 1
 }
