@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FatturaElettronica versione="FPR12" xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader xmlns="">
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>01879020517</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>24</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>KRRH6B9</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>11005861213</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>11005861213</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>LARICOGAR S.R.L.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>VIA DOMENICO PADULA 145</Indirizzo>
+        <CAP>80126</CAP>
+        <Comune>Napoli</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+      <Contatti>
+        <Telefono>08118266648</Telefono>
+        <Email>laricogar.srl@outlook.it</Email>
+      </Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>04523831214</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA CARITA', 14</Indirizzo>
+        <CAP>80134</CAP>
+        <Comune>Napoli</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody xmlns="">
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD24</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-04-30</Data>
+        <Numero>FPR 24/26</Numero>
+        <ImportoTotaleDocumento>365.94</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+      <DatiDDT>
+        <NumeroDDT>05/26</NumeroDDT>
+        <DataDDT>2026-04-21</DataDDT>
+        <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+        <RiferimentoNumeroLinea>2</RiferimentoNumeroLinea>
+      </DatiDDT>
+      <DatiDDT>
+        <NumeroDDT>30/26</NumeroDDT>
+        <DataDDT>2026-04-24</DataDDT>
+        <RiferimentoNumeroLinea>3</RiferimentoNumeroLinea>
+        <RiferimentoNumeroLinea>4</RiferimentoNumeroLinea>
+      </DatiDDT>
+      <DatiDDT>
+        <NumeroDDT>50/26</NumeroDDT>
+        <DataDDT>2026-04-28</DataDDT>
+        <RiferimentoNumeroLinea>5</RiferimentoNumeroLinea>
+        <RiferimentoNumeroLinea>6</RiferimentoNumeroLinea>
+        <RiferimentoNumeroLinea>7</RiferimentoNumeroLinea>
+      </DatiDDT>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>RICOTTA OMOGENEIZZATA BD II 5KG LOTTO 03-05-2026</Descrizione>
+        <Quantita>20.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>3.50</PrezzoUnitario>
+        <PrezzoTotale>70.00</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>RICOTTA FULVI L.111</Descrizione>
+        <Quantita>8.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>6.50</PrezzoUnitario>
+        <PrezzoTotale>52.00</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+        <Descrizione>RICOTTA OMOGENEIZZATA BD II 5KG LOTTO 03-05-2026</Descrizione>
+        <Quantita>10.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>3.50</PrezzoUnitario>
+        <PrezzoTotale>35.00</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+        <Descrizione>RICOTTA FULVI L.111</Descrizione>
+        <Quantita>4.50</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>6.50</PrezzoUnitario>
+        <PrezzoTotale>29.25</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+        <Descrizione>RICOTTA OMOGENEIZZATA BD II 5KG LOTTO 03-05-2026</Descrizione>
+        <Quantita>20.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>3.50</PrezzoUnitario>
+        <PrezzoTotale>70.00</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+        <Descrizione>RICOTTA FULVI L.111</Descrizione>
+        <Quantita>6.90</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>6.50</PrezzoUnitario>
+        <PrezzoTotale>44.85</PrezzoTotale>
+        <AliquotaIVA>4.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>7</NumeroLinea>
+        <Descrizione>RICOTTA ZUCCHERATA CONGELATA L.04226</Descrizione>
+        <Quantita>12.00</Quantita>
+        <UnitaMisura>KG</UnitaMisura>
+        <PrezzoUnitario>4.00</PrezzoUnitario>
+        <PrezzoTotale>48.00</PrezzoTotale>
+        <AliquotaIVA>10.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>4.00</AliquotaIVA>
+        <ImponibileImporto>301.10</ImponibileImporto>
+        <Imposta>12.04</Imposta>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>10.00</AliquotaIVA>
+        <ImponibileImporto>48.00</ImponibileImporto>
+        <Imposta>4.80</Imposta>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP01</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-04-30</DataScadenzaPagamento>
+        <ImportoPagamento>365.94</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</FatturaElettronica>
