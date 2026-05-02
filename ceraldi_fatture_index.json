@@ -4092,8 +4092,44 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-05-02T10:50:52.366770+00:00"
+    },
+    {
+      "id": "pec_AP_COMMERCIALE_S_R_L__26566525100020_05538_20260502",
+      "tipo": "fattura",
+      "fornitore": "AP COMMERCIALE S.R.L.",
+      "numero": "26566525100020@05538",
+      "data": "2026-05-02",
+      "importo": 40.35,
+      "scadenza": "",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/AP_COMMERCIALE_S.R.L._26566525100020_05538.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (02/05/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-05-02T13:08:20.963934+00:00"
+    },
+    {
+      "id": "pec_LARICOGAR_S_R_L__FPR_24_26_20260430",
+      "tipo": "nota_credito",
+      "fornitore": "LARICOGAR S.R.L.",
+      "numero": "FPR 24/26",
+      "data": "2026-04-30",
+      "importo": 365.94,
+      "scadenza": "2026-04-30",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "05/26",
+      "xmlGithubPath": "fatture_xml/LARICOGAR_S.R.L._FPR_24_26.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (02/05/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-05-02T13:08:22.098928+00:00"
     }
   ],
-  "lastSync": "2026-05-02T10:50:53.939223+00:00",
-  "newCount": 1
+  "lastSync": "2026-05-02T13:08:23.250626+00:00",
+  "newCount": 2
 }
