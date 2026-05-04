@@ -2,7 +2,7 @@ name: PEC Sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */12 * * *'
 jobs:
   sync:
     runs-on: ubuntu-latest
