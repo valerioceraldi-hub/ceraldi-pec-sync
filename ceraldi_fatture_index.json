@@ -4164,8 +4164,44 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-05-02T18:57:45.406266+00:00"
+    },
+    {
+      "id": "pec_EUROUOVA_SRL_1356_20260504",
+      "tipo": "fattura",
+      "fornitore": "EUROUOVA SRL",
+      "numero": "1356",
+      "data": "2026-05-04",
+      "importo": 36.3,
+      "scadenza": "2026-05-04",
+      "pagamento": "contanti",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/EUROUOVA_SRL_1356.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (04/05/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-05-04T10:12:57.067785+00:00"
+    },
+    {
+      "id": "pec_GTM_DETERSIVI_DI_TOMMASINO_CLA_18_2026_20260420",
+      "tipo": "fattura",
+      "fornitore": "GTM DETERSIVI DI TOMMASINO CLAUDIO",
+      "numero": "18/2026",
+      "data": "2026-04-20",
+      "importo": 41.0,
+      "scadenza": "",
+      "pagamento": "",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/GTM_DETERSIVI_DI_TOMMASINO_CLAUDIO_18_2026.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (04/05/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-05-04T10:12:58.537400+00:00"
     }
   ],
-  "lastSync": "2026-05-04T06:37:31.584410+00:00",
-  "newCount": 0
+  "lastSync": "2026-05-04T10:13:00.075708+00:00",
+  "newCount": 2
 }
