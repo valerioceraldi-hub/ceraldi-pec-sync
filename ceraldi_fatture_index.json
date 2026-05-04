@@ -4380,8 +4380,26 @@
       "rate": [],
       "source": "pec",
       "importedAt": "2026-05-04T15:23:23.597433+00:00"
+    },
+    {
+      "id": "pec_SIRO_S_R_L__UNIPERSONALE_2_925_20260429",
+      "tipo": "fattura",
+      "fornitore": "SIRO S.R.L. UNIPERSONALE",
+      "numero": "2/925",
+      "data": "2026-04-29",
+      "importo": 841.01,
+      "scadenza": "2026-04-29",
+      "pagamento": "bonifico",
+      "bonIban": "",
+      "numDdt": "",
+      "xmlGithubPath": "fatture_xml/SIRO_S.R.L._UNIPERSONALE_2_925.xml",
+      "stato": "da_pagare",
+      "note": "Importato da PEC (04/05/2026)",
+      "rate": [],
+      "source": "pec",
+      "importedAt": "2026-05-04T16:09:45.960113+00:00"
     }
   ],
-  "lastSync": "2026-05-04T15:23:25.112411+00:00",
-  "newCount": 10
+  "lastSync": "2026-05-04T16:09:47.952315+00:00",
+  "newCount": 1
 }
