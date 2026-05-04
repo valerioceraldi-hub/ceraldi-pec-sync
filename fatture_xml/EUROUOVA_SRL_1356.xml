@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12"
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FatturaElettronicaHeader>
+		<DatiTrasmissione>
+			<IdTrasmittente>				<IdPaese>IT</IdPaese>
+				<IdCodice>08317211210</IdCodice>
+			</IdTrasmittente>
+			<ProgressivoInvio>00JYQ</ProgressivoInvio>
+			<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+			<CodiceDestinatario>0000000</CodiceDestinatario>
+			<ContattiTrasmittente>
+				<Telefono>081 3357503</Telefono>
+				<Email>EUROUOVA@HOTMAIL.IT</Email>
+			</ContattiTrasmittente>
+		</DatiTrasmissione>
+			<CedentePrestatore>
+				<DatiAnagrafici>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>07832841212</IdCodice>
+					</IdFiscaleIVA>
+					<CodiceFiscale>07832841212</CodiceFiscale>
+					<Anagrafica>
+						<Denominazione>EUROUOVA SRL</Denominazione>
+					</Anagrafica>
+					<RegimeFiscale>RF01</RegimeFiscale>
+				</DatiAnagrafici>
+				<Sede>
+					<Indirizzo>VIA PROV.LE FRATTA N. 4</Indirizzo>
+					<CAP>80020</CAP>
+					<Comune>CRISPANO</Comune>
+					<Provincia>NA</Provincia>
+					<Nazione>IT</Nazione>
+				</Sede>
+			</CedentePrestatore>
+			<CessionarioCommittente>
+				<DatiAnagrafici>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>04523831214</IdCodice>
+					</IdFiscaleIVA>
+					<Anagrafica>
+						<Denominazione>CERALDI  GROUP S R L  PIAZZA CARITA  N, 14</Denominazione>
+					</Anagrafica>
+				</DatiAnagrafici>
+				<Sede>
+					<Indirizzo>PIAZZA CARITAN 14</Indirizzo>
+					<CAP>80134</CAP>
+					<Comune>NAPOLI</Comune>
+					<Provincia>NA</Provincia>
+					<Nazione>IT</Nazione>
+				</Sede>
+			</CessionarioCommittente>
+			<TerzoIntermediarioOSoggettoEmittente>
+				<DatiAnagrafici>
+					<IdFiscaleIVA>
+						<IdPaese>IT</IdPaese>
+						<IdCodice>08317211210</IdCodice>
+					</IdFiscaleIVA>
+					<Anagrafica>
+						<Denominazione>NadirSoftware S.R.L.S.</Denominazione>
+					</Anagrafica>
+				</DatiAnagrafici>
+			</TerzoIntermediarioOSoggettoEmittente>
+			<SoggettoEmittente>TZ</SoggettoEmittente>
+	</FatturaElettronicaHeader>
+	<FatturaElettronicaBody>
+		<DatiGenerali>
+			<DatiGeneraliDocumento>
+				<TipoDocumento>TD01</TipoDocumento>
+				<Divisa>EUR</Divisa>
+				<Data>2026-05-04</Data>
+				<Numero>1356</Numero>
+				<ImportoTotaleDocumento>36.30</ImportoTotaleDocumento>
+			</DatiGeneraliDocumento>
+		</DatiGenerali>
+		<DatiBeniServizi>
+			<DettaglioLinee>
+				<NumeroLinea>1</NumeroLinea>
+				<CodiceArticolo>
+					<CodiceTipo>MPN</CodiceTipo>
+					<CodiceValore>L180SF</CodiceValore>
+				</CodiceArticolo>
+				<Descrizione>UOVA CAT.PESO L DA 180 UOVA SFUSE COD AZ 3 IT 004 CE 001 L, 28.05.2026</Descrizione>
+				<Quantita>1.00</Quantita>
+				<UnitaMisura>NR.</UnitaMisura>
+				<PrezzoUnitario>33.0000</PrezzoUnitario>
+				<PrezzoTotale>33.00</PrezzoTotale>
+				<AliquotaIVA>10.00</AliquotaIVA>
+			</DettaglioLinee>
+			<DatiRiepilogo>
+				<AliquotaIVA>10.00</AliquotaIVA>
+				<ImponibileImporto>33.00</ImponibileImporto>
+				<Imposta>3.30</Imposta>
+				<EsigibilitaIVA>I</EsigibilitaIVA>
+			</DatiRiepilogo>
+		</DatiBeniServizi>
+		<DatiPagamento>
+			<CondizioniPagamento>TP02</CondizioniPagamento>
+			<DettaglioPagamento>
+				<ModalitaPagamento>MP01</ModalitaPagamento>
+				<DataScadenzaPagamento>2026-05-04</DataScadenzaPagamento>
+				<ImportoPagamento>36.30</ImportoPagamento>
+			</DettaglioPagamento>
+		</DatiPagamento>
+	</FatturaElettronicaBody>
+</p:FatturaElettronica>
