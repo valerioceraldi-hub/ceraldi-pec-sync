@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>TMMCLD62T17F839U</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>00233</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>0000000</CodiceDestinatario>
+            <PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>08486771218</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>GTM DETERSIVI DI TOMMASINO CLAUDIO</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>VIA MONTESANTO 16</Indirizzo>
+                <CAP>80131</CAP>
+                <Comune>NAPOLI</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>04523831214</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>CERALDI GROUP SRL</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>PIAZZA CARITA 14</Indirizzo>
+                <CAP>80134</CAP>
+                <Comune>NAPOLI</Comune>
+                <Provincia>NA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2026-04-20</Data>
+                <Numero>18/2026</Numero>
+                <ImportoTotaleDocumento>41.00</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>INTERNO</CodiceTipo>
+                    <CodiceValore>0000046109</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>AMUCHINA SPRAY 750ML SENZA RISCIACQUO IG</Descrizione>
+                <Quantita>10.00</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>2.13115</PrezzoUnitario>
+                <PrezzoTotale>21.3115</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>2</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>INTERNO</CodiceTipo>
+                    <CodiceValore>0000041036</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>SPLENDEO DEO AMB.750 ML SPRAY VANIGLIA</Descrizione>
+                <Quantita>3.00</Quantita>
+                <UnitaMisura>PZ</UnitaMisura>
+                <PrezzoUnitario>4.098367</PrezzoUnitario>
+                <PrezzoTotale>12.2951</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <ImponibileImporto>33.61</ImponibileImporto>
+                <Imposta>7.39</Imposta>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+    </FatturaElettronicaBody>
+</p:FatturaElettronica>
