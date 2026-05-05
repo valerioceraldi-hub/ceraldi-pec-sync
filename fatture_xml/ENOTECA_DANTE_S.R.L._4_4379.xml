@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica versione="FPR12" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>SM</IdPaese>
+        <IdCodice>03473</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>4/4379</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>LX4UQQ5</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>07024451218</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>07024451218</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>ENOTECA DANTE S.R.L.</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>PIAZZA DANTE 18-19</Indirizzo>
+        <CAP>80135</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+      <Contatti>
+        <Telefono>0815499689</Telefono>
+        <Email>enotecadante@alice.it</Email>
+      </Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>04523831214</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>CERALDI GROUP S.R.L.</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>P.ZZA CARITA',14</Indirizzo>
+        <CAP>80135</CAP>
+        <Comune>NAPOLI</Comune>
+        <Provincia>NA</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+    <TerzoIntermediarioOSoggettoEmittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>SM</IdPaese>
+          <IdCodice>03473</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Passepartout S.p.A</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+    </TerzoIntermediarioOSoggettoEmittente>
+    <SoggettoEmittente>TZ</SoggettoEmittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-04-27</Data>
+        <Numero>4/4379</Numero>
+        <ImportoTotaleDocumento>333.56</ImportoTotaleDocumento>
+        <Causale>VENDITA</Causale>
+      </DatiGeneraliDocumento>
+      <DatiTrasporto>
+        <DataOraRitiro>2026-04-27T16:03:00</DataOraRitiro>
+        <DataInizioTrasporto>2026-04-27</DataInizioTrasporto>
+      </DatiTrasporto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>PROPRIETARIO</CodiceTipo>
+          <CodiceValore>VNPASTCOLLECIVE075CL</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>PASETTI COLLECIVETTA PECORINO DOP 75CL BIANCO
+
+</Descrizione>
+        <Quantita>12.000000</Quantita>
+        <UnitaMisura>BT</UnitaMisura>
+        <PrezzoUnitario>7.182000</PrezzoUnitario>
+        <PrezzoTotale>86.18</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>PROPRIETARIO</CodiceTipo>
+          <CodiceValore>VNSCOSANDREAGRE75CL</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>DON ANDREA GRECO I TUFI DOCG 75CL BIANCO
+
+</Descrizione>
+        <Quantita>12.000000</Quantita>
+        <UnitaMisura>BT</UnitaMisura>
+        <PrezzoUnitario>6.002000</PrezzoUnitario>
+        <PrezzoTotale>72.02</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>PROPRIETARIO</CodiceTipo>
+          <CodiceValore>VNSCOSANDREAFIA75CL</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>DON ANDREA FIANO LE PIETRE IGP 75CL BIANCO
+
+</Descrizione>
+        <Quantita>12.000000</Quantita>
+        <UnitaMisura>BT</UnitaMisura>
+        <PrezzoUnitario>6.002000</PrezzoUnitario>
+        <PrezzoTotale>72.02</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>PROPRIETARIO</CodiceTipo>
+          <CodiceValore>VNMOIO57       070CC</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>MOIO MOIO 57 75CL ROSSO
+
+</Descrizione>
+        <Quantita>6.000000</Quantita>
+        <UnitaMisura>BT</UnitaMisura>
+        <PrezzoUnitario>7.111000</PrezzoUnitario>
+        <PrezzoTotale>42.67</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+        <TipoCessionePrestazione>AC</TipoCessionePrestazione>
+        <Descrizione>SPESE DI TRASPORTO</Descrizione>
+        <PrezzoUnitario>0.520000</PrezzoUnitario>
+        <PrezzoTotale>0.52</PrezzoTotale>
+        <AliquotaIVA>22.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>22.00</AliquotaIVA>
+        <ImponibileImporto>273.41</ImponibileImporto>
+        <Imposta>60.15</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP02</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-04-27</DataScadenzaPagamento>
+        <ImportoPagamento>333.56</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
