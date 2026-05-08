@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="fatturaordinaria_v1.2.xsl"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+<FatturaElettronicaHeader>
+<DatiTrasmissione>
+<IdTrasmittente>
+<IdPaese>SM</IdPaese>
+<IdCodice>03473</IdCodice></IdTrasmittente>
+<ProgressivoInvio>1/73602</ProgressivoInvio>
+<FormatoTrasmissione>FPR12</FormatoTrasmissione>
+<CodiceDestinatario>0000000</CodiceDestinatario>
+<PECDestinatario>CERALDIGROUPSRL@LEGALMAIL.IT</PECDestinatario>
+</DatiTrasmissione>
+<CedentePrestatore>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>01992440618</IdCodice></IdFiscaleIVA>
+<CodiceFiscale>01992440618</CodiceFiscale>
+<Anagrafica>
+<Denominazione>SAIMA S.p.A.</Denominazione></Anagrafica>
+<RegimeFiscale>RF01</RegimeFiscale>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>VIA TRIVIO QUARANTA 5</Indirizzo>
+<CAP>81020</CAP>
+<Comune>S.MARCO EVANGELISTA</Comune>
+<Provincia>CE</Provincia>
+<Nazione>IT</Nazione></Sede>
+<IscrizioneREA>
+<Ufficio>CE</Ufficio>
+<NumeroREA>135525</NumeroREA>
+<CapitaleSociale>2000000.00</CapitaleSociale>
+<SocioUnico>SM</SocioUnico>
+<StatoLiquidazione>LN</StatoLiquidazione></IscrizioneREA>
+<Contatti>
+<Telefono>0823408200</Telefono>
+<Email>info@saimaspa.it</Email></Contatti>
+</CedentePrestatore>
+<CessionarioCommittente>
+<DatiAnagrafici>
+<IdFiscaleIVA>
+<IdPaese>IT</IdPaese>
+<IdCodice>04523831214</IdCodice></IdFiscaleIVA>
+<Anagrafica>
+<Denominazione>CERALDI GROUP S.R.L.</Denominazione></Anagrafica>
+</DatiAnagrafici>
+<Sede>
+<Indirizzo>P.ZZA NAZIONALE N.46</Indirizzo>
+<CAP>80143</CAP>
+<Comune>NAPOLI</Comune>
+<Provincia>NA</Provincia>
+<Nazione>IT</Nazione></Sede>
+</CessionarioCommittente>
+</FatturaElettronicaHeader>
+<FatturaElettronicaBody>
+<DatiGenerali>
+<DatiGeneraliDocumento>
+<TipoDocumento>TD24</TipoDocumento>
+<Divisa>EUR</Divisa>
+<Data>2026-05-05</Data>
+<Numero>1/73602</Numero>
+<ImportoTotaleDocumento>469.73</ImportoTotaleDocumento>
+<Causale>VENDITA</Causale>
+<Causale>Assolve obblighi D.LGS 198/21 e successive modifiche</Causale><Causale>Contributo CONAI assolto ove dovuto</Causale><Causale>Contributo CONOE assolto ove dovuto</Causale><Causale>Informativa privacy https://www.saimaspa.com/privacy-clienti.pdf</Causale></DatiGeneraliDocumento>
+<DatiOrdineAcquisto>
+<IdDocumento>0001967241001388</IdDocumento></DatiOrdineAcquisto>
+<DatiDDT>
+<NumeroDDT>1/76733</NumeroDDT>
+<DataDDT>2026-05-05</DataDDT></DatiDDT>
+</DatiGenerali>
+<DatiBeniServizi>
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 160</CodiceValore></CodiceArticolo>
+<Descrizione>BASE PASTA DI MANDORLE MO ORO CONFEZIONE DA KG 12,5
+
+</Descrizione>
+<Quantita>12.500000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>7.769000</PrezzoUnitario>
+<PrezzoTotale>97.11</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 615430 - Scadenza: 29/07/2026 - Qtà: 12,5</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>2</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>KOM1063</CodiceValore></CodiceArticolo>
+<Descrizione>MIX YOGOFINE DA KG 15
+
+</Descrizione>
+<Quantita>15.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>4.225000</PrezzoUnitario>
+<PrezzoTotale>63.38</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 613166 - Scadenza: 23/10/2026 - Qtà: 15</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>3</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>DEBIC 020</CodiceValore></CodiceArticolo>
+<Descrizione>PANNA TENUTAPIU' DA LT 1 (M.G. 38%)
+
+</Descrizione>
+<Quantita>4.000000</Quantita>
+<UnitaMisura>LT</UnitaMisura>
+<PrezzoUnitario>5.346000</PrezzoUnitario>
+<PrezzoTotale>21.38</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 617819 - Scadenza: 22/06/2026 - Qtà: 4</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>4</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 126</CodiceValore></CodiceArticolo>
+<Descrizione>NUOVA BIANCALIEVE CREMA DA MONTARE
+
+</Descrizione>
+<Quantita>12.000000</Quantita>
+<UnitaMisura>LT</UnitaMisura>
+<PrezzoUnitario>2.673000</PrezzoUnitario>
+<PrezzoTotale>32.08</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 616013 - Scadenza: 13/01/2027 - Qtà: 12</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>5</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>SAIMA 226</CodiceValore></CodiceArticolo>
+<Descrizione>AMIDO ARTECREMA CONFEZIONE DA 1 KG
+
+</Descrizione>
+<Quantita>10.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>4.783000</PrezzoUnitario>
+<PrezzoTotale>47.83</PrezzoTotale>
+<AliquotaIVA>10.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 616562 - Scadenza: 28/02/2028 - Qtà: 10</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>6</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>BRAIMS 110</CodiceValore></CodiceArticolo>
+<Descrizione>MELANGE PLUS HOMILLINA PLATTE DA KG 10 (4155)
+
+</Descrizione>
+<Quantita>30.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>2.989000</PrezzoUnitario>
+<PrezzoTotale>89.67</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 616734 - Scadenza: 02/08/2026 - Qtà: 30</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DettaglioLinee>
+<NumeroLinea>7</NumeroLinea>
+<CodiceArticolo>
+<CodiceTipo>PROPRIETARIO</CodiceTipo>
+<CodiceValore>BRAIMS 111</CodiceValore></CodiceArticolo>
+<Descrizione>MELANGE PLUS HOMILLINA GATEAUX DA KG 10 (4156)
+
+</Descrizione>
+<Quantita>30.000000</Quantita>
+<UnitaMisura>KG</UnitaMisura>
+<PrezzoUnitario>2.837000</PrezzoUnitario>
+<PrezzoTotale>85.11</PrezzoTotale>
+<AliquotaIVA>4.00</AliquotaIVA>
+<AltriDatiGestionali>
+<TipoDato>DATI LOTTO</TipoDato>
+<RiferimentoTesto>Id: 620624 - Scadenza: 22/09/2026 - Qtà: 30</RiferimentoTesto></AltriDatiGestionali>
+</DettaglioLinee>
+<DatiRiepilogo>
+<AliquotaIVA>10.00</AliquotaIVA>
+<ImponibileImporto>261.78</ImponibileImporto>
+<Imposta>26.18</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+<DatiRiepilogo>
+<AliquotaIVA>4.00</AliquotaIVA>
+<ImponibileImporto>174.78</ImponibileImporto>
+<Imposta>6.99</Imposta>
+<EsigibilitaIVA>I</EsigibilitaIVA>
+</DatiRiepilogo>
+</DatiBeniServizi>
+<DatiPagamento>
+<CondizioniPagamento>TP02</CondizioniPagamento>
+<DettaglioPagamento>
+<ModalitaPagamento>MP05</ModalitaPagamento>
+<DataScadenzaPagamento>2026-05-05</DataScadenzaPagamento>
+<ImportoPagamento>469.73</ImportoPagamento>
+<IstitutoFinanziario>INTESA SANPAOLO SPA</IstitutoFinanziario>
+<IBAN>IT94P0306975013100000004681</IBAN>
+<ABI>03069</ABI>
+<CAB>75013</CAB>
+<BIC>BCITITMM</BIC></DettaglioPagamento>
+</DatiPagamento>
+</FatturaElettronicaBody>
+
+</p:FatturaElettronica>
