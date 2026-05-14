@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="windows-1252"?>                                                                                                                                                                               
+<?xml-stylesheet type="text/xsl" href="fatturapa_v1.2.xsl"?>                                                                                                                                                                
+<p:FatturaElettronica versione="FPR12"                                                                                                                                                                                      
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"                                                                                                                                                                               
+xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"                                                                                                                                                     
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                                                                                                                      
+  <FatturaElettronicaHeader>
+   <DatiTrasmissione>
+    <IdTrasmittente>
+     <IdPaese>SM</IdPaese>
+                            <IdCodice>03473</IdCodice>
+    </IdTrasmittente>
+        <ProgressivoInvio>2/1071</ProgressivoInvio>
+    <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+    <CodiceDestinatario>0000000</CodiceDestinatario>
+    <PECDestinatario>Cercaldigroupsrl@legalmail.it</PECDestinatario>                               
+   </DatiTrasmissione>
+   <CedentePrestatore>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04104640612</IdCodice>
+     </IdFiscaleIVA>
+          <CodiceFiscale>04104640612</CodiceFiscale>
+     <Anagrafica>
+                                                              <Denominazione>SIRO S.R.L. UNIPERSONALE</Denominazione>
+     </Anagrafica>
+     <RegimeFiscale>RF01</RegimeFiscale>
+    </DatiAnagrafici>
+    <Sede>
+                                             <Indirizzo>VIA PAOLO COLLELA, 3</Indirizzo>
+     <CAP>81030</CAP>
+                                                         <Comune>TEVEROLA</Comune>
+     <Provincia>CE</Provincia>  
+     <Nazione>IT</Nazione>
+    </Sede>
+    <IscrizioneREA>
+     <Ufficio>CE</Ufficio>
+                   <NumeroREA>298865</NumeroREA>
+            <CapitaleSociale>60000.00</CapitaleSociale>
+     <SocioUnico>SM</SocioUnico>
+     <StatoLiquidazione>LN</StatoLiquidazione>
+    </IscrizioneREA>
+    <Contatti>
+     <Email>amministrazione@sirosrl.com</Email>                                 
+    </Contatti>
+   </CedentePrestatore>
+   <CessionarioCommittente>
+    <DatiAnagrafici>
+     <IdFiscaleIVA>
+      <IdPaese>IT</IdPaese>
+                       <IdCodice>04523831214</IdCodice>
+     </IdFiscaleIVA>
+     <Anagrafica>
+                                                                   <Denominazione>CERALDI GROUP S.R.L</Denominazione>
+     </Anagrafica>
+    </DatiAnagrafici>
+    <Sede>
+                                                <Indirizzo>Piazza Carità, 14</Indirizzo>
+     <CAP>80134</CAP>
+                                                           <Comune>NAPOLI</Comune>
+     <Provincia>NA</Provincia>
+     <Nazione>IT</Nazione>
+    </Sede>
+   </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+   <DatiGenerali>
+    <DatiGeneraliDocumento>
+     <TipoDocumento>TD01</TipoDocumento>
+     <Divisa>EUR</Divisa>
+     <Data>2026-05-12</Data>
+                   <Numero>2/1071</Numero>
+     <ImportoTotaleDocumento>        1398.00</ImportoTotaleDocumento>
+     <Causale>VENDITA</Causale>                                                                                                                                                                                             
+    </DatiGeneraliDocumento>
+    <DatiTrasporto>
+     <DataOraRitiro>2026-05-12T18:18:00</DataOraRitiro>
+     <DataInizioTrasporto>2026-05-12</DataInizioTrasporto>
+    </DatiTrasporto>
+   </DatiGenerali>
+   <DatiBeniServizi>
+    <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA761</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>GIN BOMBAY SAPPHIRE BLU CL.100
+                                                                                                                                                                         
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             3.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            13.934430</PrezzoUnitario>
+     <PrezzoTotale>                41.80</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA114</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>AMARETTO DISARONNO CL.100
+                                                                                                                                                                              
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            13.278690</PrezzoUnitario>
+     <PrezzoTotale>                13.28</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>3</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA833</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BITTER CAMPARI CL.100
+                                                                                                                                                                                  
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            12.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            11.885250</PrezzoUnitario>
+     <PrezzoTotale>               142.62</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>4</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA106</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>AMARO CYNAR CL.100
+                                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            11.909840</PrezzoUnitario>
+     <PrezzoTotale>                23.82</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>5</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA7866</CodiceValore>                             
+     </CodiceArticolo>
+     <Descrizione>GIN PORTOFINO DRY CL.50 43°
+                                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            36.065570</PrezzoUnitario>
+     <PrezzoTotale>                36.07</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>6</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA766</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>GIN HENDRICK'S CL.100
+                                                                                                                                                                                  
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            28.610660</PrezzoUnitario>
+     <PrezzoTotale>                57.22</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>7</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA826</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BITTER PILLA SELECT CL.100 17.5°
+                                                                                                                                                                       
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            10.713110</PrezzoUnitario>
+     <PrezzoTotale>                10.71</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>8</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA827</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>PIMM'S CL.100
+                                                                                                                                                                                          
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>            16.811480</PrezzoUnitario>
+     <PrezzoTotale>                16.81</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+        <NumeroLinea>9</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA820</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>APEROL BARBIERI CL.100
+                                                                                                                                                                                 
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             6.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>             9.426230</PrezzoUnitario>
+     <PrezzoTotale>                56.56</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>10</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>DA117</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ZUCCHERO DOLC LINEA BOX 300 BS
+                                                                                                                                                                         
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>P2</UnitaMisura>
+     <PrezzoUnitario>             5.454550</PrezzoUnitario>
+     <PrezzoTotale>                10.91</PrezzoTotale>
+     <AliquotaIVA>10.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>11</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB136</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCKTAIL ROSSO SANPELLEGRINO CL.20 CTX24
+                                                                                                                                                               
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            13.172130</PrezzoUnitario>
+     <PrezzoTotale>                13.17</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>12</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB135</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCKTAIL SILVER SANPELLEGRINO CL.20 CTX24
+                                                                                                                                                              
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            13.176230</PrezzoUnitario>
+     <PrezzoTotale>                26.35</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>13</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB172</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ESTATHE PESCA LATTINA CL.33 CTX24
+                                                                                                                                                                      
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.737700</PrezzoUnitario>
+     <PrezzoTotale>                78.69</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>14</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB156</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>TONICA FEVER TREE POMPELMO ROSA CL.20 CTX24
+                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             1.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            22.754100</PrezzoUnitario>
+     <PrezzoTotale>                22.75</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>15</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB401</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SUCCO YOGA MAGIC ACE 200ML CTX24
+                                                                                                                                                                       
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             3.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            11.549180</PrezzoUnitario>
+     <PrezzoTotale>                34.65</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>16</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>BA969</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>SCIROPPO ZUCCHERO DI CANNA CL.100   BAGNOLI
+                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>B4</UnitaMisura>
+     <PrezzoUnitario>             4.490910</PrezzoUnitario>
+     <PrezzoTotale>                 8.98</PrezzoTotale>
+     <AliquotaIVA>10.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>17</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB164</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>FANTA ORANGE VETRO VAP CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             2.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                30.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>18</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB173</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ESTATHE LIMONE LATTINA CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.737700</PrezzoUnitario>
+     <PrezzoTotale>                78.69</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>19</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB159</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>COCA COLA ZERO VETRO VAP CL.33 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.000000</PrezzoUnitario>
+     <PrezzoTotale>                75.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>20</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB129</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>CEDRATA TASSONI CL.18 CTX25
+                                                                                                                                                                            
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             5.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            15.573770</PrezzoUnitario>
+     <PrezzoTotale>                77.87</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>21</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AB540</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>BIRRA CERES STRONG ALE CL.33 CTX24 - DANIMARCA
+                                                                                                                                                         
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>             3.000000</Quantita>
+             <UnitaMisura>C5</UnitaMisura>
+     <PrezzoUnitario>            27.868850</PrezzoUnitario>
+     <PrezzoTotale>                83.61</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>22</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA103</CodiceValore>                              
+     </CodiceArticolo>
+     <Descrizione>ACQUA VITASNELLA CL.150 CTX6
+                                                                                                                                                                           
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C6</UnitaMisura>
+     <PrezzoUnitario>             2.254100</PrezzoUnitario>
+     <PrezzoTotale>                22.54</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>23</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA12</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA ELECTA PREMIUM PET CL.50 CTX24
+                                                                                                                                                                   
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            20.000000</Quantita>
+             <UnitaMisura>C6</UnitaMisura>
+     <PrezzoUnitario>             4.350000</PrezzoUnitario>
+     <PrezzoTotale>                87.00</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>24</NumeroLinea>
+     <CodiceArticolo>
+      <CodiceTipo>PROPRIETARIO</CodiceTipo>                       
+      <CodiceValore>AA11</CodiceValore>                               
+     </CodiceArticolo>
+     <Descrizione>ACQUA LETE VAP - VETRO CL.33 CTX24
+                                                                                                                                                                     
+</Descrizione>                                                                                                                                                                                                        
+     <Quantita>            10.000000</Quantita>
+             <UnitaMisura>C7</UnitaMisura>
+     <PrezzoUnitario>             9.750000</PrezzoUnitario>
+     <PrezzoTotale>                97.50</PrezzoTotale>
+     <AliquotaIVA>22.00</AliquotaIVA> 
+    </DettaglioLinee>
+    <DettaglioLinee>
+       <NumeroLinea>25</NumeroLinea>
+     <TipoCessionePrestazione>AC</TipoCessionePrestazione>
+     <Descrizione>SPESE DI TRASPORTO</Descrizione>
+     <PrezzoUnitario>             1.260000</PrezzoUnitario>
+     <PrezzoTotale>                 1.26</PrezzoTotale>
+      <AliquotaIVA>22.00</AliquotaIVA>
+    </DettaglioLinee>
+    <DatiRiepilogo>
+      <AliquotaIVA>22.00</AliquotaIVA>
+     <ImponibileImporto>1127.97        </ImponibileImporto>
+     <Imposta>248.15         </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+    <DatiRiepilogo>
+      <AliquotaIVA>10.00</AliquotaIVA>
+     <ImponibileImporto>19.89          </ImponibileImporto>
+     <Imposta>1.99           </Imposta>
+     <EsigibilitaIVA>I</EsigibilitaIVA>
+    </DatiRiepilogo>
+   </DatiBeniServizi>
+   <DatiPagamento>
+    <CondizioniPagamento>TP02</CondizioniPagamento>
+    <DettaglioPagamento>
+     <ModalitaPagamento>MP05</ModalitaPagamento>
+     <DataScadenzaPagamento>2026-05-12</DataScadenzaPagamento>
+     <ImportoPagamento>1398.00</ImportoPagamento>        
+    </DettaglioPagamento>
+   </DatiPagamento>
+  </FatturaElettronicaBody>
+ </p:FatturaElettronica>
